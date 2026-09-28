@@ -29,5 +29,5 @@ export const students = [
   { name: "Yurou Zhou (Reign)", url: "https://reign-zhou-prototype.vercel.app/" },
   { name: "Zhongyunqi Meng (Aria)", url: "https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/" },
   { name: "Ziona Sober", url: "https://ziona-prototyping-for-masters.vercel.app/" },
-  { name: "Ziqing Huang (Lyra)", url: "" },
+  { name: "Ziqing Huang (Lyra)", url: "https://prototyping-for-masters-beta.vercel.app/" },
 ];
