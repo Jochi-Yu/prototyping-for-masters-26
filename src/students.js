@@ -26,7 +26,7 @@ export const students = [
   { name: "Yi Pan (Ruby Pann)", url: "" },
   { name: "Yiping Dong", url: "https://prototyping-for-masters-tau.vercel.app" },
   { name: "Yoonseo Yang (Eunice)", url: "https://prototyping-for-master.vercel.app/" },
-  { name: "Yurou Zhou (Regin)", url: "https://reign-zhou-prototype.vercel.app/" },
+  { name: "Yurou Zhou (Reign)", url: "https://reign-zhou-prototype.vercel.app/" },
   { name: "Zhongyunqi Meng (Aria)", url: "https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/" },
   { name: "Ziona Sober", url: "https://ziona-prototyping-for-masters.vercel.app/" },
   { name: "Ziqing Huang (Lyra)", url: "" },

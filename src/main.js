@@ -44,7 +44,7 @@ document.querySelector("#app").innerHTML = `
     </header>
 
     <section class="hero" id="top" aria-labelledby="course-title">
-      <p class="eyebrow">Course homepage · DSG-5465-A</p>
+      <p class="eyebrow">DSG-5465-A · Elizabeth Lin</p>
       <h1 id="course-title">
         <span>Prototyping</span>
         <span class="title-indent">for Masters</span>
