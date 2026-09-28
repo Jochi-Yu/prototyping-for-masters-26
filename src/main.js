@@ -52,7 +52,6 @@ document.querySelector("#app").innerHTML = `
       <div class="hero-notes">
         <p class="intro">Learn how to prototype and publish your ideas using modern and emerging development tools.</p>
       </div>
-      <a class="down-link" href="#student-sites" aria-label="Jump to student sites">↓</a>
     </section>
 
     <section class="student-section" id="student-sites" aria-label="Student sites">
