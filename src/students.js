@@ -11,7 +11,7 @@ export const students = [
   { name: "Mingtai Sun", url: "https://mingtai-prototypes.vercel.app/" },
   { name: "Minju Jang", url: "https://minjujang-prototyping-3rp6.vercel.app/" },
   { name: "Qianyi Ma (Kate)", url: "https://qianyima.vercel.app/" },
-  { name: "Ruyi Wang", url: "" },
+  { name: "Ruyi Wang", url: "https://ruyiwang.vercel.app/" },
   { name: "Ryan Page", url: "https://prototyping-for-masters-rho.vercel.app/" },
   { name: "Sasha Shafran", url: "https://prototyping-for-masters-sashki-lw62.vercel.app/" },
   { name: "Sean Wiseman", url: "https://prototyping-for-masters.vercel.app/" },
