@@ -22,7 +22,7 @@ export const students = [
   { name: "Tinglan Huang (Alanis)", url: "https://alanis1-omega.vercel.app/" },
   { name: "Vivan Nadkarni", url: "https://vivans-prototypes.vercel.app/" },
   { name: "Wenying Zhu", url: "" },
-  { name: "Xuanyi Meng", url: "" },
+  { name: "Xuanyi Meng", url: "https://xuanyi-prototyping-2026.vercel.app/" },
   { name: "Yi Pan (Ruby Pann)", url: "" },
   { name: "Yiping Dong", url: "https://prototyping-for-masters-tau.vercel.app" },
   { name: "Yoonseo Yang (Eunice)", url: "https://prototyping-for-master.vercel.app/" },
