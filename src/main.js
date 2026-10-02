@@ -16,7 +16,7 @@ const renderStudent = ({ name, url }, index) => {
   if (url) {
     return `
       <li>
-        <a class="student-row student-row-link" href="${url}" target="_blank" rel="noreferrer" aria-label="Visit ${name}'s website">
+        <a class="student-row student-row-link" href="${url}" target="_blank" rel="noreferrer" data-student-name="${name}" aria-label="Visit ${name}'s website">
           <span class="student-number">${number}</span>
           <span class="student-name">${name}</span>
           <span class="row-action">Visit site <span aria-hidden="true">↗</span></span>
@@ -60,6 +60,16 @@ document.querySelector("#app").innerHTML = `
       </ol>
     </section>
 
+    <aside class="site-preview" aria-hidden="true">
+      <div class="preview-bar">
+        <span class="preview-label">Site preview</span>
+        <span class="preview-status">Loading</span>
+      </div>
+      <div class="preview-viewport">
+        <iframe class="preview-frame" title="" tabindex="-1"></iframe>
+      </div>
+    </aside>
+
     <footer>
       <p>Prototyping for Masters</p>
       <p>© 2026 SVA</p>
@@ -87,3 +97,57 @@ paletteButton.addEventListener("click", () => {
 });
 
 applyPalette(paletteIndex);
+
+const preview = document.querySelector(".site-preview");
+const previewFrame = document.querySelector(".preview-frame");
+const previewLabel = document.querySelector(".preview-label");
+const previewStatus = document.querySelector(".preview-status");
+const previewLinks = document.querySelectorAll(".student-row-link");
+let activePreviewLink = null;
+let previewTimer;
+
+const showPreview = (link) => {
+  window.clearTimeout(previewTimer);
+  activePreviewLink = link;
+
+  const studentName = link.dataset.studentName;
+  const url = link.href;
+
+  previewLabel.textContent = studentName;
+  previewFrame.title = `${studentName}'s website preview`;
+  preview.classList.add("is-visible");
+
+  if (previewFrame.dataset.loadedUrl !== url) {
+    preview.classList.add("is-loading");
+    previewStatus.textContent = "Loading";
+    if (previewFrame.dataset.url !== url) {
+      previewFrame.dataset.url = url;
+      previewFrame.src = url;
+    }
+  } else {
+    preview.classList.remove("is-loading");
+    previewStatus.textContent = "Live preview";
+  }
+};
+
+const hidePreview = (link) => {
+  previewTimer = window.setTimeout(() => {
+    if (activePreviewLink === link) {
+      activePreviewLink = null;
+      preview.classList.remove("is-visible");
+    }
+  }, 80);
+};
+
+previewFrame.addEventListener("load", () => {
+  previewFrame.dataset.loadedUrl = previewFrame.dataset.url;
+  preview.classList.remove("is-loading");
+  previewStatus.textContent = "Live preview";
+});
+
+previewLinks.forEach((link) => {
+  link.addEventListener("mouseenter", () => showPreview(link));
+  link.addEventListener("mouseleave", () => hidePreview(link));
+  link.addEventListener("focus", () => showPreview(link));
+  link.addEventListener("blur", () => hidePreview(link));
+});

@@ -195,9 +195,93 @@ h1 span {
   opacity: 0.72;
 }
 
+.student-list:has(.student-row-link:hover) .student-row-link:not(:hover),
+.student-list:has(.student-row-link:focus-visible) .student-row-link:not(:focus-visible) {
+  opacity: 0.38;
+}
+
+.student-row-link {
+  transition: opacity 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .forthcoming {
   justify-self: end;
   opacity: 0.72;
+}
+
+.site-preview {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: var(--gutter);
+  width: min(38vw, 36rem);
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 0.75rem 0.75rem 0 var(--ink);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(2rem, -50%);
+  transition: opacity 180ms ease-out, transform 360ms cubic-bezier(0.16, 1, 0.3, 1), background-color 400ms cubic-bezier(0.16, 1, 0.3, 1), border-color 400ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-preview.is-visible {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+.preview-bar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--ink);
+  font-size: 0.625rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.preview-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview-status {
+  opacity: 0.62;
+}
+
+.preview-viewport {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f2f0e8;
+}
+
+.preview-viewport::after {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  color: var(--ink);
+  content: "Loading site…";
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 120ms ease-out;
+}
+
+.site-preview.is-loading .preview-viewport::after {
+  opacity: 1;
+}
+
+.preview-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #f2f0e8;
 }
 
 footer {
@@ -256,6 +340,16 @@ footer p {
   footer {
     grid-template-columns: 1fr auto;
   }
+
+  .site-preview {
+    display: none;
+  }
+}
+
+@media (hover: none) {
+  .site-preview {
+    display: none;
+  }
 }
 
 @media (max-width: 30rem) {
@@ -281,6 +375,12 @@ footer p {
   }
 
   body {
+    transition: none;
+  }
+
+  .student-row-link,
+  .site-preview,
+  .preview-viewport::after {
     transition: none;
   }
 }
