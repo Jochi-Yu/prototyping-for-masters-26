@@ -1,7 +1,7 @@
 export const students = [
   { name: "Caoyun Xu (Zoe)", url: "" },
   { name: "Carnycia Royce", url: "https://carnycia-ruddy.vercel.app/" },
-  { name: "Ethan Wise", url: "" },
+  { name: "Ethan Wise", url: "https://prototyping-for-masters-8v9j.vercel.app/" },
   { name: "Heren Cui (Bruce)", url: "https://prototyping-for-masters-nub1-liart.vercel.app/" },
   { name: "Hoi Kin Chan (Matthew)", url: "https://matthews-site.vercel.app/" },
   { name: "Jiaqi Yuan", url: "https://prototyping-for-masters-1-eyt7.vercel.app/" },
@@ -17,7 +17,7 @@ export const students = [
   { name: "Sean Wiseman", url: "https://prototyping-for-masters.vercel.app/" },
   { name: "Shuotong Huang (Tiffany)", url: "https://shuotong-huang-portfolio.vercel.app/" },
   { name: "Siyue Zhong", url: "https://prototyping-for-masters-c12t.vercel.app/" },
-  { name: "Stephen Grant (Mac)", url: "" },
+  { name: "Stephen Grant (Mac)", url: "https://masters-main.vercel.app/" },
   { name: "Taiying Zhang (Sunshine)", url: "https://sunshine-prototypes.vercel.app/" },
   { name: "Tinglan Huang (Alanis)", url: "https://alanis1-omega.vercel.app/" },
   { name: "Vivan Nadkarni", url: "https://vivans-prototypes.vercel.app/" },
