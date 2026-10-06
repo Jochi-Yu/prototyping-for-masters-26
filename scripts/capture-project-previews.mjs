@@ -1,0 +1,77 @@
+import { chromium } from "@playwright/test";
+import { mkdir, rename, writeFile } from "node:fs/promises";
+import { students } from "../src/students.js";
+import { projects } from "../src/projects.js";
+
+// Screenshots keep the gallery light even when projects run WebGL or audio.
+const browser = await chromium.launch({ channel: "chrome", headless: true, args: ["--mute-audio"] });
+await mkdir(new URL("../public/previews/", import.meta.url), { recursive: true });
+const requestedTitles = process.argv.slice(2);
+const queue = projects.filter((project) => !requestedTitles.length || requestedTitles.includes(project.title));
+const results = [];
+try {
+  await Promise.all(Array.from({ length: 3 }, async () => {
+    const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+    for (let project; (project = queue.shift());) {
+      const page = await context.newPage();
+      const student = students.find(({ name }) => name === project.student);
+      const url = new URL(project.path, student.url).href;
+      try {
+        const response = await page.goto(url, { waitUntil: "networkidle", timeout: 25000 }).catch(async (error) => {
+          if (error.name !== "TimeoutError") throw error;
+          // Animated projects may keep networking; still require a rendered page.
+          if (!(await page.locator("body").innerText()).trim()) throw error;
+          return null;
+        });
+        if (response && !response.ok()) throw new Error(`HTTP ${response.status()}`);
+        await page.evaluate(() => document.fonts.ready);
+        await page.waitForTimeout(2000);
+        // Reveal representative local interaction states for these prototypes.
+        if (project.path === "/prototypes/generative-blooms") {
+          await page.locator("canvas").first().evaluate((canvas) => {
+            const bounds = canvas.getBoundingClientRect();
+            window.scrollTo(0, window.scrollY + bounds.top + bounds.height / 2 - window.innerHeight / 2);
+          });
+          await page.waitForTimeout(500);
+        }
+        if (project.path === "/prototypes/torch-typography") {
+          await page.mouse.move(720, 420);
+          await page.waitForTimeout(700);
+        }
+        if (project.path === "/prototypes/mayhem") {
+          await page.locator("canvas").scrollIntoViewIfNeeded();
+          await page.mouse.move(720, 450);
+          await page.waitForTimeout(700);
+        }
+        if (project.path === "/prototypes/free-fall") {
+          await page.getByRole("button", { name: /Type Sentences/ }).click();
+          await page.getByRole("button", { name: "RADICAL KINETIC TYPOGRAPHY IN MOTION", exact: true }).click();
+          await page.getByRole("button", { name: /confirm.*drop words/i }).click();
+          await page.waitForTimeout(1500);
+        }
+        if (project.path === "/prototypes/umbrella-rain") {
+          await page.getByRole("button", { name: "Start", exact: true }).click();
+          await page.mouse.move(720, 550);
+          await page.waitForTimeout(1200);
+        }
+        const target = new URL(`../public${project.preview}`, import.meta.url);
+        const temp = new URL(`${target.href}.tmp`);
+        await page.screenshot({ path: temp.pathname, type: "jpeg", quality: 75 });
+        await rename(temp, target);
+        results.push({ student: student.name, title: project.title, url, status: "captured" });
+        console.log(`Captured ${student.name}: ${project.title}`);
+      } catch (error) {
+        results.push({ student: student.name, title: project.title, url, status: "failed", error: error.message });
+        console.error(`Failed ${url}: ${error.message}`);
+        process.exitCode = 1;
+      } finally {
+        await page.close();
+      }
+    }
+    await context.close();
+  }));
+} finally {
+  await browser.close();
+  await mkdir(new URL("../output/week-gallery/", import.meta.url), { recursive: true });
+  await writeFile(new URL("../output/week-gallery/captures.json", import.meta.url), JSON.stringify(results, null, 2));
+}

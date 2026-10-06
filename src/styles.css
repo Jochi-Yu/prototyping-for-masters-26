@@ -1,7 +1,7 @@
 :root {
   --paper: #000000;
   --ink: #ffffff;
-  --rule: color-mix(in srgb, var(--ink) 38%, transparent);
+  --rule: color-mix(in srgb, var(--ink) 8%, transparent);
   --gutter: clamp(1rem, 2.2vw, 2rem);
   color: var(--ink);
   background: var(--paper);
@@ -407,5 +407,283 @@ footer p {
 
   .preview-frame {
     transition: none;
+  }
+}
+
+/* Weekly project gallery */
+[hidden] {
+  display: none !important;
+}
+
+.work-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+.work-views {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: -1px;
+}
+
+.work-views button {
+  min-height: 2.75rem;
+  padding: 0.65rem 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.work-views button[aria-pressed="true"] {
+  border-bottom-color: currentColor;
+}
+
+.work-views button:not([aria-pressed="true"]) {
+  color: color-mix(in srgb, var(--ink) 65%, var(--paper));
+}
+
+.work-views button:hover {
+  color: var(--ink);
+  border-bottom-color: currentColor;
+}
+
+.week-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gallery-count,
+.project-week {
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.week-control select {
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.25rem 0.65rem 0;
+  border: 0;
+  border-radius: 0;
+  font: inherit;
+  font-size: 0.75rem;
+  color: var(--ink);
+  background-color: var(--paper);
+  cursor: pointer;
+}
+
+select:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.gallery-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.gallery-heading h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.5vw, 3.25rem);
+  line-height: 1.2;
+}
+
+.gallery-count {
+  margin: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.75rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-link {
+  display: block;
+}
+
+.project-image {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--ink) 8%, var(--paper));
+  border: 1px solid var(--rule);
+  background-clip: padding-box;
+}
+
+.project-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--paper);
+  transition: transform 240ms ease-out;
+}
+
+.preview-fallback {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-content: center;
+  justify-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  font-size: 0.75rem;
+}
+
+.has-missing-preview .preview-fallback {
+  display: grid;
+}
+
+.project-open {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0.65rem 0.85rem;
+  color: var(--paper);
+  background: var(--ink);
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 160ms ease-out;
+}
+
+.project-link:hover .project-open,
+.project-link:focus-visible .project-open {
+  opacity: 1;
+}
+
+.project-link:hover img {
+  transform: scale(1.025);
+}
+
+.project-caption {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.45rem 0.75rem;
+  padding-top: 1rem;
+}
+
+.project-student {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: clamp(1.1rem, 1.65vw, 1.65rem);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.project-caption h3 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.project-week {
+  white-space: nowrap;
+  color: color-mix(in srgb, var(--ink) 50%, transparent);
+}
+
+
+.gallery-empty {
+  grid-column: 1 / -1;
+  padding: 3rem 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 64rem) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 40rem) {
+  .work-toolbar {
+    align-items: stretch;
+    gap: 1rem;
+    border-bottom: 0;
+  }
+
+  .work-views {
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .work-views button {
+    margin-bottom: -1px;
+  }
+
+  .week-control {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .week-control select {
+    min-width: 0;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .gallery-heading {
+    padding-top: 2rem;
+  }
+
+  .project-student {
+    font-size: 1.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-image img,
+  .project-open {
+    transition: none;
+  }
+
+  .project-link:hover img {
+    transform: none;
+  }
+}
+
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+}
+
+.project-type {
+  grid-column: 1 / -1;
+  width: fit-content;
+  margin-top: 0.25rem;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+
+@media (max-width: 40rem) {
+  .gallery-filters {
+    width: 100%;
   }
 }

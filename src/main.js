@@ -1,5 +1,6 @@
 import "./styles.css";
 import { students } from "./students.js";
+import { galleryMarkup, initGallery } from "./gallery.js";
 
 const palettes = [
   { name: "White on black", foreground: "#ffffff", background: "#000000" },
@@ -54,8 +55,9 @@ document.querySelector("#app").innerHTML = `
       </div>
     </section>
 
-    <section class="student-section" id="student-sites" aria-label="Student sites">
-      <ol class="student-list">
+    <section class="student-section" id="student-sites" aria-label="Student work">
+      ${galleryMarkup}
+      <ol class="student-list" aria-label="Student sites">
         ${students.map(renderStudent).join("")}
       </ol>
     </section>
@@ -271,3 +273,5 @@ if (window.matchMedia("(hover: hover) and (min-width: 48.01rem)").matches) {
 
   previewLinks.forEach((link) => previewObserver.observe(link));
 }
+
+initGallery(students);
