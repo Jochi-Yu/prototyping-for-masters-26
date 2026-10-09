@@ -8,6 +8,8 @@ October 9 Weather apps review: checked all 29 published sites and their project 
 
 ## Classification rules
 
+October 9 Letian follow-up: Elizabeth supplied City Walk for Week 4 and Weather Station for Week 5. Both direct pages returned HTTP 200 and rendered successfully. City Walk belongs in Doodle: moving a character with Arrow Keys or WASD draws a path, with Pen, Clear, and Export Map controls. Weather Station renders a multi-city conditions display with temperature, humidity, wind, pressure, and unit controls. Added both with captured previews, bringing Doodle to 22 projects and Weather apps to 19.
+
 October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth's request and placed in the existing PixiJS group. The live page returned HTTP 200 and rendered a gradient mesh editor with a working transition to raster liquify tools. This is an instructor-directed assignment placement; PixiJS usage was not independently verified. A preview was captured from the current page.
 
 - **Week 3 — Typography:** the main interaction designs, manipulates, animates, or composes letters and words. A typography label or route name alone is insufficient. Games that merely use letters are excluded.
@@ -96,6 +98,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Heran Cui (Bruce) | [Fashion Sketchbook](https://prototyping-for-masters-one.vercel.app/prototypes/fashion-sketchbook) |
 | Hoi Kin Chan (Matthew) | [Doodle Creator](https://matthews-site.vercel.app/prototypes/doodle-creator) |
 | Jochi Yu | [Doodle Generator](https://jochiprototypes.vercel.app/prototypes/doodle-generator) |
+| Letian Tian | [City Walk](https://prototyping-for-masters-nine.vercel.app/prototypes/city-walk) |
 | Michelle Wong | [Combined Shape Generator](https://prototyping-for-masters-wine.vercel.app/prototypes/acf-shapes) |
 | Mingtai Sun | [Alien Toothpaste Doodle](https://mingtai-prototypes.vercel.app/prototypes/alien-toothpaste-doodle) |
 | Minju Jang | [Emoji & ASCII Mosaic Doodler](https://minjujang-prototyping-3rp6.vercel.app/prototypes/emoji-mosaic) |

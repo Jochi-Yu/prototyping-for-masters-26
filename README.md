@@ -14,9 +14,9 @@ The homepage opens in **Student sites**, showing the full roster. Choose **Proje
 - `/#student-sites` — student directory (default)
 - `/?view=projects#student-sites` — all projects
 
-The collection contains **27 Typography**, **20 projects in the PixiJS group**, **21 Doodle**, and **18 Weather apps** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
+The collection contains **27 Typography**, **20 projects in the PixiJS group**, **22 Doodle**, and **19 Weather apps** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
 
-The [Week 5 review](docs/weather-review-2026-10-09.md) records all 29 published sites, the 18 weather apps found, and API/demo limitations.
+The [Week 5 review](docs/weather-review-2026-10-09.md) records all 29 published sites, the 19 weather apps included, and API/demo limitations.
 
 Students without a verified project in a collection remain in the directory. Week numbers follow the course assignments, not the numbering on individual portfolios.
 

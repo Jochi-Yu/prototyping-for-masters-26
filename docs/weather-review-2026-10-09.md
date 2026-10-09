@@ -12,6 +12,8 @@ Heran’s former deployment returned HTTP 404 with Vercel `DEPLOYMENT_NOT_FOUND`
 
 ## Included projects
 
+October 9 instructor follow-up: Elizabeth supplied Letian’s direct Weather Station link. It returned HTTP 200 and rendered a multi-city weather display; a gallery preview was captured. The collection now has **19 projects from 19 students**. Displayed weather values were not independently verified as live data.
+
 | Student | Project | Observed content |
 | --- | --- | --- |
 | Carnycia Royce | [Atmospheric Weather Station](https://carnycia-ruddy.vercel.app/prototypes/weather-station) | Weather layers, wind map, advisories, and hourly/five-day forecasts. Rendered in demo mode with an invalid API key notice. |
@@ -19,6 +21,7 @@ Heran’s former deployment returned HTTP 404 with Vercel `DEPLOYMENT_NOT_FOUND`
 | Heran Cui (Bruce) | [Weather Station](https://prototyping-for-masters-one.vercel.app/prototypes/weather-station) | Atmospheric simulation, clothing/commute advice, telemetry, and hourly forecast. Rendered in demo mode with a missing API key notice. |
 | Hoi Kin Chan (Matthew) | [NYC Weather](https://matthews-site.vercel.app/prototypes/weather) | NYC weather and five-day forecast; discovered in the desktop’s Prototypes Explorer. |
 | Jochi Yu | [weather weather](https://jochiprototypes.vercel.app/prototypes/weather-weather) | Current city conditions, hourly forecast, and five-day forecast. |
+| Letian Tian | [Weather Station](https://prototyping-for-masters-nine.vercel.app/prototypes/weather-station) | Multi-city conditions with temperature, humidity, wind, pressure, unit controls, GPS, and a key control. |
 | Michelle Wong | [Weather Station](https://prototyping-for-masters-wine.vercel.app/prototypes/weather-display) | City conditions, atmospheric time-of-day controls, and five-day forecast. |
 | Minju Jang | [Globe Weather](https://minjujang-prototyping-3rp6.vercel.app/prototypes/weather-dashboard) | Globe Weather; discovered by selecting its workshop entry and following Launch Prototype Route. |
 | Qianyi Ma (Kate) | [Weather, now / 天气此刻](https://qianyima.vercel.app/prototypes/local-weather) | Chinese/English city weather, conditions, and five-day forecast. |
@@ -35,10 +38,9 @@ Heran’s former deployment returned HTTP 404 with Vercel `DEPLOYMENT_NOT_FOUND`
 
 ## No weather app found on the published site
 
-These 11 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere.
+These 10 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere. Letian was removed from this list after the instructor supplied his direct project link.
 
 - [Jiaqi Yuan](https://prototyping-for-masters-1-eyt7.vercel.app/)
-- [Letian Tian](https://prototyping-for-masters-nine.vercel.app/)
 - [Mingtai Sun](https://mingtai-prototypes.vercel.app/)
 - [Ruyi Wang](https://ruyiwang.vercel.app/)
 - [Shuotong Huang (Tiffany)](https://shuotong-huang-portfolio.vercel.app/)
