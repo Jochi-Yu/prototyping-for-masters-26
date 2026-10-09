@@ -16,7 +16,7 @@ Heran’s former deployment returned HTTP 404 with Vercel `DEPLOYMENT_NOT_FOUND`
 | --- | --- | --- |
 | Carnycia Royce | [Atmospheric Weather Station](https://carnycia-ruddy.vercel.app/prototypes/weather-station) | Weather layers, wind map, advisories, and hourly/five-day forecasts. Rendered in demo mode with an invalid API key notice. |
 | Ethan Wise | [Local Weather](https://prototyping-for-masters-8v9j.vercel.app/prototypes/local-weather) | City/ZIP search, location selection, units, and weather/forecast interface. |
-| Heran Cui | [Weather Station](https://prototyping-for-masters-one.vercel.app/prototypes/weather-station) | Atmospheric simulation, clothing/commute advice, telemetry, and hourly forecast. Rendered in demo mode with a missing API key notice. |
+| Heran Cui (Bruce) | [Weather Station](https://prototyping-for-masters-one.vercel.app/prototypes/weather-station) | Atmospheric simulation, clothing/commute advice, telemetry, and hourly forecast. Rendered in demo mode with a missing API key notice. |
 | Hoi Kin Chan (Matthew) | [NYC Weather](https://matthews-site.vercel.app/prototypes/weather) | NYC weather and five-day forecast; discovered in the desktop’s Prototypes Explorer. |
 | Jochi Yu | [weather weather](https://jochiprototypes.vercel.app/prototypes/weather-weather) | Current city conditions, hourly forecast, and five-day forecast. |
 | Michelle Wong | [Weather Station](https://prototyping-for-masters-wine.vercel.app/prototypes/weather-display) | City conditions, atmospheric time-of-day controls, and five-day forecast. |

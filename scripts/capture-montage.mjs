@@ -404,8 +404,8 @@ async function captureStudent(student, index) {
     const shouldScroll = targetY >= MIN_MEANINGFUL_SCROLL;
     await evaluate(cdp, `scrollTo({top:${shouldScroll ? targetY : 0}, behavior:"instant"})`);
     await wait(300);
-    const scrollDurationMs = student.name === "Heran Cui" ? HERAN_SCROLL_MS : FULL_SCROLL_MS;
-    const maxSeconds = student.name === "Heran Cui" ? HERAN_MAX_SECONDS : student.name === "Carnycia Royce" ? CARNYCIA_MAX_SECONDS : CLIP_SECONDS;
+    const scrollDurationMs = student.name === "Heran Cui (Bruce)" ? HERAN_SCROLL_MS : FULL_SCROLL_MS;
+    const maxSeconds = student.name === "Heran Cui (Bruce)" ? HERAN_MAX_SECONDS : student.name === "Carnycia Royce" ? CARNYCIA_MAX_SECONDS : CLIP_SECONDS;
     record.highlight = { y: shouldScroll ? targetY : 0, scrollShown: shouldScroll, fullPageScroll: shouldScroll, pageHeight: dimensions.height, viewportHeight: dimensions.viewport, scrollDurationMs };
     await evaluate(cdp, `document.querySelectorAll("a[target]").forEach((link) => link.removeAttribute("target"))`);
     let interaction = student.name === "Hoi Kin Chan (Matthew)" ? await findMatthewAppIcons(cdp) : null;
@@ -487,7 +487,7 @@ function retrimClips() {
   for (const record of manifest.records.filter((item) => item.status === "captured")) {
     const frameDir = path.join(RAW, record.slug);
     const oldFrameCount = record.verification.frameCount;
-    const maximumFrames = FPS * (record.name === "Carnycia Royce" ? CARNYCIA_MAX_SECONDS : record.name === "Heran Cui" ? HERAN_MAX_SECONDS : CLIP_SECONDS);
+    const maximumFrames = FPS * (record.name === "Carnycia Royce" ? CARNYCIA_MAX_SECONDS : record.name === "Heran Cui (Bruce)" ? HERAN_MAX_SECONDS : CLIP_SECONDS);
     const keptFrameCount = Math.min(oldFrameCount, maximumFrames, Math.max(Math.min(minFrames, maximumFrames), record.verification.lastMotionFrame + 7));
     for (let index = keptFrameCount; index < oldFrameCount; index++) {
       fs.rmSync(path.join(frameDir, `${String(index).padStart(5, "0")}.jpg`), { force: true });

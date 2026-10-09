@@ -37,7 +37,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | --- | --- |
 | Carnycia Royce | [Typographic Experiment](https://carnycia-ruddy.vercel.app/prototypes/typographic-experiment) |
 | Ethan Wise | [Typographic Animator](https://prototyping-for-masters-8v9j.vercel.app/prototypes/typographic-animator) |
-| Heran Cui | [Typography Experiments](https://prototyping-for-masters-one.vercel.app/prototypes/typography-experiments) |
+| Heran Cui (Bruce) | [Typography Experiments](https://prototyping-for-masters-one.vercel.app/prototypes/typography-experiments) |
 | Hoi Kin Chan (Matthew) | [Typographic Experiments](https://matthews-site.vercel.app/prototypes/typography-experiment) |
 | Jiaqi Yuan | [Typography Experiments](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/typography-experiments) |
 | Jochi Yu | [Shatter Type](https://jochiprototypes.vercel.app/prototypes/shatter-type) |
@@ -69,7 +69,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | --- | --- |
 | Carnycia Royce | [Generative Blooms](https://carnycia-ruddy.vercel.app/prototypes/generative-blooms) |
 | Ethan Wise | [Gradient Maker](https://prototyping-for-masters-8v9j.vercel.app/prototypes/gradient-maker) |
-| Heran Cui | [Liquid Distortion](https://prototyping-for-masters-one.vercel.app/prototypes/liquid-distortion) |
+| Heran Cui (Bruce) | [Liquid Distortion](https://prototyping-for-masters-one.vercel.app/prototypes/liquid-distortion) |
 | Jiaqi Yuan | [Catnip Fireworks](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/catnip-fireworks) |
 | Jiaqi Yuan | [Dream Cat](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/dream-cat) |
 | Jiaqi Yuan | [Yarn Toy](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/yarn-toy) |
@@ -93,7 +93,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Student | Project |
 | --- | --- |
 | Carnycia Royce | [The Little Creature Workshop](https://carnycia-ruddy.vercel.app/prototypes/little-creature-workshop) |
-| Heran Cui | [Fashion Sketchbook](https://prototyping-for-masters-one.vercel.app/prototypes/fashion-sketchbook) |
+| Heran Cui (Bruce) | [Fashion Sketchbook](https://prototyping-for-masters-one.vercel.app/prototypes/fashion-sketchbook) |
 | Hoi Kin Chan (Matthew) | [Doodle Creator](https://matthews-site.vercel.app/prototypes/doodle-creator) |
 | Jochi Yu | [Doodle Generator](https://jochiprototypes.vercel.app/prototypes/doodle-generator) |
 | Michelle Wong | [Combined Shape Generator](https://prototyping-for-masters-wine.vercel.app/prototypes/acf-shapes) |
