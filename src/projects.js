@@ -51,6 +51,7 @@ const pixiProjects = [
   ["Jiaqi Yuan","Catnip Fireworks","/prototypes/catnip-fireworks"],
   ["Jiaqi Yuan","Dream Cat","/prototypes/dream-cat"],
   ["Jiaqi Yuan","Yarn Toy","/prototypes/yarn-toy"],
+  ["Letian Tian","Letter Snake","/prototypes/letter-snake"],
   ["Michelle Wong","Fluid Wave","/prototypes/fluid-wave"],
   ["Mingtai Sun","Chromatic Velocity & Ripples","/prototypes/card-deck"],
   ["Qianyi Ma (Kate)","Bubble Rush","/prototypes/bubble-chain"],

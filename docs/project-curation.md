@@ -8,6 +8,8 @@ October 9 Weather apps review: checked all 29 published sites and their project 
 
 ## Classification rules
 
+October 9 Letter Snake follow-up: Elizabeth assigned Letian’s Letter Snake to Week 4 PixiJS. The direct page returned HTTP 200 and rendered the letter-based arcade game with keyboard controls. Added it to the PixiJS group with a captured preview, bringing that group to 21 projects. This is an instructor-directed assignment placement; renderer usage was not independently verified.
+
 October 9 Letian follow-up: Elizabeth supplied City Walk for Week 4 and Weather Station for Week 5. Both direct pages returned HTTP 200 and rendered successfully. City Walk belongs in Doodle: moving a character with Arrow Keys or WASD draws a path, with Pen, Clear, and Export Map controls. Weather Station renders a multi-city conditions display with temperature, humidity, wind, pressure, and unit controls. Added both with captured previews, bringing Doodle to 22 projects and Weather apps to 19.
 
 October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth's request and placed in the existing PixiJS group. The live page returned HTTP 200 and rendered a gradient mesh editor with a working transition to raster liquify tools. This is an instructor-directed assignment placement; PixiJS usage was not independently verified. A preview was captured from the current page.
@@ -24,7 +26,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Project | Decision | Evidence from the actual project |
 | --- | --- | --- |
 | Jochi Yu — Body Morphing | Remove from Typography | Face/head scan with Morph, Keep face, and Carve holes controls; the homepage description was misleading. |
-| Letian Tian — Letter Snake | Remove from Typography | Arcade game with score, speed, collisions, and arrow-key controls. Letters serve the game rather than a typography editor. |
+| Letian Tian — Letter Snake | Move to Week 4 PixiJS at Elizabeth’s request | Arcade game with score, speed, collisions, and arrow-key controls. Letters serve the game rather than a typography editor. |
 | Sean Wiseman — Umbrella Rain | Remove from Typography | Catch falling letters to avoid game over; primarily a reflex game. |
 | Mingtai Sun — /typography-experiments | Keep excluded | Route now opens “Surreal Moss Forest World Builder,” with houses, figures, and atmosphere controls. |
 | Ziona Sober — Text Wave | Keep in Typography | Editable text forms a flowing typographic surface; the surfer interacts with the text rather than a scored letter game. |
@@ -75,6 +77,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Jiaqi Yuan | [Catnip Fireworks](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/catnip-fireworks) |
 | Jiaqi Yuan | [Dream Cat](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/dream-cat) |
 | Jiaqi Yuan | [Yarn Toy](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/yarn-toy) |
+| Letian Tian | [Letter Snake](https://prototyping-for-masters-nine.vercel.app/prototypes/letter-snake) |
 | Michelle Wong | [Fluid Wave](https://prototyping-for-masters-wine.vercel.app/prototypes/fluid-wave) |
 | Mingtai Sun | [Chromatic Velocity & Ripples](https://mingtai-prototypes.vercel.app/prototypes/card-deck) |
 | Qianyi Ma (Kate) | [Bubble Rush](https://qianyima.vercel.app/prototypes/bubble-chain) |
@@ -134,7 +137,6 @@ These remain accessible through student sites. No assignment was inferred from a
 | Jiaqi Yuan | [/prototypes/wheel-of-fortune](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/wheel-of-fortune) | Fortune-telling interaction. |
 | Jiaqi Yuan | [/prototypes/the-tower](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/the-tower) | Cup-catching game; PixiJS use was not verified. |
 | Jiaqi Yuan | [/prototypes/want-posters](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/want-posters) | Blank rendered page; cannot verify content. |
-| Letian Tian | [/prototypes/letter-snake](https://prototyping-for-masters-nine.vercel.app/prototypes/letter-snake) | Letter-based arcade game. |
 | Mingtai Sun | [/prototypes/typography-experiments](https://mingtai-prototypes.vercel.app/prototypes/typography-experiments) | Scene/world composition, despite the typography route. |
 | Ruyi Wang | [/prototypes/y2k-website](https://ruyiwang.vercel.app/prototypes/y2k-website) | Sims desktop portfolio interaction. |
 | Minju Jang | [/prototypes/graph-paper-minesweeper](https://minjujang-prototyping-3rp6.vercel.app/prototypes/graph-paper-minesweeper) | Primarily Minesweeper; hand-drawn styling alone does not make it a Doodle assignment. |
