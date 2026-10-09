@@ -8,7 +8,7 @@ Carnycia’s binder, Matthew’s desktop, Minju’s project selector, and Eunice
 
 Revisited all 29 roster URLs and their project navigation, inspected route links exposed by loaded first-party scripts, and checked the nested Mac and Ruyi portfolio pages. Added Sunshine’s **Weather Horizon** and Ziona’s **Weather App**, bringing the collection to **18 projects from 18 students**. Ziona’s homepage links to a case study; the gallery uses the actual `/prototypes/weather-now` app linked from that page.
 
-Bruce’s homepage and weather route now both return HTTP 404 with Vercel `DEPLOYMENT_NOT_FOUND`. His previously verified entry and preview are retained; the roster URL needs a replacement if the deployment has moved. The other 15 existing weather links returned HTTP 200. Both new project pages were separately rendered and captured. Ziona’s city search currently displays `OPENWEATHER_API_KEY is not set`; its forecast interaction is described by the linked case study but could not be exercised on the deployed app.
+Heran’s former deployment returned HTTP 404 with Vercel `DEPLOYMENT_NOT_FOUND`. His roster and project links now use the replacement deployment at `prototyping-for-masters-one.vercel.app`; the homepage and all four curated project routes return HTTP 200. His previously verified entries and previews are retained. The other 15 existing weather links returned HTTP 200. Both new project pages were separately rendered and captured. Ziona’s city search currently displays `OPENWEATHER_API_KEY is not set`; its forecast interaction is described by the linked case study but could not be exercised on the deployed app.
 
 ## Included projects
 
@@ -16,7 +16,7 @@ Bruce’s homepage and weather route now both return HTTP 404 with Vercel `DEPLO
 | --- | --- | --- |
 | Carnycia Royce | [Atmospheric Weather Station](https://carnycia-ruddy.vercel.app/prototypes/weather-station) | Weather layers, wind map, advisories, and hourly/five-day forecasts. Rendered in demo mode with an invalid API key notice. |
 | Ethan Wise | [Local Weather](https://prototyping-for-masters-8v9j.vercel.app/prototypes/local-weather) | City/ZIP search, location selection, units, and weather/forecast interface. |
-| Heren Cui (Bruce) | [Weather Station](https://prototyping-for-masters-nub1-liart.vercel.app/prototypes/weather-station) | Atmospheric simulation, clothing/commute advice, telemetry, and hourly forecast. Rendered in demo mode with a missing API key notice. |
+| Heran Cui | [Weather Station](https://prototyping-for-masters-one.vercel.app/prototypes/weather-station) | Atmospheric simulation, clothing/commute advice, telemetry, and hourly forecast. Rendered in demo mode with a missing API key notice. |
 | Hoi Kin Chan (Matthew) | [NYC Weather](https://matthews-site.vercel.app/prototypes/weather) | NYC weather and five-day forecast; discovered in the desktop’s Prototypes Explorer. |
 | Jochi Yu | [weather weather](https://jochiprototypes.vercel.app/prototypes/weather-weather) | Current city conditions, hourly forecast, and five-day forecast. |
 | Michelle Wong | [Weather Station](https://prototyping-for-masters-wine.vercel.app/prototypes/weather-display) | City conditions, atmospheric time-of-day controls, and five-day forecast. |
@@ -56,6 +56,6 @@ These 11 homepages were inspected, including their published prototype lists. No
 
 ## Review scope
 
-This collection records weather-app prototypes, including apps with demo data or API setup requirements. It does not certify their weather accuracy or production readiness. Carnycia and Bruce displayed explicit API-key notices and usable demo interfaces; other apps’ displayed values were not independently audited. No credentials were supplied or changed.
+This collection records weather-app prototypes, including apps with demo data or API setup requirements. It does not certify their weather accuracy or production readiness. Carnycia and Heran displayed explicit API-key notices and usable demo interfaces; other apps’ displayed values were not independently audited. No credentials were supplied or changed.
 
 The captures use the students’ default interfaces, with New York entered in Ethan, Kate, Sean, Eunice, and Ziona’s city search to expose a useful weather state. Existing course-week assignments remain unchanged.

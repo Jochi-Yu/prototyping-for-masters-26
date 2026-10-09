@@ -4,7 +4,7 @@ Reviewed on October 6, 2026. Inspected the rendered pages and screenshots of 87 
 
 October 9 Doodle follow-up: checked all 15 students absent from the Doodle collection, including 13 published homepages and 32 linked project pages. Added Ruby’s Little Print Shop and Lyra’s Doodle Playground after exercising their drawing tools. Alanis’s separately hosted Point / Trace was subsequently supplied by Elizabeth and verified as an image-to-dot-tracing tool. The Doodle collection now has 21 projects from 19 students. See [the full follow-up](doodle-review-2026-10-09.md).
 
-October 9 Weather apps review: checked all 29 published sites and their project navigation, then added 18 verified weather-app pages to Week 5 with captured previews. The second pass added Sunshine and Ziona; Bruce’s previously verified deployment is now unavailable. See [the full review and coverage](weather-review-2026-10-09.md).
+October 9 Weather apps review: checked all 29 published sites and their project navigation, then added 18 verified weather-app pages to Week 5 with captured previews. The second pass added Sunshine and Ziona; Heran’s site URL was updated to his replacement deployment, and his homepage and all four curated project routes return HTTP 200. See [the full review and coverage](weather-review-2026-10-09.md).
 
 ## Classification rules
 
@@ -37,7 +37,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | --- | --- |
 | Carnycia Royce | [Typographic Experiment](https://carnycia-ruddy.vercel.app/prototypes/typographic-experiment) |
 | Ethan Wise | [Typographic Animator](https://prototyping-for-masters-8v9j.vercel.app/prototypes/typographic-animator) |
-| Heren Cui (Bruce) | [Typography Experiments](https://prototyping-for-masters-nub1-liart.vercel.app/prototypes/typography-experiments) |
+| Heran Cui | [Typography Experiments](https://prototyping-for-masters-one.vercel.app/prototypes/typography-experiments) |
 | Hoi Kin Chan (Matthew) | [Typographic Experiments](https://matthews-site.vercel.app/prototypes/typography-experiment) |
 | Jiaqi Yuan | [Typography Experiments](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/typography-experiments) |
 | Jochi Yu | [Shatter Type](https://jochiprototypes.vercel.app/prototypes/shatter-type) |
@@ -69,7 +69,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | --- | --- |
 | Carnycia Royce | [Generative Blooms](https://carnycia-ruddy.vercel.app/prototypes/generative-blooms) |
 | Ethan Wise | [Gradient Maker](https://prototyping-for-masters-8v9j.vercel.app/prototypes/gradient-maker) |
-| Heren Cui (Bruce) | [Liquid Distortion](https://prototyping-for-masters-nub1-liart.vercel.app/prototypes/liquid-distortion) |
+| Heran Cui | [Liquid Distortion](https://prototyping-for-masters-one.vercel.app/prototypes/liquid-distortion) |
 | Jiaqi Yuan | [Catnip Fireworks](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/catnip-fireworks) |
 | Jiaqi Yuan | [Dream Cat](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/dream-cat) |
 | Jiaqi Yuan | [Yarn Toy](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/yarn-toy) |
@@ -93,7 +93,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Student | Project |
 | --- | --- |
 | Carnycia Royce | [The Little Creature Workshop](https://carnycia-ruddy.vercel.app/prototypes/little-creature-workshop) |
-| Heren Cui (Bruce) | [Fashion Sketchbook](https://prototyping-for-masters-nub1-liart.vercel.app/prototypes/fashion-sketchbook) |
+| Heran Cui | [Fashion Sketchbook](https://prototyping-for-masters-one.vercel.app/prototypes/fashion-sketchbook) |
 | Hoi Kin Chan (Matthew) | [Doodle Creator](https://matthews-site.vercel.app/prototypes/doodle-creator) |
 | Jochi Yu | [Doodle Generator](https://jochiprototypes.vercel.app/prototypes/doodle-generator) |
 | Michelle Wong | [Combined Shape Generator](https://prototyping-for-masters-wine.vercel.app/prototypes/acf-shapes) |

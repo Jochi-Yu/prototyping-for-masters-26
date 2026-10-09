@@ -17,7 +17,7 @@ export const projectTypes = [
 const typographyProjects = [
   ["Carnycia Royce","Typographic Experiment","/prototypes/typographic-experiment"],
   ["Ethan Wise","Typographic Animator","/prototypes/typographic-animator"],
-  ["Heren Cui (Bruce)","Typography Experiments","/prototypes/typography-experiments"],
+  ["Heran Cui","Typography Experiments","/prototypes/typography-experiments"],
   ["Hoi Kin Chan (Matthew)","Typographic Experiments","/prototypes/typography-experiment"],
   ["Jiaqi Yuan","Typography Experiments","/prototypes/typography-experiments"],
   ["Jochi Yu","Shatter Type","/prototypes/shatter-type"],
@@ -47,7 +47,7 @@ const typographyProjects = [
 const pixiProjects = [
   ["Carnycia Royce","Generative Blooms","/prototypes/generative-blooms"],
   ["Ethan Wise","Gradient Maker","/prototypes/gradient-maker"],
-  ["Heren Cui (Bruce)","Liquid Distortion","/prototypes/liquid-distortion"],
+  ["Heran Cui","Liquid Distortion","/prototypes/liquid-distortion"],
   ["Jiaqi Yuan","Catnip Fireworks","/prototypes/catnip-fireworks"],
   ["Jiaqi Yuan","Dream Cat","/prototypes/dream-cat"],
   ["Jiaqi Yuan","Yarn Toy","/prototypes/yarn-toy"],
@@ -69,7 +69,7 @@ const pixiProjects = [
 
 const doodleProjects = [
   ["Carnycia Royce","The Little Creature Workshop","/prototypes/little-creature-workshop"],
-  ["Heren Cui (Bruce)","Fashion Sketchbook","/prototypes/fashion-sketchbook"],
+  ["Heran Cui","Fashion Sketchbook","/prototypes/fashion-sketchbook"],
   ["Hoi Kin Chan (Matthew)","Doodle Creator","/prototypes/doodle-creator"],
   ["Jochi Yu","Doodle Generator","/prototypes/doodle-generator"],
   ["Michelle Wong","Combined Shape Generator","/prototypes/acf-shapes"],
@@ -94,7 +94,7 @@ const doodleProjects = [
 const weatherProjects = [
   ["Carnycia Royce","Atmospheric Weather Station","/prototypes/weather-station"],
   ["Ethan Wise","Local Weather","/prototypes/local-weather"],
-  ["Heren Cui (Bruce)","Weather Station","/prototypes/weather-station"],
+  ["Heran Cui","Weather Station","/prototypes/weather-station"],
   ["Hoi Kin Chan (Matthew)","NYC Weather","/prototypes/weather"],
   ["Jochi Yu","weather weather","/prototypes/weather-weather"],
   ["Michelle Wong","Weather Station","/prototypes/weather-display"],
