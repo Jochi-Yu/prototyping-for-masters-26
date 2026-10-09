@@ -44,6 +44,7 @@ const typographyProjects = [
 
 const pixiProjects = [
   ["Carnycia Royce","Generative Blooms","/prototypes/generative-blooms"],
+  ["Ethan Wise","Gradient Maker","/prototypes/gradient-maker"],
   ["Heren Cui (Bruce)","Liquid Distortion","/prototypes/liquid-distortion"],
   ["Jiaqi Yuan","Catnip Fireworks","/prototypes/catnip-fireworks"],
   ["Jiaqi Yuan","Dream Cat","/prototypes/dream-cat"],

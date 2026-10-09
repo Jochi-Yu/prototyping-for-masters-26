@@ -4,6 +4,8 @@ Reviewed on October 6, 2026. Inspected the rendered pages and screenshots of 87 
 
 ## Classification rules
 
+October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth's request and placed in the existing PixiJS group. The live page returned HTTP 200 and rendered a gradient mesh editor with a working transition to raster liquify tools. This is an instructor-directed assignment placement; PixiJS usage was not independently verified. A preview was captured from the current page.
+
 - **Week 3 — Typography:** the main interaction designs, manipulates, animates, or composes letters and words. A typography label or route name alone is insufficient. Games that merely use letters are excluded.
 - **Week 4 — PixiJS:** a focused class experiment with PixiJS rendering confirmed in its loaded implementation and/or the project’s own technical description. A mention in a prefetched homepage is not evidence.
 - **Week 4 — Doodle:** the main activity is drawing, sketching, constructing illustrative characters, or generating doodle artwork.
@@ -61,6 +63,7 @@ Reviewed on October 6, 2026. Inspected the rendered pages and screenshots of 87 
 | Student | Project |
 | --- | --- |
 | Carnycia Royce | [Generative Blooms](https://carnycia-ruddy.vercel.app/prototypes/generative-blooms) |
+| Ethan Wise | [Gradient Maker](https://prototyping-for-masters-8v9j.vercel.app/prototypes/gradient-maker) |
 | Heren Cui (Bruce) | [Liquid Distortion](https://prototyping-for-masters-nub1-liart.vercel.app/prototypes/liquid-distortion) |
 | Jiaqi Yuan | [Catnip Fireworks](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/catnip-fireworks) |
 | Jiaqi Yuan | [Dream Cat](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/dream-cat) |

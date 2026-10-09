@@ -11,7 +11,7 @@ The homepage opens in **Student sites**, showing the full roster. Choose **Proje
 - `/#student-sites` — student directory (default)
 - `/?view=projects#student-sites` — all projects
 
-The reviewed collection contains **27 Typography**, **19 PixiJS**, and **18 Doodle** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage. See [the curation review](docs/project-curation.md) for included projects, corrections, and exclusions.
+The collection contains **27 Typography**, **20 projects in the PixiJS group**, and **18 Doodle** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
 
 Students without a verified project in a collection remain in the directory. Week numbers follow the course assignments, not the numbering on individual portfolios.
 
