@@ -27,6 +27,41 @@ try {
         await page.evaluate(() => document.fonts.ready);
         await page.waitForTimeout(2000);
         // Reveal representative local interaction states for these prototypes.
+        if (project.path === "https://point-trace-doodle.vercel.app/") {
+          await page.getByRole("button", { name: "Connect all", exact: true }).click();
+          await page.locator("canvas").evaluate((canvas) => {
+            const bounds = canvas.getBoundingClientRect();
+            window.scrollTo(0, window.scrollY + bounds.top + bounds.height / 2 - window.innerHeight / 2);
+          });
+          await page.waitForTimeout(500);
+        }
+        if (["/prototypes/little-print-shop", "/prototypes/doodle-playground"].includes(project.path)) {
+          const isPrintShop = project.path === "/prototypes/little-print-shop";
+          if (!isPrintShop) {
+            await page.getByRole("button", { name: "OK", exact: true }).click();
+            await page.getByRole("button", { name: "🎨 Doodle Studio", exact: true }).click();
+          }
+          const canvas = page.locator("canvas").last();
+          const readDrawing = () => canvas.evaluate((element, printShop) => printShop
+            ? element.parentElement.dataset.strokes
+            : element.toDataURL(), isPrintShop);
+          const before = await readDrawing();
+          const bounds = await canvas.boundingBox();
+          for (let stroke = 0; stroke < 2; stroke++) {
+            if (isPrintShop && stroke === 1) await page.getByRole("button", { name: "Burgundy", exact: true }).click();
+            for (let point = 0; point <= 60; point++) {
+              const angle = point / 60 * Math.PI * 2;
+              await page.mouse.move(
+                bounds.x + bounds.width * (0.4 + stroke * 0.2 + Math.cos(angle) * 0.16),
+                bounds.y + Math.min(bounds.height, 480) * (0.5 + Math.sin(angle) * 0.25),
+              );
+              if (point === 0) await page.mouse.down();
+            }
+            await page.mouse.up();
+          }
+          await page.waitForTimeout(300);
+          if (before === await readDrawing()) throw new Error("Drawing interaction did not change the canvas");
+        }
         if (project.path === "/prototypes/generative-blooms") {
           await page.locator("canvas").first().evaluate((canvas) => {
             const bounds = canvas.getBoundingClientRect();

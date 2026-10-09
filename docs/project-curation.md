@@ -2,6 +2,8 @@
 
 Reviewed on October 6, 2026. Inspected the rendered pages and screenshots of 87 linked project pages across 28 published student sites, including the project links inside Eunice’s page-turning archive. All 64 included project URLs returned HTTP 200 during review. The three students without published site URLs remain in the student directory.
 
+October 9 Doodle follow-up: checked all 15 students absent from the Doodle collection, including 13 published homepages and 32 linked project pages. Added Ruby’s Little Print Shop and Lyra’s Doodle Playground after exercising their drawing tools. Alanis’s separately hosted Point / Trace was subsequently supplied by Elizabeth and verified as an image-to-dot-tracing tool. The Doodle collection now has 21 projects from 19 students. See [the full follow-up](doodle-review-2026-10-09.md).
+
 ## Classification rules
 
 October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth's request and placed in the existing PixiJS group. The live page returned HTTP 200 and rendered a gradient mesh editor with a working transition to raster liquify tools. This is an instructor-directed assignment placement; PixiJS usage was not independently verified. A preview was captured from the current page.
@@ -100,9 +102,12 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Sasha Shafran | [Fashion Doodle](https://prototyping-for-masters-sashki-lw62.vercel.app/prototypes/fashion-doodle) |
 | Taiying Zhang (Sunshine) | [Needy Girl Oekaki](https://sunshine-prototypes.vercel.app/prototypes/needy-girl-os) |
 | Taiying Zhang (Sunshine) | [Masterpiece Vandal Club](https://sunshine-prototypes.vercel.app/prototypes/masterpiece-graffiti-lab) |
+| Yi Pan (Ruby Pann) | [Little Print Shop](https://ruby-pann-course.vercel.app/prototypes/little-print-shop) |
+| Tinglan Huang (Alanis) | [Point / Trace](https://point-trace-doodle.vercel.app/) |
 | Vivan Nadkarni | [Doodle Engine](https://vivans-prototypes.vercel.app/prototypes/doodle-engine) |
 | Yiping Dong | [Doodle Creator](https://prototyping-for-masters-tau.vercel.app/prototypes/doodle-creator) |
 | Yurou Zhou (Reign) | [3D Aurora Doodler](https://reign-zhou-prototype.vercel.app/prototypes/p5-doodle) |
+| Ziqing Huang (Lyra) | [Doodle Playground](https://prototyping-for-masters-beta.vercel.app/prototypes/doodle-playground) |
 | Ziona Sober | [Dress the Doodle](https://ziona-prototyping-for-masters.vercel.app/prototypes/dress-the-doodle) |
 | Yoonseo Yang (Eunice) | [Drawing Machine](https://prototyping-for-master.vercel.app/prototypes/drawing-machine) |
 

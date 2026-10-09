@@ -79,16 +79,19 @@ const doodleProjects = [
   ["Sasha Shafran","Fashion Doodle","/prototypes/fashion-doodle"],
   ["Taiying Zhang (Sunshine)","Needy Girl Oekaki","/prototypes/needy-girl-os"],
   ["Taiying Zhang (Sunshine)","Masterpiece Vandal Club","/prototypes/masterpiece-graffiti-lab"],
+  ["Tinglan Huang (Alanis)","Point / Trace","https://point-trace-doodle.vercel.app/"],
   ["Vivan Nadkarni","Doodle Engine","/prototypes/doodle-engine"],
+  ["Yi Pan (Ruby Pann)","Little Print Shop","/prototypes/little-print-shop"],
   ["Yiping Dong","Doodle Creator","/prototypes/doodle-creator"],
   ["Yurou Zhou (Reign)","3D Aurora Doodler","/prototypes/p5-doodle"],
   ["Ziona Sober","Dress the Doodle","/prototypes/dress-the-doodle"],
+  ["Ziqing Huang (Lyra)","Doodle Playground","/prototypes/doodle-playground"],
   ["Yoonseo Yang (Eunice)","Drawing Machine","/prototypes/drawing-machine"],
 ];
 
 const makeProjects = (entries, week, type) => entries.map(([student, title, path]) => ({
   student, title, path, week, type,
-  preview: `/previews/${student.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}-${path.split("/").pop()}.jpg`,
+  preview: `/previews/${student.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}-${(path.split("/").pop() || title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}.jpg`,
 }));
 
 export const projects = [
