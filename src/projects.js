@@ -103,11 +103,13 @@ const weatherProjects = [
   ["Ryan Page","Weather Dashboard","/prototypes/weather-dashboard"],
   ["Sasha Shafran","Weather Archive","/prototypes/weather-archive"],
   ["Sean Wiseman","Weather, anywhere.","/prototypes/weather"],
+  ["Taiying Zhang (Sunshine)","Weather Horizon","/prototypes/weather-horizon"],
   ["Vivan Nadkarni","Weather","/prototypes/weather"],
   ["Yi Pan (Ruby Pann)","Find my weather","/prototypes/ideal-weather"],
   ["Yiping Dong","Weather","/prototypes/weather"],
   ["Yoonseo Yang (Eunice)","Weather","/prototypes/weather"],
   ["Yurou Zhou (Reign)","Weather Dashboard","/prototypes/weather-dashboard"],
+  ["Ziona Sober","Weather App","/prototypes/weather-now"],
 ];
 
 const makeProjects = (entries, week, type) => entries.map(([student, title, path]) => ({

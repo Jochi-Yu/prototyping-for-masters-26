@@ -4,7 +4,7 @@ Reviewed on October 6, 2026. Inspected the rendered pages and screenshots of 87 
 
 October 9 Doodle follow-up: checked all 15 students absent from the Doodle collection, including 13 published homepages and 32 linked project pages. Added Ruby’s Little Print Shop and Lyra’s Doodle Playground after exercising their drawing tools. Alanis’s separately hosted Point / Trace was subsequently supplied by Elizabeth and verified as an image-to-dot-tracing tool. The Doodle collection now has 21 projects from 19 students. See [the full follow-up](doodle-review-2026-10-09.md).
 
-October 9 Weather apps review: checked all 29 published sites and their project navigation, then added 16 verified weather-app pages to Week 5 with captured previews. See [the full review and coverage](weather-review-2026-10-09.md).
+October 9 Weather apps review: checked all 29 published sites and their project navigation, then added 18 verified weather-app pages to Week 5 with captured previews. The second pass added Sunshine and Ziona; Bruce’s previously verified deployment is now unavailable. See [the full review and coverage](weather-review-2026-10-09.md).
 
 ## Classification rules
 

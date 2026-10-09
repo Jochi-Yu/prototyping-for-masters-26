@@ -1,8 +1,14 @@
 # Week 5 – Weather apps review
 
-Reviewed October 9, 2026. Opened all **29 published student sites** in the 31-person roster. Found **16 weather apps from 16 students**, opened their direct project pages, and captured local gallery previews. Homepages alone were not used to classify projects.
+Reviewed October 9, 2026. Opened all **29 published student sites** in the 31-person roster. Initially found **16 weather apps from 16 students**, opened their direct project pages, and captured local gallery previews. Homepages alone were not used to classify projects.
 
 Carnycia’s binder, Matthew’s desktop, Minju’s project selector, and Eunice’s seven-spread archive required navigation to expose their project routes.
+
+## Recheck on October 9
+
+Revisited all 29 roster URLs and their project navigation, inspected route links exposed by loaded first-party scripts, and checked the nested Mac and Ruyi portfolio pages. Added Sunshine’s **Weather Horizon** and Ziona’s **Weather App**, bringing the collection to **18 projects from 18 students**. Ziona’s homepage links to a case study; the gallery uses the actual `/prototypes/weather-now` app linked from that page.
+
+Bruce’s homepage and weather route now both return HTTP 404 with Vercel `DEPLOYMENT_NOT_FOUND`. His previously verified entry and preview are retained; the roster URL needs a replacement if the deployment has moved. The other 15 existing weather links returned HTTP 200. Both new project pages were separately rendered and captured. Ziona’s city search currently displays `OPENWEATHER_API_KEY is not set`; its forecast interaction is described by the linked case study but could not be exercised on the deployed app.
 
 ## Included projects
 
@@ -19,15 +25,17 @@ Carnycia’s binder, Matthew’s desktop, Minju’s project selector, and Eunice
 | Ryan Page | [Weather Dashboard](https://prototyping-for-masters-rho.vercel.app/prototypes/weather-dashboard) | Current city conditions, 24-hour forecast, and five-day outlook. |
 | Sasha Shafran | [Weather Archive](https://prototyping-for-masters-sashki-lw62.vercel.app/prototypes/weather-archive) | Five-day Kyiv forecast in a filmstrip, with weather-based outfit suggestions. |
 | Sean Wiseman | [Weather, anywhere.](https://prototyping-for-masters.vercel.app/prototypes/weather) | Interactive globe and city search for local weather. |
+| Taiying Zhang (Sunshine) | [Weather Horizon](https://sunshine-prototypes.vercel.app/prototypes/weather-horizon) | City search, atmospheric scene, temperature, wind, pressure, visibility, and solar cycle. |
 | Vivan Nadkarni | [Weather](https://vivans-prototypes.vercel.app/prototypes/weather) | Current weather, hourly/five-day forecast, practical activity advice, and air quality. |
 | Yi Pan (Ruby Pann) | [Find my weather](https://ruby-pann-course.vercel.app/prototypes/ideal-weather) | Matches preferred temperature and conditions against weather in 24 places. |
 | Yiping Dong | [Weather](https://prototyping-for-masters-tau.vercel.app/prototypes/weather) | City weather, hourly/daily forecasts, and a climate-based dressing room. |
 | Yoonseo Yang (Eunice) | [Weather](https://prototyping-for-master.vercel.app/prototypes/weather) | Weather project reached through all seven archive spreads; city conditions and five-day forecast. |
 | Yurou Zhou (Reign) | [Weather Dashboard](https://reign-zhou-prototype.vercel.app/prototypes/weather-dashboard) | City conditions, weather presets, hourly/upcoming forecast, and wind display. |
+| Ziona Sober | [Weather App](https://ziona-prototyping-for-masters.vercel.app/prototypes/weather-now) | Rendered sky and city search; searching displays a missing API key error. The linked case study describes forecast time travel. |
 
 ## No weather app found on the published site
 
-These 13 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere.
+These 11 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere.
 
 - [Jiaqi Yuan](https://prototyping-for-masters-1-eyt7.vercel.app/)
 - [Letian Tian](https://prototyping-for-masters-nine.vercel.app/)
@@ -36,11 +44,9 @@ These 13 homepages were inspected, including their published prototype lists. No
 - [Shuotong Huang (Tiffany)](https://shuotong-huang-portfolio.vercel.app/)
 - [Siyue Zhong](https://prototyping-for-masters-c12t.vercel.app/)
 - [Stephen Grant (Mac)](https://masters-main.vercel.app/)
-- [Taiying Zhang (Sunshine)](https://sunshine-prototypes.vercel.app/)
 - [Tinglan Huang (Alanis)](https://alanis1-omega.vercel.app/)
 - [Xuanyi Meng](https://xuanyi-prototyping-2026.vercel.app/)
 - [Zhongyunqi Meng (Aria)](https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/)
-- [Ziona Sober](https://ziona-prototyping-for-masters.vercel.app/)
 - [Ziqing Huang (Lyra)](https://prototyping-for-masters-beta.vercel.app/)
 
 ## No site URL in the roster
@@ -52,4 +58,4 @@ These 13 homepages were inspected, including their published prototype lists. No
 
 This collection records weather-app prototypes, including apps with demo data or API setup requirements. It does not certify their weather accuracy or production readiness. Carnycia and Bruce displayed explicit API-key notices and usable demo interfaces; other apps’ displayed values were not independently audited. No credentials were supplied or changed.
 
-The captures use the students’ default interfaces, with New York entered in Ethan, Kate, Sean, and Eunice’s city search to expose a useful weather state. Existing course-week assignments remain unchanged.
+The captures use the students’ default interfaces, with New York entered in Ethan, Kate, Sean, Eunice, and Ziona’s city search to expose a useful weather state. Existing course-week assignments remain unchanged.
