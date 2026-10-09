@@ -1,4 +1,4 @@
-import { projects, weeks, projectTypes } from "./projects.js";
+import { projects, projectTypes } from "./projects.js";
 
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
@@ -12,9 +12,9 @@ export const galleryMarkup = `
     </div>
     <div class="gallery-filters" hidden>
       <div class="week-control">
-        <select id="week-filter" aria-label="Filter by week">
-          <option value="all">All weeks</option>
-          ${weeks.map(({ number, title }) => `<option value="${number}">Week ${number} — ${escapeHtml(title)}</option>`).join("")}
+        <select id="week-filter" aria-label="Filter by week and project">
+          <option value="all">All projects</option>
+          ${projectTypes.map(({ id, week, title }) => `<option value="${id}">Week ${week} — ${escapeHtml(title)}</option>`).join("")}
         </select>
       </div>
     </div>
@@ -38,7 +38,7 @@ export function initGallery(students) {
   const viewButtons = [...document.querySelectorAll("[data-view]")];
   const studentByName = new Map(students.map((student) => [student.name, student]));
   let view = "students";
-  let selectedWeek = "all";
+  let selectedType = "all";
 
   const render = () => {
     const showProjects = view === "projects";
@@ -47,13 +47,15 @@ export function initGallery(students) {
     document.querySelector(".gallery-filters").hidden = !showProjects;
     document.querySelector(".site-preview").classList.remove("is-visible");
     viewButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === view)));
-    filter.value = selectedWeek;
+    filter.value = selectedType;
     if (!showProjects) return;
 
-    const week = weeks.find(({ number }) => String(number) === selectedWeek);
-    const visibleProjects = projects.filter((project) => selectedWeek === "all" || String(project.week) === selectedWeek);
+    const collection = projectTypes.find(({ id }) => id === selectedType);
+    const visibleProjects = projects
+      .filter((project) => selectedType === "all" || project.type === selectedType)
+      .sort((a, b) => a.student.localeCompare(b.student, "en") || a.title.localeCompare(b.title, "en"));
     const showTypes = new Set(visibleProjects.map(({ type }) => type)).size > 1;
-    title.textContent = week ? `Week ${week.number} - ${week.title}` : "All projects";
+    title.textContent = collection ? `Week ${collection.week} - ${collection.title}` : "All projects";
     const studentCount = new Set(visibleProjects.map(({ student }) => student)).size;
     count.textContent = `${visibleProjects.length} ${visibleProjects.length === 1 ? "project" : "projects"} · ${studentCount} ${studentCount === 1 ? "student" : "students"}`;
     grid.innerHTML = visibleProjects.map((project, index) => {
@@ -77,7 +79,7 @@ export function initGallery(students) {
         </li>`;
     }).join("");
     if (!visibleProjects.length) {
-      grid.innerHTML = `<li class="gallery-empty">No project links for this week yet. Choose another week or browse the student sites.</li>`;
+      grid.innerHTML = `<li class="gallery-empty">No project links for this collection yet. Choose another collection or browse the student sites.</li>`;
     }
     grid.querySelectorAll("img").forEach((image) => image.addEventListener("error", () => {
       image.hidden = true;
@@ -92,16 +94,25 @@ export function initGallery(students) {
     view = requestedView === "students" ? "students"
       : requestedView === "projects" || params.has("week") || params.has("type") ? "projects" : "students";
     const requestedWeek = params.get("week");
-    selectedWeek = weeks.some(({ number }) => String(number) === requestedWeek) ? requestedWeek : "all";
+    const requestedType = params.get("type");
+    // Older week-only links open the first collection for that week.
+    selectedType = projectTypes.find(({ id }) => id === requestedType)?.id
+      ?? projectTypes.find(({ week }) => String(week) === requestedWeek)?.id
+      ?? "all";
     render();
   };
 
   const updateLocation = () => {
     const url = new URL(window.location.href);
     url.searchParams.set("view", view);
-    if (selectedWeek === "all") url.searchParams.delete("week");
-    else url.searchParams.set("week", selectedWeek);
-    url.searchParams.delete("type");
+    const collection = projectTypes.find(({ id }) => id === selectedType);
+    if (collection) {
+      url.searchParams.set("week", collection.week);
+      url.searchParams.set("type", collection.id);
+    } else {
+      url.searchParams.delete("week");
+      url.searchParams.delete("type");
+    }
     window.history.pushState(null, "", url);
     render();
   };
@@ -112,7 +123,7 @@ export function initGallery(students) {
     updateLocation();
   }));
   filter.addEventListener("change", () => {
-    selectedWeek = filter.value;
+    selectedType = filter.value;
     updateLocation();
   });
   window.addEventListener("popstate", readLocation);
