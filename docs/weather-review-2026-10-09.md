@@ -14,8 +14,17 @@ Heran’s former deployment returned HTTP 404 with Vercel `DEPLOYMENT_NOT_FOUND`
 
 October 9 instructor follow-up: Elizabeth supplied Letian’s direct Weather Station link. It returned HTTP 200 and rendered a multi-city weather display; a gallery preview was captured. The collection now has **19 projects from 19 students**. Displayed weather values were not independently verified as live data.
 
+October 9 additional instructor links: added Mingtai’s The Weather Daily, Stephen’s Local Forecast, Xuanyi’s Weather Near Me, and Ziqing’s Weather Postcard. All four direct pages returned HTTP 200 and rendered successfully. The collection now has **23 projects from 23 students**.
+
+Siyue follow-up: Elizabeth supplied the direct Weather Station link. It returned HTTP 200 and rendered conditions and forecasts in demo mode. Added it with a captured preview, bringing the collection to **24 projects from 24 students**.
+
 | Student | Project | Observed content |
 | --- | --- | --- |
+| Siyue Zhong | [Weather Station](https://prototyping-for-masters-c12t.vercel.app/prototypes/weather-station) | Explicit demo mode; city conditions, hourly/five-day forecasts, packing recommendations, and historical comparisons. |
+| Mingtai Sun | [The Weather Daily](https://mingtai-prototypes.vercel.app/prototypes/weather-station) | Newspaper-style conditions, hourly forecast, seven-day outlook, station and unit controls. |
+| Stephen Grant (Mac) | [Local Forecast](https://masters-main.vercel.app/prototypes/local-weather) | City search and local forecast interface; searching New York displayed a missing OPENWEATHER_API_KEY notice. |
+| Xuanyi Meng | [Weather Near Me](https://xuanyi-prototyping-2026.vercel.app/prototypes/weather-dashboard) | Interactive map and city search; searching New York displayed conditions and a five-day forecast. |
+| Ziqing Huang (Lyra) | [Weather Postcard](https://prototyping-for-masters-beta.vercel.app/prototypes/weather-postcard) | City selection and weather-driven paper collage postcards; Generate Postcard rendered conditions and collage artwork. |
 | Carnycia Royce | [Atmospheric Weather Station](https://carnycia-ruddy.vercel.app/prototypes/weather-station) | Weather layers, wind map, advisories, and hourly/five-day forecasts. Rendered in demo mode with an invalid API key notice. |
 | Ethan Wise | [Local Weather](https://prototyping-for-masters-8v9j.vercel.app/prototypes/local-weather) | City/ZIP search, location selection, units, and weather/forecast interface. |
 | Heran Cui (Bruce) | [Weather Station](https://prototyping-for-masters-one.vercel.app/prototypes/weather-station) | Atmospheric simulation, clothing/commute advice, telemetry, and hourly forecast. Rendered in demo mode with a missing API key notice. |
@@ -38,18 +47,13 @@ October 9 instructor follow-up: Elizabeth supplied Letian’s direct Weather Sta
 
 ## No weather app found on the published site
 
-These 10 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere. Letian was removed from this list after the instructor supplied his direct project link.
+These 5 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere. Letian, Mingtai, Stephen, Xuanyi, Ziqing, and Siyue were removed after the instructor supplied their direct project links.
 
 - [Jiaqi Yuan](https://prototyping-for-masters-1-eyt7.vercel.app/)
-- [Mingtai Sun](https://mingtai-prototypes.vercel.app/)
 - [Ruyi Wang](https://ruyiwang.vercel.app/)
 - [Shuotong Huang (Tiffany)](https://shuotong-huang-portfolio.vercel.app/)
-- [Siyue Zhong](https://prototyping-for-masters-c12t.vercel.app/)
-- [Stephen Grant (Mac)](https://masters-main.vercel.app/)
 - [Tinglan Huang (Alanis)](https://alanis1-omega.vercel.app/)
-- [Xuanyi Meng](https://xuanyi-prototyping-2026.vercel.app/)
 - [Zhongyunqi Meng (Aria)](https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/)
-- [Ziqing Huang (Lyra)](https://prototyping-for-masters-beta.vercel.app/)
 
 ## No site URL in the roster
 

@@ -17,22 +17,27 @@ Both project pages returned HTTP 200. Added both to Week 4 — Doodle, bringing 
 
 Elizabeth supplied Alanis’s separately hosted [Point / Trace](https://point-trace-doodle.vercel.app/), which was not linked from the portfolio index during the initial review. The page returned HTTP 200 and rendered an image-to-doodle tool with numbered tracing points, a sample bird, undo, outline controls, and a Connect all action. Added it under Tinglan Huang (Alanis) with a captured preview. The collection now has **21 projects from 19 students**, leaving **12 students** without a Doodle entry.
 
+## Subsequent instructor corrections
+
+Letian’s City Walk was added after checking its drawing controls. Elizabeth then identified Ethan’s Gradient Maker as Doodle and supplied Jiaqi’s Cat Spellbook. Both direct pages returned HTTP 200. Moved Gradient Maker out of PixiJS into Doodle; it renders a vector mesh editor with raster liquify tools. Cat Spellbook provides Magic Quill, Paw Stamp, Yarn Brush, Stardust, and Cat Tail drawing tools, with ink, size, undo/redo, and save controls. Captured updated previews for both pages.
+
+Shuotong follow-up: Elizabeth supplied [3D Doodle Studio](https://shuotong-huang-portfolio.vercel.app/doodle-playground/index.html), a standalone page outside the portfolio prototype routes. It returned HTTP 200 and rendered neon ribbon artwork with drawing/inspect modes, brush controls, geometry choices, and preset sculptures. Added it with a captured preview.
+
+Zhongyunqi follow-up: Elizabeth supplied [Draw to Feed a Creature](https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/prototypes/doodle-creator). The page returned HTTP 200 and rendered a drawing canvas with brush widths, palette changes, and stroke-based creature growth. Added it with a captured preview showing sample strokes.
+
+The collection now contains **26 projects from 24 students**, leaving **7 students** without a Doodle entry.
+
 ## Remaining students
 
 | Student | Site | Finding |
 | --- | --- | --- |
 | Caoyun Xu (Zoe) | No URL in roster | Could not check a site. |
-| Ethan Wise | [Site](https://prototyping-for-masters-8v9j.vercel.app/) | Design Oracle, Dragon Skywriter, and Gradient Maker. No separate doodle tool found; Gradient Maker remains in its instructor-selected Week 4 PixiJS group. |
-| Jiaqi Yuan | [Site](https://prototyping-for-masters-1-eyt7.vercel.app/) | Cat interactions, typography, particle effects, and games. WANT still returned a blank rendered page; no usable drawing tool found. |
-| Letian Tian | [Site](https://prototyping-for-masters-nine.vercel.app/) | Typography Lab, Letter Snake, and City Walk. The new City Walk is a character exploration simulator, with character choices and an asset catalog. No separate drawing tool found. |
 | Qianyi Ma (Kate) | [Site](https://qianyima.vercel.app/) | Typography experiments and Bubble Rush; no new doodle project linked in the experiments list. |
 | Ruyi Wang | [Site](https://ruyiwang.vercel.app/) | Y2K/Sims interaction and two typography tools. No separate drawing tool found. |
-| Shuotong Huang (Tiffany) | [Site](https://shuotong-huang-portfolio.vercel.app/) | Portfolio scrapbook with Getting Started and Confetti buttons. No linked doodle prototype found. |
 | Siyue Zhong | [Site](https://prototyping-for-masters-c12t.vercel.app/) | Getting Started, Confetti, and Personal Weblog. No linked doodle tool found. |
 | Stephen Grant (Mac) | [Site](https://masters-main.vercel.app/) | Instagram feed with an engagement game and magazine-cover layering interaction, plus two typography experiments. No separate doodle creator found. |
 | Wenying Zhu | No URL in roster | Could not check a site. |
 | Xuanyi Meng | [Site](https://xuanyi-prototyping-2026.vercel.app/) | Two room games and Maybe Tomorrow typography. Maybe Tomorrow now includes wiping/carving a foam surface, but remains a typography tool already in Week 3; no separate doodle project found. |
-| Zhongyunqi Meng (Aria) | [Site](https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/) | Homepage punctuation physics with Tornado/Chinese Dragon modes; only Getting Started and Confetti linked. No separate doodle creator found. |
 
 ## Evidence and maintenance
 

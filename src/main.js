@@ -1,5 +1,6 @@
 import "./styles.css";
 import { students } from "./students.js";
+import { initSitePreviews } from "./site-previews.js";
 import { galleryMarkup, initGallery } from "./gallery.js";
 
 const palettes = [
@@ -65,13 +66,10 @@ document.querySelector("#app").innerHTML = `
     <aside class="site-preview" aria-hidden="true">
       <div class="preview-bar">
         <span class="preview-label">Site preview</span>
-        <span class="preview-status">Loading</span>
       </div>
       <div class="preview-viewport">
-        <div class="preview-frames">
-          <iframe class="preview-frame" title="" tabindex="-1"></iframe>
-          <iframe class="preview-frame" title="" tabindex="-1"></iframe>
-        </div>
+        <img class="preview-image" alt="" width="1440" height="900" hidden />
+        <p class="preview-message">Loading preview…</p>
       </div>
     </aside>
 
@@ -103,175 +101,5 @@ paletteButton.addEventListener("click", () => {
 
 applyPalette(paletteIndex);
 
-const preview = document.querySelector(".site-preview");
-const previewLabel = document.querySelector(".preview-label");
-const previewStatus = document.querySelector(".preview-status");
-const previewLinks = document.querySelectorAll(".student-row-link");
-const frameRecords = [...document.querySelectorAll(".preview-frame")].map((frame) => ({
-  frame,
-  url: null,
-  loadedUrl: null,
-}));
-const previewPreloader = document.createElement("iframe");
-const preloadQueue = [];
-const queuedUrls = new Set();
-const warmedUrls = new Set();
-let activePreviewLink = null;
-let activePreviewUrl = null;
-let activeFrameRecord = null;
-let isPreloading = false;
-let preloadingUrl = null;
-let previewTimer;
-
-const activateFrame = (record) => {
-  frameRecords.forEach(({ frame }) => frame.classList.remove("is-active"));
-  record.frame.classList.add("is-active");
-  activeFrameRecord = record;
-};
-
-frameRecords.forEach((record) => {
-  record.frame.addEventListener("load", () => {
-    if (!record.url) return;
-
-    record.loadedUrl = record.url;
-    warmedUrls.add(record.url);
-
-    if (activePreviewUrl === record.loadedUrl) {
-      activateFrame(record);
-      preview.classList.remove("is-loading");
-      previewStatus.textContent = "Live preview";
-    }
-  });
-});
-
-previewPreloader.className = "preview-preloader";
-previewPreloader.title = "";
-previewPreloader.tabIndex = -1;
-previewPreloader.setAttribute("aria-hidden", "true");
-document.body.append(previewPreloader);
-
-const loadPreviewFrame = (link) => {
-  const url = link.href;
-  const readyRecord = frameRecords.find((record) => record.loadedUrl === url);
-
-  if (readyRecord) return readyRecord;
-
-  const loadingRecord = frameRecords.find((record) => record.url === url);
-  if (loadingRecord) return loadingRecord;
-
-  const targetRecord = frameRecords.find((record) => record !== activeFrameRecord) ?? frameRecords[0];
-  targetRecord.url = url;
-  targetRecord.loadedUrl = null;
-  targetRecord.frame.title = `${link.dataset.studentName}'s website preview`;
-  targetRecord.frame.src = url;
-
-  return targetRecord;
-};
-
-const showPreview = (link) => {
-  window.clearTimeout(previewTimer);
-  activePreviewLink = link;
-
-  const studentName = link.dataset.studentName;
-  const url = link.href;
-  const record = loadPreviewFrame(link);
-
-  activePreviewUrl = url;
-  previewLabel.textContent = studentName;
-  preview.classList.add("is-visible");
-
-  if (record.loadedUrl === url) {
-    activateFrame(record);
-    preview.classList.remove("is-loading");
-    previewStatus.textContent = "Live preview";
-  } else {
-    preview.classList.add("is-loading");
-    previewStatus.textContent = "Loading";
-  }
-};
-
-const hidePreview = (link) => {
-  previewTimer = window.setTimeout(() => {
-    if (activePreviewLink === link) {
-      activePreviewLink = null;
-      preview.classList.remove("is-visible");
-    }
-  }, 80);
-};
-
-const runPreloadQueue = () => {
-  if (isPreloading) return;
-
-  if (preloadQueue.length === 0) {
-    previewPreloader.src = "about:blank";
-    return;
-  }
-
-  const link = preloadQueue.shift();
-  const url = link.href;
-  queuedUrls.delete(url);
-
-  if (warmedUrls.has(url) || frameRecords.some((record) => record.url === url)) {
-    runPreloadQueue();
-    return;
-  }
-
-  isPreloading = true;
-  preloadingUrl = url;
-  const finishPreload = () => {
-    if (preloadingUrl !== url) return;
-
-    warmedUrls.add(url);
-    preloadingUrl = null;
-    isPreloading = false;
-    schedulePreload();
-  };
-  const preloadTimeout = window.setTimeout(finishPreload, 6000);
-
-  previewPreloader.addEventListener("load", () => {
-    window.clearTimeout(preloadTimeout);
-    finishPreload();
-  }, { once: true });
-  previewPreloader.src = url;
-};
-
-const schedulePreload = () => {
-  if (isPreloading || preloadQueue.length === 0) return;
-
-  if ("requestIdleCallback" in window) {
-    window.requestIdleCallback(runPreloadQueue, { timeout: 1600 });
-  } else {
-    window.setTimeout(runPreloadQueue, 300);
-  }
-};
-
-const queuePreviewPreload = (link) => {
-  const url = link.href;
-  if (warmedUrls.has(url) || queuedUrls.has(url) || frameRecords.some((record) => record.url === url)) return;
-
-  queuedUrls.add(url);
-  preloadQueue.push(link);
-  schedulePreload();
-};
-
-previewLinks.forEach((link) => {
-  link.addEventListener("mouseenter", () => showPreview(link));
-  link.addEventListener("mouseleave", () => hidePreview(link));
-  link.addEventListener("focus", () => showPreview(link));
-  link.addEventListener("blur", () => hidePreview(link));
-});
-
-if (window.matchMedia("(hover: hover) and (min-width: 48.01rem)").matches) {
-  const previewObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        queuePreviewPreload(entry.target);
-        previewObserver.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: "240px 0px" });
-
-  previewLinks.forEach((link) => previewObserver.observe(link));
-}
-
+initSitePreviews();
 initGallery(students);

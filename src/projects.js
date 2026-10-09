@@ -3,7 +3,7 @@
 export const weeks = [
   { number: 3, title: "Typography" },
   { number: 4, title: "PixiJS & Doodle" },
-  { number: 5, title: "Weather apps" },
+  { number: 5, title: "Weather apps & API explorations" },
 ];
 
 export const projectTypes = [
@@ -11,6 +11,7 @@ export const projectTypes = [
   { id: "pixijs", title: "PixiJS", week: 4 },
   { id: "doodle", title: "Doodle", week: 4 },
   { id: "weather", title: "Weather apps", week: 5 },
+  { id: "api", title: "API explorations", week: 5 },
 ];
 
 // Each entry: [student name, project title, direct project path].
@@ -25,6 +26,7 @@ const typographyProjects = [
   ["Michelle Wong","Typography Experiments","/prototypes/typography-experiments"],
   ["Michelle Wong","Text Unravel","/prototypes/pretext-unravel"],
   ["Michelle Wong","Free Fall","/prototypes/free-fall"],
+  ["Mingtai Sun","Typographic Village Builder","/prototypes/typography-experiments"],
   ["Minju Jang","Typography Experiments","/prototypes/typography-experiments"],
   ["Qianyi Ma (Kate)","Typography Experiments","/prototypes/typography-experiments"],
   ["Ruyi Wang","Typography Generator","/prototypes/typography-generator"],
@@ -32,6 +34,7 @@ const typographyProjects = [
   ["Ryan Page","Typography Experiments","/prototypes/typography-experiments"],
   ["Sasha Shafran","Type Mix","/prototypes/type-mix"],
   ["Sean Wiseman","Torch Typography","/prototypes/torch-typography"],
+  ["Shuotong Huang (Tiffany)","Typography Playground","/typography-playground/index.html"],
   ["Stephen Grant (Mac)","Ampersand Field","/prototypes/ampersand-field"],
   ["Stephen Grant (Mac)","TADA Tile Automaton","/prototypes/tada-tile-automaton"],
   ["Taiying Zhang (Sunshine)","MAYHEM","/prototypes/mayhem"],
@@ -40,6 +43,7 @@ const typographyProjects = [
   ["Yi Pan (Ruby Pann)","Antique collage","/prototypes/antique-collage"],
   ["Yiping Dong","Typography Experiments","/prototypes/typography-experiments"],
   ["Yurou Zhou (Reign)","Typography Experiments","/prototypes/typography-experiments"],
+  ["Zhongyunqi Meng (Aria)","Typography","/prototypes/typography"],
   ["Ziona Sober","Text Wave","/prototypes/wave-surfer"],
   ["Ziqing Huang (Lyra)","Kinetic Typography","/prototypes/kinetic-typography"],
   ["Yoonseo Yang (Eunice)","Typography Generator","/prototypes/typography-generator"],
@@ -47,7 +51,6 @@ const typographyProjects = [
 
 const pixiProjects = [
   ["Carnycia Royce","Generative Blooms","/prototypes/generative-blooms"],
-  ["Ethan Wise","Gradient Maker","/prototypes/gradient-maker"],
   ["Heran Cui (Bruce)","Liquid Distortion","/prototypes/liquid-distortion"],
   ["Jiaqi Yuan","Catnip Fireworks","/prototypes/catnip-fireworks"],
   ["Jiaqi Yuan","Dream Cat","/prototypes/dream-cat"],
@@ -59,6 +62,7 @@ const pixiProjects = [
   ["Ryan Page","Vector Ribbon Drawing","/prototypes/vector-drawing"],
   ["Sean Wiseman","Whack-a-Mole","/prototypes/whack-a-mole"],
   ["Sasha Shafran","Liquid Image","/prototypes/liquid-image"],
+  ["Siyue Zhong","Jelly Creatures","/prototypes/jelly-creatures"],
   ["Stephen Grant (Mac)","Instagram Assignment Feed","/prototypes/instagram-feed"],
   ["Vivan Nadkarni","Butterfly Catch","/prototypes/butterfly-catch"],
   ["Xuanyi Meng","Stardew Mini Game","/prototypes/stardew-mini-game"],
@@ -71,8 +75,10 @@ const pixiProjects = [
 
 const doodleProjects = [
   ["Carnycia Royce","The Little Creature Workshop","/prototypes/little-creature-workshop"],
+  ["Ethan Wise","Gradient Maker","/prototypes/gradient-maker"],
   ["Heran Cui (Bruce)","Fashion Sketchbook","/prototypes/fashion-sketchbook"],
   ["Hoi Kin Chan (Matthew)","Doodle Creator","/prototypes/doodle-creator"],
+  ["Jiaqi Yuan","Cat Spellbook","/prototypes/cat-spellbook"],
   ["Jochi Yu","Doodle Generator","/prototypes/doodle-generator"],
   ["Letian Tian","City Walk","/prototypes/city-walk"],
   ["Michelle Wong","Combined Shape Generator","/prototypes/acf-shapes"],
@@ -82,6 +88,7 @@ const doodleProjects = [
   ["Ryan Page","Doodle Creator","/prototypes/doodle-creator"],
   ["Sean Wiseman","Doodle","/prototypes/doodle"],
   ["Sasha Shafran","Fashion Doodle","/prototypes/fashion-doodle"],
+  ["Shuotong Huang (Tiffany)","3D Doodle Studio","/doodle-playground/index.html"],
   ["Taiying Zhang (Sunshine)","Needy Girl Oekaki","/prototypes/needy-girl-os"],
   ["Taiying Zhang (Sunshine)","Masterpiece Vandal Club","/prototypes/masterpiece-graffiti-lab"],
   ["Tinglan Huang (Alanis)","Point / Trace","https://point-trace-doodle.vercel.app/"],
@@ -89,6 +96,7 @@ const doodleProjects = [
   ["Yi Pan (Ruby Pann)","Little Print Shop","/prototypes/little-print-shop"],
   ["Yiping Dong","Doodle Creator","/prototypes/doodle-creator"],
   ["Yurou Zhou (Reign)","3D Aurora Doodler","/prototypes/p5-doodle"],
+  ["Zhongyunqi Meng (Aria)","Draw to Feed a Creature","/prototypes/doodle-creator"],
   ["Ziona Sober","Dress the Doodle","/prototypes/dress-the-doodle"],
   ["Ziqing Huang (Lyra)","Doodle Playground","/prototypes/doodle-playground"],
   ["Yoonseo Yang (Eunice)","Drawing Machine","/prototypes/drawing-machine"],
@@ -102,23 +110,35 @@ const weatherProjects = [
   ["Jochi Yu","weather weather","/prototypes/weather-weather"],
   ["Letian Tian","Weather Station","/prototypes/weather-station"],
   ["Michelle Wong","Weather Station","/prototypes/weather-display"],
+  ["Mingtai Sun","The Weather Daily","/prototypes/weather-station"],
   ["Minju Jang","Globe Weather","/prototypes/weather-dashboard"],
   ["Qianyi Ma (Kate)","Weather, now / 天气此刻","/prototypes/local-weather"],
   ["Ryan Page","Weather Dashboard","/prototypes/weather-dashboard"],
   ["Sasha Shafran","Weather Archive","/prototypes/weather-archive"],
   ["Sean Wiseman","Weather, anywhere.","/prototypes/weather"],
+  ["Siyue Zhong","Weather Station","/prototypes/weather-station"],
+  ["Stephen Grant (Mac)","Local Forecast","/prototypes/local-weather"],
   ["Taiying Zhang (Sunshine)","Weather Horizon","/prototypes/weather-horizon"],
   ["Vivan Nadkarni","Weather","/prototypes/weather"],
+  ["Xuanyi Meng","Weather Near Me","/prototypes/weather-dashboard"],
   ["Yi Pan (Ruby Pann)","Find my weather","/prototypes/ideal-weather"],
   ["Yiping Dong","Weather","/prototypes/weather"],
   ["Yoonseo Yang (Eunice)","Weather","/prototypes/weather"],
   ["Yurou Zhou (Reign)","Weather Dashboard","/prototypes/weather-dashboard"],
   ["Ziona Sober","Weather App","/prototypes/weather-now"],
+  ["Ziqing Huang (Lyra)","Weather Postcard","/prototypes/weather-postcard"],
+];
+
+const apiProjects = [
+  ["Carnycia Royce","Spotify Palette & Mood Explorer","/prototypes/spotify-palette-explorer"],
+  ["Qianyi Ma (Kate)","PokéAPI Data Lab","/prototypes/ditto-lab"],
+  ["Sasha Shafran","My toddler could paint that.","/prototypes/my-toddler-could-paint-that"],
+  ["Sean Wiseman","Species Globe","/prototypes/species-globe"],
 ];
 
 const makeProjects = (entries, week, type) => entries.map(([student, title, path]) => ({
   student, title, path, week, type,
-  preview: `/previews/${student.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}-${(path.split("/").pop() || title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}.jpg`,
+  preview: `/previews/${student.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}-${(path.replace(/\/index\.html?$/i, "").split("/").pop() || title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}.jpg`,
 }));
 
 export const projects = [
@@ -126,4 +146,5 @@ export const projects = [
   ...makeProjects(pixiProjects, 4, "pixijs"),
   ...makeProjects(doodleProjects, 4, "doodle"),
   ...makeProjects(weatherProjects, 5, "weather"),
+  ...makeProjects(apiProjects, 5, "api"),
 ];

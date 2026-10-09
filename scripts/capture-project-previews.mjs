@@ -27,6 +27,48 @@ try {
         await page.evaluate(() => document.fonts.ready);
         await page.waitForTimeout(2000);
         // Reveal representative local interaction states for these prototypes.
+        if (project.type === "api") {
+          if (project.path === "/prototypes/spotify-palette-explorer") {
+            await page.locator("input").first().fill("Miles Davis");
+            await page.getByRole("button", { name: "Explore Album", exact: true }).click();
+            await page.waitForTimeout(3000);
+          }
+          if (project.path === "/prototypes/ditto-lab") {
+            await page.getByRole("button", { name: "EN", exact: true }).click();
+            await page.getByRole("button", { name: /Pikachu/ }).click();
+            await page.waitForTimeout(2000);
+          }
+          if (project.path === "/prototypes/my-toddler-could-paint-that") {
+            await page.waitForFunction(() => !document.body.innerText.includes("Loading…"), {}, { timeout: 25000 });
+          }
+          if (project.path === "/prototypes/species-globe") {
+            await page.locator("canvas").first().click({ position: { x: 720, y: 290 } });
+            await page.getByText("Sightings and photos from iNaturalist", { exact: true }).waitFor({ timeout: 25000 });
+            await page.waitForTimeout(2000);
+          }
+        }
+        if (project.student === "Zhongyunqi Meng (Aria)" && project.type === "doodle") {
+          const canvas = page.locator("canvas").first();
+          const bounds = await canvas.boundingBox();
+          for (let stroke = 0; stroke < 3; stroke++) {
+            for (let point = 0; point <= 60; point++) {
+              const angle = point / 60 * Math.PI * 2;
+              await page.mouse.move(
+                bounds.x + bounds.width * (0.3 + stroke * 0.2 + Math.cos(angle) * 0.16),
+                bounds.y + bounds.height * (0.5 + Math.sin(angle) * 0.23),
+              );
+              if (point === 0) await page.mouse.down();
+            }
+            await page.mouse.up();
+          }
+          if (!/[1-9]\d*\/20 STROKES/.test(await page.locator("body").innerText())) {
+            throw new Error("Doodle strokes did not update creature growth");
+          }
+        }
+        if (project.path === "/prototypes/jelly-creatures") {
+          await page.getByRole("button", { name: /Party Fling/ }).click();
+          await page.waitForTimeout(350);
+        }
         if (project.type === "weather" && ["Ethan Wise", "Qianyi Ma (Kate)", "Sean Wiseman", "Yoonseo Yang (Eunice)", "Ziona Sober"].includes(project.student)) {
           await page.locator("input").first().fill("New York");
           await page.locator("input").first().press("Enter");

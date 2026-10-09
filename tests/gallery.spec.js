@@ -5,6 +5,7 @@ import { existsSync } from "node:fs";
 
 test("weekly collection has valid student links and captured previews", async ({ page }) => {
   expect(new Set(projects.map((project) => `${project.student}:${project.path}`)).size).toBe(projects.length);
+  expect(new Set(projects.map((project) => project.preview)).size).toBe(projects.length);
   for (const project of projects) {
     expect(students.find(({ name }) => name === project.student)?.url).toBeTruthy();
     expect(weeks.some(({ number }) => number === project.week)).toBe(true);
@@ -128,6 +129,23 @@ test("every project view is alphabetical by student, then project title", async 
       expect(titles).toEqual([...titles].sort((a, b) => a.localeCompare(b, "en")));
     }
   }
+});
+
+test("Week 5 API explorations stay separate from weather across shared links and history", async ({ page }) => {
+  await page.goto("/?week=5&type=api");
+  await expect(page.getByRole("heading", { name: "Week 5 - API explorations" })).toBeVisible();
+  await expect(page.locator(".project-card")).toHaveCount(projects.filter(({ type }) => type === "api").length);
+  await expect(page.locator('.project-link[href$="/prototypes/ditto-lab"]')).toBeVisible();
+  await expect(page.locator('.project-link[href$="/prototypes/local-weather"]')).toHaveCount(0);
+  await page.reload();
+  await expect(page.getByLabel("Filter by week and project")).toHaveValue("api");
+  await page.getByLabel("Filter by week and project").selectOption("weather");
+  await expect(page.getByRole("heading", { name: "Week 5 - Weather apps" })).toBeVisible();
+  await expect(page.locator('.project-link[href$="/prototypes/ditto-lab"]')).toHaveCount(0);
+  await page.goBack();
+  await expect(page.getByLabel("Filter by week and project")).toHaveValue("api");
+  await page.goto("/?week=5");
+  await expect(page.getByLabel("Filter by week and project")).toHaveValue("weather");
 });
 
 test("week-only and invalid type links recover to a valid collection", async ({ page }) => {

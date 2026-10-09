@@ -6,6 +6,20 @@ October 9 Doodle follow-up: checked all 15 students absent from the Doodle colle
 
 October 9 Weather apps review: checked all 29 published sites and their project navigation, then added 18 verified weather-app pages to Week 5 with captured previews. The second pass added Sunshine and Ziona; Heran’s site URL was updated to his replacement deployment, and his homepage and all four curated project routes return HTTP 200. See [the full review and coverage](weather-review-2026-10-09.md).
 
+## October 9 supplied-project corrections
+
+Elizabeth supplied seven direct project links. All returned HTTP 200 and rendered successfully on recheck. Added Mingtai’s Typographic Village Builder to Typography: the previously excluded route now builds houses from letters. Moved Ethan’s Gradient Maker from PixiJS to Doodle as instructed, and added Jiaqi’s Cat Spellbook drawing tool. Added Mingtai’s The Weather Daily, Stephen’s Local Forecast, Xuanyi’s Weather Near Me, and Ziqing’s Weather Postcard to Weather apps. Captured previews for all seven pages.
+
+Shuotong follow-up: Elizabeth supplied the standalone Typography Playground and 3D Doodle Studio pages. Both returned HTTP 200 and rendered successfully. Typography Playground manipulates woven/textile letterforms with editable text and behavior modes; 3D Doodle Studio renders neon ribbons with drawing, geometry, brush, and orbit controls. Added both to their assigned collections with separate captured previews.
+
+Siyue follow-up: Elizabeth supplied Jelly Creatures for PixiJS and Weather Station for Weather apps. Both direct pages returned HTTP 200 and rendered successfully. Jelly Creatures identifies PixiJS v8 and container transforms in its own interface, with interactive squash-and-stretch cats. Weather Station displays conditions, hourly/five-day forecasts, packing recommendations, and historical comparisons in explicitly labeled demo mode. Added both with captured previews.
+
+Zhongyunqi follow-up: Elizabeth supplied Typography and Draw to Feed a Creature. Both direct pages returned HTTP 200. Typography renders individually arranged letters and an embedded 3D scene; included in Week 3 as assigned by the instructor. Draw to Feed a Creature provides a drawing canvas, brush widths, changing palettes, and stroke-based creature growth. Added both with captured previews.
+
+Current totals: **31 Typography projects from 27 students**, **21 PixiJS projects from 17 students**, **26 Doodle projects from 24 students**, and **24 Weather apps from 24 students**. These corrections supersede the earlier counts and exclusions below.
+
+October 9 API explorations review: checked all 29 published student sites and 37 additional project/case-study pages. Added four non-weather API projects from Carnycia, Kate, Sasha, and Sean to Week 5 — API explorations. See [the full roster review and API evidence](api-review-2026-10-09.md).
+
 ## Classification rules
 
 October 9 Ruby follow-up: Elizabeth assigned Antique collage to Week 3, Little Print Shop to Week 4, and Find my weather to Week 5. Verified all three live pages. Added Antique collage to Typography with a captured preview: the page composes entered words from scanned book letters and offers a “Turn to ash” interaction. Little Print Shop and Find my weather were already included in Doodle and Weather apps respectively. Typography now has 28 projects.
@@ -20,6 +34,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 - **Week 4 — PixiJS:** a focused class experiment with PixiJS rendering confirmed in its loaded implementation and/or the project’s own technical description. A mention in a prefetched homepage is not evidence.
 - **Week 4 — Doodle:** the main activity is drawing, sketching, constructing illustrative characters, or generating doodle artwork.
 - **Week 5 — Weather apps:** current weather, forecasts, or weather-driven exploration and recommendations are the main experience. Demo-data prototypes are included, with observed API limitations recorded in the review.
+- **Week 5 — API explorations:** a standalone non-weather experiment centered on an external data/service API. Demo mode is allowed with a documented integration; browser APIs, graphics libraries, static attributions, and simple media embeds alone do not qualify.
 - Assignment classification takes precedence over implementation library: Shatter Type stays in Typography, and Doodle Generator stays in Doodle, even though both use PixiJS. Each project has one primary collection so cards are not duplicated.
 - Week numbers follow Elizabeth’s course assignments, not the numbering on individual portfolios. This is a curated topic collection, not an assertion of submission dates.
 
@@ -30,7 +45,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Jochi Yu — Body Morphing | Remove from Typography | Face/head scan with Morph, Keep face, and Carve holes controls; the homepage description was misleading. |
 | Letian Tian — Letter Snake | Move to Week 4 PixiJS at Elizabeth’s request | Arcade game with score, speed, collisions, and arrow-key controls. Letters serve the game rather than a typography editor. |
 | Sean Wiseman — Umbrella Rain | Remove from Typography | Catch falling letters to avoid game over; primarily a reflex game. |
-| Mingtai Sun — /typography-experiments | Keep excluded | Route now opens “Surreal Moss Forest World Builder,” with houses, figures, and atmosphere controls. |
+| Mingtai Sun — /typography-experiments | Add to Typography after October 9 recheck | Now renders Typographic Village Builder, constructing architectural houses from entered letters and words. |
 | Ziona Sober — Text Wave | Keep in Typography | Editable text forms a flowing typographic surface; the surfer interacts with the text rather than a scored letter game. |
 | Carnycia Royce — Typographic Experiment | Keep in Typography | Saxophone components form selectable glyphs; live letterform morphing is the main tool. |
 | Yoonseo Yang (Eunice) — Typography Generator | Add to Typography | Editable phrase, font, and puffy/chrome/drop/wave letterform modes. |
@@ -41,6 +56,9 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 
 | Student | Project |
 | --- | --- |
+| Zhongyunqi Meng (Aria) | [Typography](https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/prototypes/typography) |
+| Shuotong Huang (Tiffany) | [Typography Playground](https://shuotong-huang-portfolio.vercel.app/typography-playground/index.html) |
+| Mingtai Sun | [Typographic Village Builder](https://mingtai-prototypes.vercel.app/prototypes/typography-experiments) |
 | Carnycia Royce | [Typographic Experiment](https://carnycia-ruddy.vercel.app/prototypes/typographic-experiment) |
 | Ethan Wise | [Typographic Animator](https://prototyping-for-masters-8v9j.vercel.app/prototypes/typographic-animator) |
 | Heran Cui (Bruce) | [Typography Experiments](https://prototyping-for-masters-one.vercel.app/prototypes/typography-experiments) |
@@ -74,8 +92,8 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 
 | Student | Project |
 | --- | --- |
+| Siyue Zhong | [Jelly Creatures](https://prototyping-for-masters-c12t.vercel.app/prototypes/jelly-creatures) |
 | Carnycia Royce | [Generative Blooms](https://carnycia-ruddy.vercel.app/prototypes/generative-blooms) |
-| Ethan Wise | [Gradient Maker](https://prototyping-for-masters-8v9j.vercel.app/prototypes/gradient-maker) |
 | Heran Cui (Bruce) | [Liquid Distortion](https://prototyping-for-masters-one.vercel.app/prototypes/liquid-distortion) |
 | Jiaqi Yuan | [Catnip Fireworks](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/catnip-fireworks) |
 | Jiaqi Yuan | [Dream Cat](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/dream-cat) |
@@ -100,6 +118,10 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 
 | Student | Project |
 | --- | --- |
+| Zhongyunqi Meng (Aria) | [Draw to Feed a Creature](https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/prototypes/doodle-creator) |
+| Shuotong Huang (Tiffany) | [3D Doodle Studio](https://shuotong-huang-portfolio.vercel.app/doodle-playground/index.html) |
+| Ethan Wise | [Gradient Maker](https://prototyping-for-masters-8v9j.vercel.app/prototypes/gradient-maker) |
+| Jiaqi Yuan | [Cat Spellbook](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/cat-spellbook) |
 | Carnycia Royce | [The Little Creature Workshop](https://carnycia-ruddy.vercel.app/prototypes/little-creature-workshop) |
 | Heran Cui (Bruce) | [Fashion Sketchbook](https://prototyping-for-masters-one.vercel.app/prototypes/fashion-sketchbook) |
 | Hoi Kin Chan (Matthew) | [Doodle Creator](https://matthews-site.vercel.app/prototypes/doodle-creator) |
@@ -140,7 +162,6 @@ These remain accessible through student sites. No assignment was inferred from a
 | Jiaqi Yuan | [/prototypes/wheel-of-fortune](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/wheel-of-fortune) | Fortune-telling interaction. |
 | Jiaqi Yuan | [/prototypes/the-tower](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/the-tower) | Cup-catching game; PixiJS use was not verified. |
 | Jiaqi Yuan | [/prototypes/want-posters](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/want-posters) | Blank rendered page; cannot verify content. |
-| Mingtai Sun | [/prototypes/typography-experiments](https://mingtai-prototypes.vercel.app/prototypes/typography-experiments) | Scene/world composition, despite the typography route. |
 | Ruyi Wang | [/prototypes/y2k-website](https://ruyiwang.vercel.app/prototypes/y2k-website) | Sims desktop portfolio interaction. |
 | Minju Jang | [/prototypes/graph-paper-minesweeper](https://minjujang-prototyping-3rp6.vercel.app/prototypes/graph-paper-minesweeper) | Primarily Minesweeper; hand-drawn styling alone does not make it a Doodle assignment. |
 | Sean Wiseman | [/prototypes/umbrella-rain](https://prototyping-for-masters.vercel.app/prototypes/umbrella-rain) | Letter-catching arcade game. |

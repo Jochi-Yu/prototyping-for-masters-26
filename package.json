@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "playwright test",
+    "previews:sites": "node scripts/capture-site-previews.mjs",
     "previews:capture": "node scripts/capture-project-previews.mjs"
   },
   "devDependencies": {
