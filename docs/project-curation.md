@@ -8,6 +8,8 @@ October 9 Weather apps review: checked all 29 published sites and their project 
 
 ## Classification rules
 
+October 9 Ruby follow-up: Elizabeth assigned Antique collage to Week 3, Little Print Shop to Week 4, and Find my weather to Week 5. Verified all three live pages. Added Antique collage to Typography with a captured preview: the page composes entered words from scanned book letters and offers a “Turn to ash” interaction. Little Print Shop and Find my weather were already included in Doodle and Weather apps respectively. Typography now has 28 projects.
+
 October 9 Letter Snake follow-up: Elizabeth assigned Letian’s Letter Snake to Week 4 PixiJS. The direct page returned HTTP 200 and rendered the letter-based arcade game with keyboard controls. Added it to the PixiJS group with a captured preview, bringing that group to 21 projects. This is an instructor-directed assignment placement; renderer usage was not independently verified.
 
 October 9 Letian follow-up: Elizabeth supplied City Walk for Week 4 and Weather Station for Week 5. Both direct pages returned HTTP 200 and rendered successfully. City Walk belongs in Doodle: moving a character with Arrow Keys or WASD draws a path, with Pen, Clear, and Export Map controls. Weather Station renders a multi-city conditions display with temperature, humidity, wind, pressure, and unit controls. Added both with captured previews, bringing Doodle to 22 projects and Weather apps to 19.
@@ -61,6 +63,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Taiying Zhang (Sunshine) | [MAYHEM](https://sunshine-prototypes.vercel.app/prototypes/mayhem) |
 | Vivan Nadkarni | [Projected Type](https://vivans-prototypes.vercel.app/prototypes/projected-type) |
 | Xuanyi Meng | [Maybe Tomorrow](https://xuanyi-prototyping-2026.vercel.app/prototypes/maybe-tomorrow) |
+| Yi Pan (Ruby Pann) | [Antique collage](https://ruby-pann-course.vercel.app/prototypes/antique-collage) |
 | Yiping Dong | [Typography Experiments](https://prototyping-for-masters-tau.vercel.app/prototypes/typography-experiments) |
 | Yurou Zhou (Reign) | [Typography Experiments](https://reign-zhou-prototype.vercel.app/prototypes/typography-experiments) |
 | Ziona Sober | [Text Wave](https://ziona-prototyping-for-masters.vercel.app/prototypes/wave-surfer) |

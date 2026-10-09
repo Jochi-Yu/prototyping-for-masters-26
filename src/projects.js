@@ -37,6 +37,7 @@ const typographyProjects = [
   ["Taiying Zhang (Sunshine)","MAYHEM","/prototypes/mayhem"],
   ["Vivan Nadkarni","Projected Type","/prototypes/projected-type"],
   ["Xuanyi Meng","Maybe Tomorrow","/prototypes/maybe-tomorrow"],
+  ["Yi Pan (Ruby Pann)","Antique collage","/prototypes/antique-collage"],
   ["Yiping Dong","Typography Experiments","/prototypes/typography-experiments"],
   ["Yurou Zhou (Reign)","Typography Experiments","/prototypes/typography-experiments"],
   ["Ziona Sober","Text Wave","/prototypes/wave-surfer"],
