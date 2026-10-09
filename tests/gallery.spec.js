@@ -115,7 +115,7 @@ test("the single Week 4 filter fits on mobile and supports keyboard navigation",
 
 test("every project view is alphabetical by student, then project title", async ({ page }) => {
   await page.goto("/?view=projects");
-  for (const type of ["all", "typography", "pixijs", "doodle"]) {
+  for (const type of ["all", ...projectTypes.map(({ id }) => id)]) {
     await page.getByLabel("Filter by week and project").selectOption(type);
     const cards = await page.locator(".project-card").evaluateAll((cards) => cards.map((card) => ({
       student: card.querySelector(".project-student").textContent,

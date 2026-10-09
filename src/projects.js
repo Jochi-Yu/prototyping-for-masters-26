@@ -3,12 +3,14 @@
 export const weeks = [
   { number: 3, title: "Typography" },
   { number: 4, title: "PixiJS & Doodle" },
+  { number: 5, title: "Weather apps" },
 ];
 
 export const projectTypes = [
   { id: "typography", title: "Typography", week: 3 },
   { id: "pixijs", title: "PixiJS", week: 4 },
   { id: "doodle", title: "Doodle", week: 4 },
+  { id: "weather", title: "Weather apps", week: 5 },
 ];
 
 // Each entry: [student name, project title, direct project path].
@@ -89,6 +91,25 @@ const doodleProjects = [
   ["Yoonseo Yang (Eunice)","Drawing Machine","/prototypes/drawing-machine"],
 ];
 
+const weatherProjects = [
+  ["Carnycia Royce","Atmospheric Weather Station","/prototypes/weather-station"],
+  ["Ethan Wise","Local Weather","/prototypes/local-weather"],
+  ["Heren Cui (Bruce)","Weather Station","/prototypes/weather-station"],
+  ["Hoi Kin Chan (Matthew)","NYC Weather","/prototypes/weather"],
+  ["Jochi Yu","weather weather","/prototypes/weather-weather"],
+  ["Michelle Wong","Weather Station","/prototypes/weather-display"],
+  ["Minju Jang","Globe Weather","/prototypes/weather-dashboard"],
+  ["Qianyi Ma (Kate)","Weather, now / 天气此刻","/prototypes/local-weather"],
+  ["Ryan Page","Weather Dashboard","/prototypes/weather-dashboard"],
+  ["Sasha Shafran","Weather Archive","/prototypes/weather-archive"],
+  ["Sean Wiseman","Weather, anywhere.","/prototypes/weather"],
+  ["Vivan Nadkarni","Weather","/prototypes/weather"],
+  ["Yi Pan (Ruby Pann)","Find my weather","/prototypes/ideal-weather"],
+  ["Yiping Dong","Weather","/prototypes/weather"],
+  ["Yoonseo Yang (Eunice)","Weather","/prototypes/weather"],
+  ["Yurou Zhou (Reign)","Weather Dashboard","/prototypes/weather-dashboard"],
+];
+
 const makeProjects = (entries, week, type) => entries.map(([student, title, path]) => ({
   student, title, path, week, type,
   preview: `/previews/${student.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}-${(path.split("/").pop() || title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}.jpg`,
@@ -98,4 +119,5 @@ export const projects = [
   ...makeProjects(typographyProjects, 3, "typography"),
   ...makeProjects(pixiProjects, 4, "pixijs"),
   ...makeProjects(doodleProjects, 4, "doodle"),
+  ...makeProjects(weatherProjects, 5, "weather"),
 ];

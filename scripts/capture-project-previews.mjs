@@ -27,6 +27,16 @@ try {
         await page.evaluate(() => document.fonts.ready);
         await page.waitForTimeout(2000);
         // Reveal representative local interaction states for these prototypes.
+        if (project.type === "weather" && ["Ethan Wise", "Qianyi Ma (Kate)", "Sean Wiseman", "Yoonseo Yang (Eunice)"].includes(project.student)) {
+          await page.locator("input").first().fill("New York");
+          await page.locator("input").first().press("Enter");
+          await page.waitForTimeout(5000);
+          const city = page.getByRole("button", { name: /^New York, New York, US/ });
+          if (await city.count()) {
+            await city.first().click();
+            await page.waitForTimeout(3000);
+          }
+        }
         if (project.path === "https://point-trace-doodle.vercel.app/") {
           await page.getByRole("button", { name: "Connect all", exact: true }).click();
           await page.locator("canvas").evaluate((canvas) => {

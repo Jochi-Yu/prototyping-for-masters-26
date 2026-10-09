@@ -4,16 +4,19 @@ A Vite course homepage with a weekly student-project gallery and a student-site 
 
 ## Browse student work
 
-The homepage opens in **Student sites**, showing the full roster. Choose **Projects**, then select **Week 3 — Typography**, **Week 4 — PixiJS**, or **Week 4 — Doodle**. Every view is sorted alphabetically by student name, then project title. Filters are shareable and work with browser Back/Forward:
+The homepage opens in **Student sites**, showing the full roster. Choose **Projects**, then select **Week 3 — Typography**, **Week 4 — PixiJS**, **Week 4 — Doodle**, or **Week 5 — Weather apps**. Every view is sorted alphabetically by student name, then project title. Filters are shareable and work with browser Back/Forward:
 
 - `/?week=3#student-sites` — Week 3 typography gallery
 - `/?week=4&type=pixijs#student-sites` — Week 4 PixiJS gallery
 - `/?week=4&type=doodle#student-sites` — Week 4 Doodle gallery
+- `/?week=5&type=weather#student-sites` — Week 5 weather apps gallery
 - Older week-only links open the first collection for that week (PixiJS for Week 4).
 - `/#student-sites` — student directory (default)
 - `/?view=projects#student-sites` — all projects
 
-The collection contains **27 Typography**, **20 projects in the PixiJS group**, and **21 Doodle** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
+The collection contains **27 Typography**, **20 projects in the PixiJS group**, **21 Doodle**, and **16 Weather apps** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
+
+The [Week 5 review](docs/weather-review-2026-10-09.md) records all 29 published sites, the 16 weather apps found, and API/demo limitations.
 
 Students without a verified project in a collection remain in the directory. Week numbers follow the course assignments, not the numbering on individual portfolios.
 
@@ -35,7 +38,7 @@ Add a reviewed project to the appropriate list in `src/projects.js`:
 ["Student Name", "Project title", "/prototypes/project-name"]
 ```
 
-Use `typographyProjects` for Week 3 typography, `pixiProjects` for Week 4 PixiJS, or `doodleProjects` for Week 4 Doodle work. Names must match `src/students.js`. URLs can be relative to the student's site or absolute. Each list assigns its week, project type, and preview filename explicitly. Adding a future collection also requires entries in `weeks`, `projectTypes`, and `makeProjects`.
+Use `typographyProjects` for Week 3 typography, `pixiProjects` for Week 4 PixiJS, `doodleProjects` for Week 4 Doodle work, or `weatherProjects` for Week 5 weather apps. Names must match `src/students.js`. URLs can be relative to the student's site or absolute. Each list assigns its week, project type, and preview filename explicitly. Adding a future collection also requires entries in `weeks`, `projectTypes`, and `makeProjects`.
 
 Inspect the actual page before classifying it. Games that happen to contain letters do not belong in Typography; hand-drawn styling alone does not make a game a Doodle tool. The filter options and counts update from the curated data.
 

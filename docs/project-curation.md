@@ -4,6 +4,8 @@ Reviewed on October 6, 2026. Inspected the rendered pages and screenshots of 87 
 
 October 9 Doodle follow-up: checked all 15 students absent from the Doodle collection, including 13 published homepages and 32 linked project pages. Added Ruby’s Little Print Shop and Lyra’s Doodle Playground after exercising their drawing tools. Alanis’s separately hosted Point / Trace was subsequently supplied by Elizabeth and verified as an image-to-dot-tracing tool. The Doodle collection now has 21 projects from 19 students. See [the full follow-up](doodle-review-2026-10-09.md).
 
+October 9 Weather apps review: checked all 29 published sites and their project navigation, then added 16 verified weather-app pages to Week 5 with captured previews. See [the full review and coverage](weather-review-2026-10-09.md).
+
 ## Classification rules
 
 October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth's request and placed in the existing PixiJS group. The live page returned HTTP 200 and rendered a gradient mesh editor with a working transition to raster liquify tools. This is an instructor-directed assignment placement; PixiJS usage was not independently verified. A preview was captured from the current page.
@@ -11,6 +13,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 - **Week 3 — Typography:** the main interaction designs, manipulates, animates, or composes letters and words. A typography label or route name alone is insufficient. Games that merely use letters are excluded.
 - **Week 4 — PixiJS:** a focused class experiment with PixiJS rendering confirmed in its loaded implementation and/or the project’s own technical description. A mention in a prefetched homepage is not evidence.
 - **Week 4 — Doodle:** the main activity is drawing, sketching, constructing illustrative characters, or generating doodle artwork.
+- **Week 5 — Weather apps:** current weather, forecasts, or weather-driven exploration and recommendations are the main experience. Demo-data prototypes are included, with observed API limitations recorded in the review.
 - Assignment classification takes precedence over implementation library: Shatter Type stays in Typography, and Doodle Generator stays in Doodle, even though both use PixiJS. Each project has one primary collection so cards are not duplicated.
 - Week numbers follow Elizabeth’s course assignments, not the numbering on individual portfolios. This is a curated topic collection, not an assertion of submission dates.
 
