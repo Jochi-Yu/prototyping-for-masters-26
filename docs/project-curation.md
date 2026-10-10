@@ -16,7 +16,7 @@ Siyue follow-up: Elizabeth supplied Jelly Creatures for PixiJS and Weather Stati
 
 Zhongyunqi follow-up: Elizabeth supplied Typography and Draw to Feed a Creature. Both direct pages returned HTTP 200. Typography renders individually arranged letters and an embedded 3D scene; included in Week 3 as assigned by the instructor. Draw to Feed a Creature provides a drawing canvas, brush widths, changing palettes, and stroke-based creature growth. Added both with captured previews.
 
-Current totals: **31 Typography projects from 27 students**, **21 PixiJS projects from 17 students**, **26 Doodle projects from 24 students**, and **24 Weather apps from 24 students**. These corrections supersede the earlier counts and exclusions below.
+Current totals: **31 Typography projects from 27 students**, **21 PixiJS projects from 17 students**, **26 Doodle projects from 24 students**, and **25 Weather apps from 25 students**. These corrections supersede the earlier counts and exclusions below.
 
 October 9 API explorations review: checked all 29 published student sites and 37 additional project/case-study pages. Added four non-weather API projects from Carnycia, Kate, Sasha, and Sean to Week 5 — API explorations. See [the full roster review and API evidence](api-review-2026-10-09.md).
 

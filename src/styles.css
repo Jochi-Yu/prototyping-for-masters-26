@@ -450,10 +450,8 @@ footer p {
   cursor: pointer;
 }
 
-.week-control select:focus-visible {
+.week-control select:focus {
   outline: none;
-  border-bottom-color: var(--ink);
-  background-color: color-mix(in srgb, var(--ink) 8%, var(--paper));
 }
 
 .gallery-heading {
@@ -521,23 +519,6 @@ footer p {
 
 .has-missing-preview .preview-fallback {
   display: grid;
-}
-
-.project-open {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0.65rem 0.85rem;
-  color: var(--paper);
-  background: var(--ink);
-  font-size: var(--text-small);
-  opacity: 0;
-  transition: opacity 160ms ease-out;
-}
-
-.project-link:hover .project-open,
-.project-link:focus-visible .project-open {
-  opacity: 1;
 }
 
 .project-link:hover img {
@@ -626,8 +607,7 @@ footer p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .project-image img,
-  .project-open {
+  .project-image img {
     transition: none;
   }
 

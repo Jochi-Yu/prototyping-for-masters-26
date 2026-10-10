@@ -18,6 +18,8 @@ October 9 additional instructor links: added Mingtai’s The Weather Daily, Step
 
 Siyue follow-up: Elizabeth supplied the direct Weather Station link. It returned HTTP 200 and rendered conditions and forecasts in demo mode. Added it with a captured preview, bringing the collection to **24 projects from 24 students**.
 
+October 10 Jiaqi follow-up: Elizabeth supplied the direct Weather Cat link. It returned HTTP 200 and rendered a world map of city pins, city search, and °C/°F controls. Searching New York displayed a missing OpenWeatherMap API key notice, so the preview shows the landing view. The collection now has **25 projects from 25 students**.
+
 | Student | Project | Observed content |
 | --- | --- | --- |
 | Siyue Zhong | [Weather Station](https://prototyping-for-masters-c12t.vercel.app/prototypes/weather-station) | Explicit demo mode; city conditions, hourly/five-day forecasts, packing recommendations, and historical comparisons. |
@@ -29,6 +31,7 @@ Siyue follow-up: Elizabeth supplied the direct Weather Station link. It returned
 | Ethan Wise | [Local Weather](https://prototyping-for-masters-8v9j.vercel.app/prototypes/local-weather) | City/ZIP search, location selection, units, and weather/forecast interface. |
 | Heran Cui (Bruce) | [Weather Station](https://prototyping-for-masters-one.vercel.app/prototypes/weather-station) | Atmospheric simulation, clothing/commute advice, telemetry, and hourly forecast. Rendered in demo mode with a missing API key notice. |
 | Hoi Kin Chan (Matthew) | [NYC Weather](https://matthews-site.vercel.app/prototypes/weather) | NYC weather and five-day forecast; discovered in the desktop’s Prototypes Explorer. |
+| Jiaqi Yuan | [Weather Cat](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/weather-cat) | World map with city pins, city search, and unit controls; searching New York displayed a missing OpenWeatherMap API key notice. |
 | Jochi Yu | [weather weather](https://jochiprototypes.vercel.app/prototypes/weather-weather) | Current city conditions, hourly forecast, and five-day forecast. |
 | Letian Tian | [Weather Station](https://prototyping-for-masters-nine.vercel.app/prototypes/weather-station) | Multi-city conditions with temperature, humidity, wind, pressure, unit controls, GPS, and a key control. |
 | Michelle Wong | [Weather Station](https://prototyping-for-masters-wine.vercel.app/prototypes/weather-display) | City conditions, atmospheric time-of-day controls, and five-day forecast. |
@@ -47,9 +50,8 @@ Siyue follow-up: Elizabeth supplied the direct Weather Station link. It returned
 
 ## No weather app found on the published site
 
-These 5 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere. Letian, Mingtai, Stephen, Xuanyi, Ziqing, and Siyue were removed after the instructor supplied their direct project links.
+These 4 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere. Letian, Mingtai, Stephen, Xuanyi, Ziqing, Siyue, and Jiaqi were removed after the instructor supplied their direct project links.
 
-- [Jiaqi Yuan](https://prototyping-for-masters-1-eyt7.vercel.app/)
 - [Ruyi Wang](https://ruyiwang.vercel.app/)
 - [Shuotong Huang (Tiffany)](https://shuotong-huang-portfolio.vercel.app/)
 - [Tinglan Huang (Alanis)](https://alanis1-omega.vercel.app/)

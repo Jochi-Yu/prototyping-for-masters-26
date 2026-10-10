@@ -67,7 +67,6 @@ export function initGallery(students) {
             <div class="project-image">
               <span class="preview-fallback">Preview unavailable<span>Open project ↗</span></span>
               <img src="${escapeHtml(project.preview)}" alt="" width="1440" height="900" loading="${index < 3 ? "eager" : "lazy"}" decoding="async" />
-              <span class="project-open" aria-hidden="true">Open project ↗</span>
             </div>
             <div class="project-caption">
               <span class="project-student">${escapeHtml(student.name)}</span>

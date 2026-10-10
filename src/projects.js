@@ -107,6 +107,7 @@ const weatherProjects = [
   ["Ethan Wise","Local Weather","/prototypes/local-weather"],
   ["Heran Cui (Bruce)","Weather Station","/prototypes/weather-station"],
   ["Hoi Kin Chan (Matthew)","NYC Weather","/prototypes/weather"],
+  ["Jiaqi Yuan","Weather Cat","/prototypes/weather-cat"],
   ["Jochi Yu","weather weather","/prototypes/weather-weather"],
   ["Letian Tian","Weather Station","/prototypes/weather-station"],
   ["Michelle Wong","Weather Station","/prototypes/weather-display"],
