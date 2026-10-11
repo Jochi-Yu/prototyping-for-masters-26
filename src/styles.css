@@ -322,7 +322,10 @@ footer p {
     padding: 1rem 0;
   }
 
-  .row-action,
+  .row-action {
+    display: none;
+  }
+
   .forthcoming {
     grid-column: 2;
     justify-self: start;
