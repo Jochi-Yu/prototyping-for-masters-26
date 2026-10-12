@@ -1,5 +1,5 @@
 export const students = [
-  { name: "Caoyun Xu (Zoe)", url: "" },
+  { name: "Caoyun Xu (Zoe)", url: "https://cxu25-debug.github.io/prototyping-for-masters/" },
   { name: "Carnycia Royce", url: "https://carnycia-ruddy.vercel.app/" },
   { name: "Ethan Wise", url: "https://prototyping-for-masters-8v9j.vercel.app/" },
   { name: "Heran Cui (Bruce)", url: "https://prototyping-for-masters-one.vercel.app/" },
