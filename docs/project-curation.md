@@ -16,7 +16,11 @@ Siyue follow-up: Elizabeth supplied Jelly Creatures for PixiJS and Weather Stati
 
 Zhongyunqi follow-up: Elizabeth supplied Typography and Draw to Feed a Creature. Both direct pages returned HTTP 200. Typography renders individually arranged letters and an embedded 3D scene; included in Week 3 as assigned by the instructor. Draw to Feed a Creature provides a drawing canvas, brush widths, changing palettes, and stroke-based creature growth. Added both with captured previews.
 
-Current totals: **31 Typography projects from 27 students**, **21 PixiJS projects from 17 students**, **26 Doodle projects from 24 students**, and **25 Weather apps from 25 students**. These corrections supersede the earlier counts and exclusions below.
+Caoyun follow-up: added the instructor-supplied [portfolio](https://cxu25-debug.github.io/prototyping-for-masters/) to the roster. Opened all six project dialogs: five contain explicit example/placeholder descriptions and their live-project links point to `#`. The one working linked project, [Melody Maker](https://cxu25-debug.github.io/melody-maker/), returned HTTP 200 and renders a p5.js drawing studio with Tone.js sound, color and brush controls, undo, clear, and export. Added it to Week 4 — Doodle after verifying drawing changed the canvas. Captured both the directory and project previews. No Typography, PixiJS, Weather, or external-data API project was verified from this site.
+
+October 15 follow-up: reviewed all 30 published sites and added Alanis’s newly linked Local Weather, Jiaqi’s Purr Type, and five previously omitted Siyue projects. All seven pages rendered successfully; Alanis’s weather app was verified in demo mode. See [the review](site-review-2026-10-15.md).
+
+Current totals: **36 Typography projects from 28 students**, **22 PixiJS projects from 17 students**, **27 Doodle projects from 25 students**, and **26 Weather apps from 26 students**. These corrections supersede the earlier counts and exclusions below.
 
 October 9 API explorations review: checked all 29 published student sites and 37 additional project/case-study pages. Added four non-weather API projects from Carnycia, Kate, Sasha, and Sean to Week 5 — API explorations. See [the full roster review and API evidence](api-review-2026-10-09.md).
 
@@ -118,6 +122,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 
 | Student | Project |
 | --- | --- |
+| Caoyun Xu (Zoe) | [Melody Maker](https://cxu25-debug.github.io/melody-maker/) |
 | Zhongyunqi Meng (Aria) | [Draw to Feed a Creature](https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/prototypes/doodle-creator) |
 | Shuotong Huang (Tiffany) | [3D Doodle Studio](https://shuotong-huang-portfolio.vercel.app/doodle-playground/index.html) |
 | Ethan Wise | [Gradient Maker](https://prototyping-for-masters-8v9j.vercel.app/prototypes/gradient-maker) |

@@ -20,6 +20,7 @@ const typographyProjects = [
   ["Ethan Wise","Typographic Animator","/prototypes/typographic-animator"],
   ["Heran Cui (Bruce)","Typography Experiments","/prototypes/typography-experiments"],
   ["Hoi Kin Chan (Matthew)","Typographic Experiments","/prototypes/typography-experiment"],
+  ["Jiaqi Yuan","Purr Type","/prototypes/purr-type"],
   ["Jiaqi Yuan","Typography Experiments","/prototypes/typography-experiments"],
   ["Jochi Yu","Shatter Type","/prototypes/shatter-type"],
   ["Letian Tian","Typography Lab","/prototypes/typography-lab"],
@@ -35,6 +36,10 @@ const typographyProjects = [
   ["Sasha Shafran","Type Mix","/prototypes/type-mix"],
   ["Sean Wiseman","Torch Typography","/prototypes/torch-typography"],
   ["Shuotong Huang (Tiffany)","Typography Playground","/typography-playground/index.html"],
+  ["Siyue Zhong","Typography Generator","/prototypes/typography-generator"],
+  ["Siyue Zhong","Typography Experiments","/prototypes/typography-experiments"],
+  ["Siyue Zhong","Spiral Typography","/prototypes/spiral-typography"],
+  ["Siyue Zhong","Shatter Type","/prototypes/shatter-type"],
   ["Stephen Grant (Mac)","Ampersand Field","/prototypes/ampersand-field"],
   ["Stephen Grant (Mac)","TADA Tile Automaton","/prototypes/tada-tile-automaton"],
   ["Taiying Zhang (Sunshine)","MAYHEM","/prototypes/mayhem"],
@@ -62,6 +67,7 @@ const pixiProjects = [
   ["Ryan Page","Vector Ribbon Drawing","/prototypes/vector-drawing"],
   ["Sean Wiseman","Whack-a-Mole","/prototypes/whack-a-mole"],
   ["Sasha Shafran","Liquid Image","/prototypes/liquid-image"],
+  ["Siyue Zhong","Silk Ribbon","/prototypes/silk-ribbon"],
   ["Siyue Zhong","Jelly Creatures","/prototypes/jelly-creatures"],
   ["Stephen Grant (Mac)","Instagram Assignment Feed","/prototypes/instagram-feed"],
   ["Vivan Nadkarni","Butterfly Catch","/prototypes/butterfly-catch"],
@@ -74,6 +80,7 @@ const pixiProjects = [
 ];
 
 const doodleProjects = [
+  ["Caoyun Xu (Zoe)","Melody Maker","https://cxu25-debug.github.io/melody-maker/"],
   ["Carnycia Royce","The Little Creature Workshop","/prototypes/little-creature-workshop"],
   ["Ethan Wise","Gradient Maker","/prototypes/gradient-maker"],
   ["Heran Cui (Bruce)","Fashion Sketchbook","/prototypes/fashion-sketchbook"],
@@ -120,6 +127,7 @@ const weatherProjects = [
   ["Siyue Zhong","Weather Station","/prototypes/weather-station"],
   ["Stephen Grant (Mac)","Local Forecast","/prototypes/local-weather"],
   ["Taiying Zhang (Sunshine)","Weather Horizon","/prototypes/weather-horizon"],
+  ["Tinglan Huang (Alanis)","Local Weather","/prototypes/local-weather"],
   ["Vivan Nadkarni","Weather","/prototypes/weather"],
   ["Xuanyi Meng","Weather Near Me","/prototypes/weather-dashboard"],
   ["Yi Pan (Ruby Pann)","Find my weather","/prototypes/ideal-weather"],

@@ -25,13 +25,14 @@ Shuotong follow-up: Elizabeth supplied [3D Doodle Studio](https://shuotong-huang
 
 Zhongyunqi follow-up: Elizabeth supplied [Draw to Feed a Creature](https://zhongyunqimeng-prototyping-for-mast-two.vercel.app/prototypes/doodle-creator). The page returned HTTP 200 and rendered a drawing canvas with brush widths, palette changes, and stroke-based creature growth. Added it with a captured preview showing sample strokes.
 
-The collection now contains **26 projects from 24 students**, leaving **7 students** without a Doodle entry.
+Caoyun follow-up: added her supplied portfolio and verified [Melody Maker](https://cxu25-debug.github.io/melody-maker/), a p5.js/Tone.js drawing tool. Drawing changed the canvas; a preview shows sample strokes. Her other five project dialogs currently contain placeholder content and no working project links.
+
+The collection now contains **27 projects from 25 students**, leaving **6 students** without a Doodle entry.
 
 ## Remaining students
 
 | Student | Site | Finding |
 | --- | --- | --- |
-| Caoyun Xu (Zoe) | No URL in roster | Could not check a site. |
 | Qianyi Ma (Kate) | [Site](https://qianyima.vercel.app/) | Typography experiments and Bubble Rush; no new doodle project linked in the experiments list. |
 | Ruyi Wang | [Site](https://ruyiwang.vercel.app/) | Y2K/Sims interaction and two typography tools. No separate drawing tool found. |
 | Siyue Zhong | [Site](https://prototyping-for-masters-c12t.vercel.app/) | Getting Started, Confetti, and Personal Weblog. No linked doodle tool found. |

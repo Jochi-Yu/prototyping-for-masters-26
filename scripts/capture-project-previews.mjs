@@ -27,6 +27,26 @@ try {
         await page.evaluate(() => document.fonts.ready);
         await page.waitForTimeout(2000);
         // Reveal representative local interaction states for these prototypes.
+        if (project.path === "https://cxu25-debug.github.io/melody-maker/") {
+          const canvas = page.locator("canvas").first();
+          const before = await canvas.evaluate((element) => element.toDataURL());
+          const bounds = await canvas.boundingBox();
+          for (let stroke = 0; stroke < 3; stroke++) {
+            for (let point = 0; point <= 60; point++) {
+              const angle = point / 60 * Math.PI * 2;
+              await page.mouse.move(
+                bounds.x + bounds.width * (0.3 + stroke * 0.2 + Math.cos(angle) * 0.14),
+                bounds.y + bounds.height * (0.5 + Math.sin(angle) * 0.25),
+              );
+              if (point === 0) await page.mouse.down();
+            }
+            await page.mouse.up();
+          }
+          await page.waitForTimeout(300);
+          if (before === await canvas.evaluate((element) => element.toDataURL())) {
+            throw new Error("Melody Maker drawing did not change the canvas");
+          }
+        }
         if (project.type === "api") {
           if (project.path === "/prototypes/spotify-palette-explorer") {
             await page.locator("input").first().fill("Miles Davis");
@@ -68,6 +88,13 @@ try {
         if (project.path === "/prototypes/jelly-creatures") {
           await page.getByRole("button", { name: /Party Fling/ }).click();
           await page.waitForTimeout(350);
+        }
+        if (project.student === "Tinglan Huang (Alanis)" && project.type === "weather") {
+          // The weather app lives inside an iframe and currently offers sample data.
+          const weather = page.frameLocator('iframe[title="Local weather"]');
+          await weather.getByRole("button", { name: "Explore demo", exact: true }).click();
+          await weather.getByText("DEMO · Sample weather", { exact: true }).waitFor();
+          await page.waitForTimeout(500);
         }
         if (project.type === "weather" && ["Ethan Wise", "Qianyi Ma (Kate)", "Sean Wiseman", "Yoonseo Yang (Eunice)", "Ziona Sober"].includes(project.student)) {
           await page.locator("input").first().fill("New York");

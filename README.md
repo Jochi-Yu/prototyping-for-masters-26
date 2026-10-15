@@ -15,9 +15,11 @@ The homepage opens in **Student sites**, showing the full roster. Choose **Proje
 - `/#student-sites` — student directory (default)
 - `/?view=projects#student-sites` — all projects
 
-The collection contains **31 Typography**, **21 projects in the PixiJS group**, **26 Doodle**, **25 Weather apps**, and **4 API explorations** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
+The collection contains **36 Typography**, **22 projects in the PixiJS group**, **27 Doodle**, **26 Weather apps**, and **4 API explorations** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
 
-The [Week 5 review](docs/weather-review-2026-10-09.md) records all 29 published sites, the 25 weather apps included, and API/demo limitations.
+The [Week 5 review](docs/weather-review-2026-10-09.md) records the initial 29 published sites and Caoyun’s subsequent site review, the 25 weather apps included, and API/demo limitations.
+
+The [October 15 review](docs/site-review-2026-10-15.md) records seven additional gallery entries found across 30 published student sites.
 
 The [API explorations review](docs/api-review-2026-10-09.md) records the full-roster review, four non-weather API projects, and their live/demo behavior.
 

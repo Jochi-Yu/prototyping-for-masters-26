@@ -48,10 +48,13 @@ October 10 Jiaqi follow-up: Elizabeth supplied the direct Weather Cat link. It r
 | Yurou Zhou (Reign) | [Weather Dashboard](https://reign-zhou-prototype.vercel.app/prototypes/weather-dashboard) | City conditions, weather presets, hourly/upcoming forecast, and wind display. |
 | Ziona Sober | [Weather App](https://ziona-prototyping-for-masters.vercel.app/prototypes/weather-now) | Rendered sky and city search; searching displays a missing API key error. The linked case study describes forecast time travel. |
 
+Caoyun follow-up: reviewed her newly supplied portfolio and all six project dialogs. Found Melody Maker (Doodle) and five placeholder entries, with no weather app linked. There are now 30 published site URLs in the roster.
+
 ## No weather app found on the published site
 
-These 4 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere. Letian, Mingtai, Stephen, Xuanyi, Ziqing, Siyue, and Jiaqi were removed after the instructor supplied their direct project links.
+These 5 homepages were inspected, including their published prototype lists. No weather app was linked in the reviewed navigation. This does not establish that the student has not made one elsewhere. Letian, Mingtai, Stephen, Xuanyi, Ziqing, Siyue, and Jiaqi were removed after the instructor supplied their direct project links.
 
+- [Caoyun Xu (Zoe)](https://cxu25-debug.github.io/prototyping-for-masters/)
 - [Ruyi Wang](https://ruyiwang.vercel.app/)
 - [Shuotong Huang (Tiffany)](https://shuotong-huang-portfolio.vercel.app/)
 - [Tinglan Huang (Alanis)](https://alanis1-omega.vercel.app/)
@@ -59,7 +62,6 @@ These 4 homepages were inspected, including their published prototype lists. No 
 
 ## No site URL in the roster
 
-- Caoyun Xu (Zoe)
 - Wenying Zhu
 
 ## Review scope

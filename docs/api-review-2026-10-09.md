@@ -1,6 +1,8 @@
 # Week 5 – API explorations review
 
-Reviewed October 9, 2026. Opened all **29 published student sites** in the **31-student roster**; every homepage returned HTTP 200. Two students have no site URL. Inspected rendered navigation, project routes in loaded first-party scripts, nested project indexes, Matthew’s desktop windows, and Eunice’s seven archive spreads. Opened **37 additional project/case-study pages** and exercised the four qualifying projects.
+Reviewed October 9, 2026. Opened all **29 published student sites** in the **31-student roster**; every homepage returned HTTP 200. Two students had no site URL at that initial review. Inspected rendered navigation, project routes in loaded first-party scripts, nested project indexes, Matthew’s desktop windows, and Eunice’s seven archive spreads. Opened **37 additional project/case-study pages** and exercised the four qualifying projects.
+
+Caoyun follow-up: the instructor subsequently supplied her portfolio, bringing reviewed published sites to **30**. Opened all six project dialogs and the linked Melody Maker app. Five entries were placeholders; Melody Maker uses browser audio and drawing libraries, with no external-data API exploration found. Wenying remains the only student without a roster URL.
 
 ## Scope
 
@@ -23,7 +25,7 @@ All four direct project pages returned HTTP 200. Saved local gallery previews af
 
 | Student | Review result |
 | --- | --- |
-| Caoyun Xu (Zoe) | No site URL in the roster; could not inspect. |
+| Caoyun Xu (Zoe) | Follow-up: reviewed the supplied portfolio, all six project dialogs, and Melody Maker. No external-data API project found; Melody Maker belongs in Doodle. |
 | Carnycia Royce | Added Spotify Palette & Mood Explorer. Also checked the mixed class labs; their Web Audio synthesizer uses browser APIs rather than an external data service. |
 | Ethan Wise | Checked Design Oracle; tarot content is local and no external data integration was found. |
 | Heran Cui (Bruce) | Reviewed the complete project index; the only data API project found was Weather Station. |
