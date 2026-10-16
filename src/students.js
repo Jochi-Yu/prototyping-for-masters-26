@@ -21,7 +21,7 @@ export const students = [
   { name: "Taiying Zhang (Sunshine)", url: "https://sunshine-prototypes.vercel.app/" },
   { name: "Tinglan Huang (Alanis)", url: "https://alanis1-omega.vercel.app/" },
   { name: "Vivan Nadkarni", url: "https://vivans-prototypes.vercel.app/" },
-  { name: "Wenying Zhu", url: "" },
+  { name: "Wenying Zhu", url: "https://prototyping-for-masters-delta.vercel.app/" },
   { name: "Xuanyi Meng", url: "https://xuanyi-prototyping-2026.vercel.app/" },
   { name: "Yi Pan (Ruby Pann)", url: "https://ruby-pann-course.vercel.app/" },
   { name: "Yiping Dong", url: "https://prototyping-for-masters-tau.vercel.app" },
