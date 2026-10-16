@@ -49,8 +49,14 @@ try {
         }
         if (project.type === "api") {
           if (project.path === "/prototypes/spotify-palette-explorer") {
-            await page.locator("input").first().fill("Miles Davis");
-            await page.getByRole("button", { name: "Explore Album", exact: true }).click();
+            const search = page.locator("input").first();
+            if (await search.count()) {
+              await search.fill("Miles Davis");
+              await page.getByRole("button", { name: "Explore Album", exact: true }).click();
+            } else {
+              // The updated music player opens directly on an album and palette.
+              await page.getByRole("button", { name: "3D Sleeve Mode ↗", exact: true }).waitFor();
+            }
             await page.waitForTimeout(3000);
           }
           if (project.path === "/prototypes/ditto-lab") {
@@ -66,6 +72,25 @@ try {
             await page.getByText("Sightings and photos from iNaturalist", { exact: true }).waitFor({ timeout: 25000 });
             await page.waitForTimeout(2000);
           }
+        }
+        if (project.type === "weather" && project.student === "Jiaqi Yuan") {
+          // City buttons sit behind the map canvas; use their keyboard action.
+          await page.getByRole("button", { name: /^New York(?:\s|,|$)/ }).focus();
+          await page.keyboard.press("Enter");
+          await page.waitForTimeout(2500);
+        }
+        if (project.type === "weather" && project.student === "Yi Pan (Ruby Pann)") {
+          await page.getByRole("button", { name: /Find my weather/ }).click();
+          await page.waitForTimeout(6000);
+        }
+        if (project.path === "/prototypes/weather-postcard") {
+          await page.getByRole("button", { name: /Generate Postcard/ }).click();
+          await page.waitForTimeout(5000);
+        }
+        if (project.path === "/prototypes/herbal-atlas") {
+          await page.getByRole("button", { name: /Agrimony/ }).click();
+          await page.getByText("From the herbarium", { exact: true }).scrollIntoViewIfNeeded();
+          await page.waitForTimeout(700);
         }
         if (project.student === "Zhongyunqi Meng (Aria)" && project.type === "doodle") {
           const canvas = page.locator("canvas").first();
@@ -102,7 +127,7 @@ try {
           await weather.getByText("DEMO · Sample weather", { exact: true }).waitFor();
           await page.waitForTimeout(500);
         }
-        if (project.type === "weather" && ["Ethan Wise", "Qianyi Ma (Kate)", "Sean Wiseman", "Yoonseo Yang (Eunice)", "Ziona Sober"].includes(project.student)) {
+        if (project.type === "weather" && ["Ethan Wise", "Qianyi Ma (Kate)", "Sean Wiseman", "Yoonseo Yang (Eunice)", "Ziona Sober", "Stephen Grant (Mac)", "Xuanyi Meng"].includes(project.student)) {
           await page.locator("input").first().fill("New York");
           await page.locator("input").first().press("Enter");
           await page.waitForTimeout(5000);
@@ -174,11 +199,21 @@ try {
           await page.mouse.move(720, 550);
           await page.waitForTimeout(1200);
         }
+        let captureNote;
+        if (["Stephen Grant (Mac)", "Yi Pan (Ruby Pann)"].includes(project.student) && project.type === "weather") {
+          const text = await page.locator("body").innerText();
+          if (/Weather is not configured|A pause in the forecast/.test(text)) {
+            captureNote = "Live weather unavailable; captured the current entry screen.";
+            await page.reload({ waitUntil: "domcontentloaded" });
+            await page.evaluate(() => document.fonts.ready);
+            await page.waitForTimeout(1500);
+          }
+        }
         const target = new URL(`../public${project.preview}`, import.meta.url);
         const temp = new URL(`${target.href}.tmp`);
         await page.screenshot({ path: temp.pathname, type: "jpeg", quality: 75 });
         await rename(temp, target);
-        results.push({ student: student.name, title: project.title, url, status: "captured" });
+        results.push({ student: student.name, title: project.title, url, status: "captured", ...(captureNote ? { note: captureNote } : {}) });
         console.log(`Captured ${student.name}: ${project.title}`);
       } catch (error) {
         results.push({ student: student.name, title: project.title, url, status: "failed", error: error.message });
