@@ -75,3 +75,7 @@ npm test
 ```
 
 Browser checks use Playwright with locally installed Google Chrome. They cover filtering, shared URLs, browser history, the student directory, missing images, mobile layout, keyboard access, and palette switching.
+
+## My bookshelf prototype
+
+Open `/prototypes/my-bookshelf/` for the Notion-powered reading gallery. It includes covers, authors, genres, ratings, and expandable reviews, with search and filtering. See [setup and API documentation](docs/my-bookshelf.md) to connect the database using a private server-side token. Without credentials, the gallery clearly displays fictional sample books.
