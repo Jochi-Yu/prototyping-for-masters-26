@@ -151,9 +151,11 @@ const apiProjects = [
 ];
 
 const bookProjects = [
+  ["Caoyun Xu (Zoe)","My bookshelf","https://my-bookshelf-sand.vercel.app/"],
   ["Ethan Wise","My Bookshelf","/prototypes/my-bookshelf"],
   ["Heran Cui (Bruce)","Bruce’s books","/prototypes/my-bookshelf"],
   ["Hoi Kin Chan (Matthew)","My bookshelf","/prototypes/my-bookshelf"],
+  ["Jochi Yu","My bookshelf","/prototypes/my-bookshelf"],
   ["Letian Tian","My Bookshelf","/prototypes/my-bookshelf"],
   ["Michelle Wong","Michelle's Bookshelf","/prototypes/my-bookshelf"],
   ["Mingtai Sun","My Bookshelf","/prototypes/my-bookshelf"],
@@ -162,10 +164,15 @@ const bookProjects = [
   ["Ryan Page","My bookshelf","/prototypes/my-bookshelf"],
   ["Sasha Shafran","What I Read in NYC","/prototypes/my-bookshelf"],
   ["Sean Wiseman","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Siyue Zhong","My bookshelf","/prototypes/my-bookshelf"],
   ["Stephen Grant (Mac)","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Taiying Zhang (Sunshine)","My Bookshelf","/prototypes/my-bookshelf"],
   ["Tinglan Huang (Alanis)","My Bookshelf","/prototypes/my-bookshelf"],
   ["Vivan Nadkarni","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Xuanyi Meng","My bookshelf","/prototypes/my-bookshelf"],
+  ["Yi Pan (Ruby Pann)","My bookshelf","/prototypes/my-bookshelf"],
   ["Yoonseo Yang (Eunice)","My Fav Books/Shows/Movies","/prototypes/my-bookshelf"],
+  ["Yurou Zhou (Reign)","Reign's Reading Sharing","/prototypes/my-bookshelf"],
   ["Zhongyunqi Meng (Aria)","My bookshelf","/prototypes/my-bookshelf"],
   ["Ziona Sober","My Bookshelf","/prototypes/my-bookshelf"],
 ];

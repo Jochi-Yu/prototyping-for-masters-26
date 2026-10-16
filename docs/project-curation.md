@@ -26,7 +26,7 @@ Current totals: **36 Typography projects from 28 students**, **22 PixiJS project
 
 October 9 API explorations review: checked all 29 published student sites and 37 additional project/case-study pages. Added four non-weather API projects from Carnycia, Kate, Sasha, and Sean to Week 5 — API explorations. See [the full roster review and API evidence](api-review-2026-10-09.md).
 
-October 16 Books review: added **Week 6 — Books** with 17 published bookshelf projects from 17 students and captured previews. Includes sample-data prototypes and Eunice’s published configuration screen; these are documented in [the Books review](books-review-2026-10-16.md).
+October 16 Books review: added **Week 6 — Books** with 24 published bookshelf projects from 24 students and captured previews. Includes sample-data prototypes and Eunice’s published configuration screen; these are documented in [the Books review](books-review-2026-10-16.md).
 
 ## Classification rules
 

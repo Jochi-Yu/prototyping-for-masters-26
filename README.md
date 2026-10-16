@@ -16,17 +16,17 @@ The homepage opens in **Student sites**, showing the full roster. Choose **Proje
 - `/#student-sites` — student directory (default)
 - `/?view=projects#student-sites` — all projects
 
-The collection contains **36 Typography**, **22 projects in the PixiJS group**, **27 Doodle**, **28 Weather apps**, **5 API explorations**, and **17 Books** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
+The collection contains **36 Typography**, **22 projects in the PixiJS group**, **27 Doodle**, **28 Weather apps**, **5 API explorations**, and **24 Books** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
 
 The [Week 5 review](docs/weather-review-2026-10-09.md) records the initial 29 published sites and Caoyun’s subsequent site review, the 25 weather apps included, and API/demo limitations.
 
 The [October 15 review](docs/site-review-2026-10-15.md) records seven additional gallery entries found across 30 published student sites.
 
-The [October 16 recheck](docs/week5-review-2026-10-16.md) adds Zoe’s Atmos, Aria’s Weather Flag, and Ethan’s Herbal Atlas. Aria’s weather integration currently needs an API key; its preview shows the project’s About panel.
+The [October 16 recheck](docs/week5-review-2026-10-16.md) adds Zoe’s Atmos, Aria’s Weather Flag, and Ethan’s Herbal Atlas. A [later screenshot refresh](docs/preview-refresh-2026-10-16.md) verified Aria’s live weather poster and Minju’s restored weather route, and refreshed all 28 weather previews.
 
 The [API explorations review](docs/api-review-2026-10-09.md) records the full-roster review, four non-weather API projects, and their live/demo behavior.
 
-The [Week 6 Books review](docs/books-review-2026-10-16.md) records the full-roster review, 17 published bookshelf projects, and observed demo/configuration limitations.
+The [Week 6 Books review](docs/books-review-2026-10-16.md) records the full-roster review, 24 published bookshelf projects, and observed demo/configuration limitations.
 
 Students without a verified project in a collection remain in the directory. Week numbers follow the course assignments, not the numbering on individual portfolios.
 

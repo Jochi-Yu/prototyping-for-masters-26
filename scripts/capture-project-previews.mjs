@@ -29,7 +29,9 @@ try {
         if (project.type === "books") {
           // Give the Notion-backed shelves time to settle into live, demo, or setup states.
           await page.waitForTimeout(10000);
-          if (project.student === "Minju Jang") await page.evaluate(() => window.scrollTo(0, 450));
+          if (project.student === "Minju Jang" && !(await page.getByRole("button", { name: /Photo Slider/ }).count())) {
+            await page.evaluate(() => window.scrollTo(0, 450));
+          }
           if (project.student === "Ethan Wise") await page.evaluate(() => window.scrollTo(0, 180));
         }
         // Reveal representative local interaction states for these prototypes.
@@ -117,9 +119,8 @@ try {
           }
         }
         if (project.path === "/prototypes/weather-flag") {
-          // The deployed flag currently needs an API key. Show its concept panel
-          // so the gallery preview still explains the student's weather project.
-          await page.getByRole("button", { name: "ABOUT", exact: true }).click();
+          // The live weather poster now renders; capture it with its conditions.
+          await page.getByText(/POSTER:/).waitFor({ timeout: 25000 });
           await page.waitForTimeout(700);
         }
         if (project.path === "/prototypes/jelly-creatures") {
@@ -134,6 +135,9 @@ try {
           await page.waitForTimeout(500);
         }
         if (project.type === "weather" && ["Ethan Wise", "Qianyi Ma (Kate)", "Sean Wiseman", "Yoonseo Yang (Eunice)", "Ziona Sober", "Stephen Grant (Mac)", "Xuanyi Meng"].includes(project.student)) {
+          if (project.student === "Ziona Sober" && !(await page.locator("input").first().isVisible())) {
+            await page.getByRole("button", { name: "Open menu", exact: true }).click();
+          }
           await page.locator("input").first().fill("New York");
           await page.locator("input").first().press("Enter");
           await page.waitForTimeout(5000);
@@ -141,6 +145,12 @@ try {
           if (await city.count()) {
             await city.first().click();
             await page.waitForTimeout(3000);
+          }
+          if (project.student === "Ziona Sober") {
+            const skip = page.getByRole("button", { name: /^Skip/ });
+            if (await skip.isVisible()) await skip.click();
+            await page.getByRole("heading", { name: "The next 24 hours", exact: true }).waitFor();
+            await page.waitForTimeout(1000);
           }
         }
         if (project.path === "https://point-trace-doodle.vercel.app/") {
