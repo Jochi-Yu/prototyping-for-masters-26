@@ -4,6 +4,7 @@ export const weeks = [
   { number: 3, title: "Typography" },
   { number: 4, title: "PixiJS & Doodle" },
   { number: 5, title: "Weather apps & API explorations" },
+  { number: 6, title: "Books" },
 ];
 
 export const projectTypes = [
@@ -12,6 +13,7 @@ export const projectTypes = [
   { id: "doodle", title: "Doodle", week: 4 },
   { id: "weather", title: "Weather apps", week: 5 },
   { id: "api", title: "API explorations", week: 5 },
+  { id: "books", title: "Books", week: 6 },
 ];
 
 // Each entry: [student name, project title, direct project path].
@@ -148,6 +150,26 @@ const apiProjects = [
   ["Sean Wiseman","Species Globe","/prototypes/species-globe"],
 ];
 
+const bookProjects = [
+  ["Ethan Wise","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Heran Cui (Bruce)","Bruce’s books","/prototypes/my-bookshelf"],
+  ["Hoi Kin Chan (Matthew)","My bookshelf","/prototypes/my-bookshelf"],
+  ["Letian Tian","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Michelle Wong","Michelle's Bookshelf","/prototypes/my-bookshelf"],
+  ["Mingtai Sun","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Minju Jang","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Qianyi Ma (Kate)","My bookshelf / 我的书架","/prototypes/my-bookshelf"],
+  ["Ryan Page","My bookshelf","/prototypes/my-bookshelf"],
+  ["Sasha Shafran","What I Read in NYC","/prototypes/my-bookshelf"],
+  ["Sean Wiseman","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Stephen Grant (Mac)","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Tinglan Huang (Alanis)","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Vivan Nadkarni","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Yoonseo Yang (Eunice)","My Fav Books/Shows/Movies","/prototypes/my-bookshelf"],
+  ["Zhongyunqi Meng (Aria)","My bookshelf","/prototypes/my-bookshelf"],
+  ["Ziona Sober","My Bookshelf","/prototypes/my-bookshelf"],
+];
+
 const makeProjects = (entries, week, type) => entries.map(([student, title, path]) => ({
   student, title, path, week, type,
   preview: `/previews/${student.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}-${(path.replace(/\/index\.html?$/i, "").split("/").pop() || title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}.jpg`,
@@ -159,4 +181,5 @@ export const projects = [
   ...makeProjects(doodleProjects, 4, "doodle"),
   ...makeProjects(weatherProjects, 5, "weather"),
   ...makeProjects(apiProjects, 5, "api"),
+  ...makeProjects(bookProjects, 6, "books"),
 ];

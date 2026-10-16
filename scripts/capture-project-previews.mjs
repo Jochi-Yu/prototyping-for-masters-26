@@ -26,6 +26,12 @@ try {
         if (response && !response.ok()) throw new Error(`HTTP ${response.status()}`);
         await page.evaluate(() => document.fonts.ready);
         await page.waitForTimeout(2000);
+        if (project.type === "books") {
+          // Give the Notion-backed shelves time to settle into live, demo, or setup states.
+          await page.waitForTimeout(10000);
+          if (project.student === "Minju Jang") await page.evaluate(() => window.scrollTo(0, 450));
+          if (project.student === "Ethan Wise") await page.evaluate(() => window.scrollTo(0, 180));
+        }
         // Reveal representative local interaction states for these prototypes.
         if (project.path === "https://cxu25-debug.github.io/melody-maker/") {
           const canvas = page.locator("canvas").first();

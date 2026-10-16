@@ -26,6 +26,8 @@ Current totals: **36 Typography projects from 28 students**, **22 PixiJS project
 
 October 9 API explorations review: checked all 29 published student sites and 37 additional project/case-study pages. Added four non-weather API projects from Carnycia, Kate, Sasha, and Sean to Week 5 — API explorations. See [the full roster review and API evidence](api-review-2026-10-09.md).
 
+October 16 Books review: added **Week 6 — Books** with 17 published bookshelf projects from 17 students and captured previews. Includes sample-data prototypes and Eunice’s published configuration screen; these are documented in [the Books review](books-review-2026-10-16.md).
+
 ## Classification rules
 
 October 9 Ruby follow-up: Elizabeth assigned Antique collage to Week 3, Little Print Shop to Week 4, and Find my weather to Week 5. Verified all three live pages. Added Antique collage to Typography with a captured preview: the page composes entered words from scanned book letters and offers a “Turn to ash” interaction. Little Print Shop and Find my weather were already included in Doodle and Weather apps respectively. Typography now has 28 projects.
@@ -41,6 +43,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 - **Week 4 — Doodle:** the main activity is drawing, sketching, constructing illustrative characters, or generating doodle artwork.
 - **Week 5 — Weather apps:** current weather, forecasts, or weather-driven exploration and recommendations are the main experience. Demo-data prototypes are included, with observed API limitations recorded in the review.
 - **Week 5 — API explorations:** a standalone non-weather experiment centered on an external data/service API. Demo mode is allowed with a documented integration; browser APIs, graphics libraries, static attributions, and simple media embeds alone do not qualify.
+- **Week 6 — Books:** a dedicated bookshelf, reading tracker, or personal book/media collection. Published demos and configuration-blocked prototypes are included with limitations recorded. Generic portfolio reading lists, sketchbooks, and book-themed typography tools do not qualify.
 - Assignment classification takes precedence over implementation library: Shatter Type stays in Typography, and Doodle Generator stays in Doodle, even though both use PixiJS. Each project has one primary collection so cards are not duplicated.
 - Week numbers follow Elizabeth’s course assignments, not the numbering on individual portfolios. This is a curated topic collection, not an assertion of submission dates.
 
