@@ -20,7 +20,9 @@ Caoyun follow-up: added the instructor-supplied [portfolio](https://cxu25-debug.
 
 October 15 follow-up: reviewed all 30 published sites and added Alanis’s newly linked Local Weather, Jiaqi’s Purr Type, and five previously omitted Siyue projects. All seven pages rendered successfully; Alanis’s weather app was verified in demo mode. See [the review](site-review-2026-10-15.md).
 
-Current totals: **36 Typography projects from 28 students**, **22 PixiJS projects from 17 students**, **27 Doodle projects from 25 students**, and **26 Weather apps from 26 students**. These corrections supersede the earlier counts and exclusions below.
+October 16 follow-up: added Zoe’s Atmos and Aria’s Weather Flag to Weather, and Ethan’s The Herbal Atlas to API explorations, with captured previews. Zoe’s city search and Ethan’s reference lookup worked; Aria’s weather endpoint returned a missing-key error, so its preview shows the About panel. API explorations now has five projects from five students. See [the full recheck](week5-review-2026-10-16.md).
+
+Current totals: **36 Typography projects from 28 students**, **22 PixiJS projects from 17 students**, **27 Doodle projects from 25 students**, and **28 Weather apps from 28 students**. These corrections supersede the earlier counts and exclusions below.
 
 October 9 API explorations review: checked all 29 published student sites and 37 additional project/case-study pages. Added four non-weather API projects from Carnycia, Kate, Sasha, and Sean to Week 5 — API explorations. See [the full roster review and API evidence](api-review-2026-10-09.md).
 

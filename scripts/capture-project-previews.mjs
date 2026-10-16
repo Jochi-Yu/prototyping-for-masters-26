@@ -85,6 +85,12 @@ try {
             throw new Error("Doodle strokes did not update creature growth");
           }
         }
+        if (project.path === "/prototypes/weather-flag") {
+          // The deployed flag currently needs an API key. Show its concept panel
+          // so the gallery preview still explains the student's weather project.
+          await page.getByRole("button", { name: "ABOUT", exact: true }).click();
+          await page.waitForTimeout(700);
+        }
         if (project.path === "/prototypes/jelly-creatures") {
           await page.getByRole("button", { name: /Party Fling/ }).click();
           await page.waitForTimeout(350);

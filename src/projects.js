@@ -110,6 +110,7 @@ const doodleProjects = [
 ];
 
 const weatherProjects = [
+  ["Caoyun Xu (Zoe)","Atmos","https://atmos-weather-prototype.vercel.app/"],
   ["Carnycia Royce","Atmospheric Weather Station","/prototypes/weather-station"],
   ["Ethan Wise","Local Weather","/prototypes/local-weather"],
   ["Heran Cui (Bruce)","Weather Station","/prototypes/weather-station"],
@@ -134,12 +135,14 @@ const weatherProjects = [
   ["Yiping Dong","Weather","/prototypes/weather"],
   ["Yoonseo Yang (Eunice)","Weather","/prototypes/weather"],
   ["Yurou Zhou (Reign)","Weather Dashboard","/prototypes/weather-dashboard"],
+  ["Zhongyunqi Meng (Aria)","Weather Flag","/prototypes/weather-flag"],
   ["Ziona Sober","Weather App","/prototypes/weather-now"],
   ["Ziqing Huang (Lyra)","Weather Postcard","/prototypes/weather-postcard"],
 ];
 
 const apiProjects = [
   ["Carnycia Royce","Spotify Palette & Mood Explorer","/prototypes/spotify-palette-explorer"],
+  ["Ethan Wise","The Herbal Atlas","/prototypes/herbal-atlas"],
   ["Qianyi Ma (Kate)","PokéAPI Data Lab","/prototypes/ditto-lab"],
   ["Sasha Shafran","My toddler could paint that.","/prototypes/my-toddler-could-paint-that"],
   ["Sean Wiseman","Species Globe","/prototypes/species-globe"],
