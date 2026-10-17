@@ -64,9 +64,6 @@ document.querySelector("#app").innerHTML = `
     </section>
 
     <aside class="site-preview" aria-hidden="true">
-      <div class="preview-bar">
-        <span class="preview-label">Site preview</span>
-      </div>
       <div class="preview-viewport">
         <img class="preview-image" alt="" width="1440" height="900" hidden />
         <p class="preview-message">Loading preview…</p>
