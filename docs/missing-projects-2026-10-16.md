@@ -25,7 +25,7 @@ Compared all 31 students against the current gallery and October 15–16 site-re
 
 ## All required projects present
 
-Ethan Wise; Heran Cui (Bruce); Hoi Kin Chan (Matthew); Jochi Yu; Letian Tian; Michelle Wong; Mingtai Sun; Minju Jang; Ryan Page; Sasha Shafran; Sean Wiseman; Stephen Grant (Mac); Taiying Zhang (Sunshine); Vivan Nadkarni; Yi Pan (Ruby Pann); Yoonseo Yang (Eunice); Yurou Zhou (Reign); Zhongyunqi Meng (Aria); Ziona Sober.
+Ethan Wise; Heran Cui (Bruce); Hoi Kin Chan (Matthew); Jochi Yu; Letian Tian; Michelle Wong; Mingtai Sun; Minju Jang; Ryan Page; Sasha Shafran; Sean Wiseman; Stephen Grant (Mac); Taiyang Zhang (Sunshine); Vivan Nadkarni; Yi Pan (Ruby Pann); Yoonseo Yang (Eunice); Yurou Zhou (Reign); Zhongyunqi Meng (Aria); Ziona Sober.
 
 ## Counts by required category
 

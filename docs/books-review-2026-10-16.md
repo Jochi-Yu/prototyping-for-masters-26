@@ -41,7 +41,7 @@ Revisited all 30 roster sites and checked the common bookshelf route on all 29 V
 | Sean Wiseman | [My Bookshelf](https://prototyping-for-masters.vercel.app/prototypes/my-bookshelf) | Twelve books with genres, ratings, and reviews rendered; books endpoint returned 200. |
 | Siyue Zhong | [My bookshelf](https://prototyping-for-masters-c12t.vercel.app/prototypes/my-bookshelf) | Eight demo books with genre/rating controls and reviews; explicitly labeled Demo Mode. |
 | Stephen Grant (Mac) | [My Bookshelf](https://masters-main.vercel.app/prototypes/my-bookshelf) | Published bookshelf interface renders a Notion setup screen. Books endpoint returned 503; no books loaded. |
-| Taiying Zhang (Sunshine) | [My Bookshelf](https://sunshine-prototypes.vercel.app/prototypes/my-bookshelf) | Eight demo books with ratings, reviews, and gallery/spine/list controls; explicitly labeled Demo Mode. |
+| Taiyang Zhang (Sunshine) | [My Bookshelf](https://sunshine-prototypes.vercel.app/prototypes/my-bookshelf) | Eight demo books with ratings, reviews, and gallery/spine/list controls; explicitly labeled Demo Mode. |
 | Tinglan Huang (Alanis) | [My Bookshelf](https://alanis1-omega.vercel.app/prototypes/my-bookshelf) | Connection fixed: now displays 13 entries, including one Untitled placeholder, and a Connected to Notion indicator. Preview refreshed. |
 | Vivan Nadkarni | [My Bookshelf](https://vivans-prototypes.vercel.app/prototypes/my-bookshelf) | Twelve books with genres and reviews now render. |
 | Xuanyi Meng | [My bookshelf](https://xuanyi-prototyping-2026.vercel.app/prototypes/my-bookshelf) | Published reading tracker shows a database/data-source-not-found error; books endpoint returned 502 and no books loaded. |

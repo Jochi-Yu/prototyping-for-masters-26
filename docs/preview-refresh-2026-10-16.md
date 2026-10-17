@@ -25,7 +25,7 @@ Updated capture interactions for Carnycia’s redesigned record player, Jiaqi’
 | Sean Wiseman | [Weather, anywhere.](https://prototyping-for-masters.vercel.app/prototypes/weather) | Fresh preview captured and visually reviewed. |
 | Siyue Zhong | [Weather Station](https://prototyping-for-masters-c12t.vercel.app/prototypes/weather-station) | Fresh preview captured and visually reviewed. |
 | Stephen Grant (Mac) | [Local Forecast](https://masters-main.vercel.app/prototypes/local-weather) | Fresh entry-screen preview. Searching New York reports that OPENWEATHER_API_KEY is not configured. |
-| Taiying Zhang (Sunshine) | [Weather Horizon](https://sunshine-prototypes.vercel.app/prototypes/weather-horizon) | Fresh preview captured and visually reviewed. |
+| Taiyang Zhang (Sunshine) | [Weather Horizon](https://sunshine-prototypes.vercel.app/prototypes/weather-horizon) | Fresh preview captured and visually reviewed. |
 | Tinglan Huang (Alanis) | [Local Weather](https://alanis1-omega.vercel.app/prototypes/local-weather) | Fresh preview using the app’s explicit Explore demo mode. |
 | Vivan Nadkarni | [Weather](https://vivans-prototypes.vercel.app/prototypes/weather) | Fresh preview captured and visually reviewed. |
 | Xuanyi Meng | [Weather Near Me](https://xuanyi-prototyping-2026.vercel.app/prototypes/weather-dashboard) | Fresh preview captured and visually reviewed. |
