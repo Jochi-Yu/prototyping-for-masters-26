@@ -2,6 +2,7 @@
   --paper: #000000;
   --ink: #ffffff;
   --rule: color-mix(in srgb, var(--ink) 8%, transparent);
+  --line: color-mix(in srgb, var(--ink) 16%, transparent);
   --gutter: clamp(1rem, 2.2vw, 2rem);
   --text-small: clamp(0.75rem, 1vw, 1.125rem);
   --text-label: clamp(0.625rem, 0.9vw, 1rem);
@@ -161,12 +162,11 @@ h1 span {
   gap: 1rem;
   align-items: center;
   min-height: clamp(5.5rem, 9vw, 8.5rem);
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
 }
 
 .student-number,
-.forthcoming,
-.row-action {
+.forthcoming {
   font-size: var(--text-small);
   text-transform: uppercase;
 }
@@ -186,12 +186,14 @@ h1 span {
 .row-action {
   justify-self: end;
   padding: 0.75rem 0;
-  border-bottom: 1px solid currentColor;
+  font-size: var(--text-label);
+  text-decoration: underline transparent;
+  text-underline-offset: 0.25em;
 }
 
 .student-row-link:hover .row-action,
 .student-row-link:focus-visible .row-action {
-  font-style: italic;
+  text-decoration-color: currentColor;
 }
 
 .student-row-link:active {
@@ -394,7 +396,7 @@ footer p {
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: 0;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
 }
 
 .work-views {
@@ -578,7 +580,7 @@ footer p {
   .work-views {
     width: 100%;
     margin-bottom: 0;
-    border-bottom: 1px solid var(--ink);
+    border-bottom: 1px solid var(--line);
   }
 
   .work-views button {
