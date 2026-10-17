@@ -52,6 +52,24 @@ Use `typographyProjects` for Week 3 typography, `pixiProjects` for Week 4 PixiJS
 
 Inspect the actual page before classifying it. Games that happen to contain letters do not belong in Typography; hand-drawn styling alone does not make a game a Doodle tool. The filter options and counts update from the curated data.
 
+## Audit student sites
+
+Run the audit regularly to find projects that are missing from the gallery or have stopped working:
+
+```sh
+npm run audit:projects
+npm run audit:projects -- "Student Name"   # check specific students
+```
+
+It opens every student homepage, collects project links (including routes in each site’s scripts), probes common assignment paths, and opens every curated and discovered page. The report lists:
+
+- **New:** reachable pages that aren’t in `src/projects.js`.
+- **Broken:** gallery entries that return errors, not-found pages, or redirect home.
+- **Moved:** gallery entries that redirect elsewhere or now live on the student’s current site.
+- **Homepage unreachable**, plus curated projects no longer linked from the homepage, for reference.
+
+The readable report is saved to ignored `output/project-audit/report.md`, with full detail in `report.json`. The command exits with an error when anything needs attention. It only reports: open each new page before adding it to a collection in `src/projects.js`, or add it to `scripts/project-audit-exclusions.js` with a reason if it isn’t a gallery project. A typical refresh is `npm run audit:projects`, update the data, then `npm run previews:sites && npm run previews:capture`.
+
 ## Preview images
 
 The student directory also uses local screenshots for immediate hover and keyboard-focus previews, with a thin border and no shadow. Screenshots are captured at a consistent 1440 × 900 desktop viewport. Press Escape to dismiss a preview; selecting a student's name still opens their live site. On touch devices, names open sites directly.
