@@ -19,9 +19,10 @@ try {
         if (!response?.ok()) throw new Error(`HTTP ${response?.status()}`);
         await page.evaluate(() => document.fonts.ready);
         await page.waitForTimeout(2500);
-        // This portfolio opens with a simulated PC boot sequence.
+        // This portfolio renders a simulated desktop client-side.
         if (student.name === 'Hoi Kin Chan (Matthew)') {
-          await page.getByText("Matthew's PC", { exact: true }).waitFor({ timeout: 15000 });
+          await page.getByText('About Me', { exact: true }).first().waitFor({ timeout: 15000 });
+          await page.waitForTimeout(1500);
         }
         const target = new URL(`../public${studentPreviewPath(student.name)}`, import.meta.url);
         const temp = new URL(`${target.href}.tmp`);
