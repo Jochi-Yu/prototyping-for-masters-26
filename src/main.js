@@ -40,13 +40,13 @@ document.querySelector("#app").innerHTML = `
   <main class="site-shell">
     <header class="masthead">
       <a class="wordmark" href="#top" aria-label="Prototyping for Masters home">Fall / 2026</a>
+      <p class="eyebrow">DSG-5465-A · Elizabeth Lin</p>
       <button class="palette-button" type="button" aria-label="Change color palette">
         <span class="palette-dot" aria-hidden="true"></span>
       </button>
     </header>
 
     <section class="hero" id="top" aria-labelledby="course-title">
-      <p class="eyebrow">DSG-5465-A · Elizabeth Lin</p>
       <h1 id="course-title">
         <span>Prototyping</span>
         <span class="title-indent">for Masters</span>
@@ -64,9 +64,6 @@ document.querySelector("#app").innerHTML = `
     </section>
 
     <aside class="site-preview" aria-hidden="true">
-      <div class="preview-bar">
-        <span class="preview-label">Site preview</span>
-      </div>
       <div class="preview-viewport">
         <img class="preview-image" alt="" width="1440" height="900" hidden />
         <p class="preview-message">Loading preview…</p>

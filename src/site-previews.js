@@ -2,7 +2,6 @@ export const studentPreviewPath = (name) => `/previews/sites/${name.toLowerCase(
 
 export function initSitePreviews() {
   const preview = document.querySelector('.site-preview');
-  const label = preview.querySelector('.preview-label');
   const image = preview.querySelector('.preview-image');
   const message = preview.querySelector('.preview-message');
   const links = document.querySelectorAll('.student-row-link');
@@ -30,7 +29,6 @@ export function initSitePreviews() {
   const show = async (link) => {
     if (!enabled.matches) return;
     activeLink = link;
-    label.textContent = link.dataset.studentName;
     image.hidden = true;
     message.hidden = false;
     message.textContent = 'Loading preview…';

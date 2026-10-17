@@ -1,7 +1,8 @@
 :root {
   --paper: #000000;
   --ink: #ffffff;
-  --rule: color-mix(in srgb, var(--ink) 8%, transparent);
+  --preview-border: color-mix(in srgb, var(--ink) 16%, transparent);
+  --line: color-mix(in srgb, var(--ink) 16%, transparent);
   --gutter: clamp(1rem, 2.2vw, 2rem);
   --text-small: clamp(0.75rem, 1vw, 1.125rem);
   --text-label: clamp(0.625rem, 0.9vw, 1rem);
@@ -55,7 +56,8 @@ button:focus-visible {
 
 .masthead {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  gap: 0 1.5rem;
   align-items: center;
   min-height: 4.5rem;
   padding: 0 var(--gutter);
@@ -104,7 +106,8 @@ footer {
 }
 
 .eyebrow {
-  margin: 0 0 clamp(1.5rem, 3vh, 3rem);
+  margin: 0;
+  justify-self: end;
 }
 
 h1,
@@ -161,12 +164,11 @@ h1 span {
   gap: 1rem;
   align-items: center;
   min-height: clamp(5.5rem, 9vw, 8.5rem);
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
 }
 
 .student-number,
-.forthcoming,
-.row-action {
+.forthcoming {
   font-size: var(--text-small);
   text-transform: uppercase;
 }
@@ -186,12 +188,14 @@ h1 span {
 .row-action {
   justify-self: end;
   padding: 0.75rem 0;
-  border-bottom: 1px solid currentColor;
+  font-size: var(--text-label);
+  text-decoration: underline transparent;
+  text-underline-offset: 0.25em;
 }
 
 .student-row-link:hover .row-action,
 .student-row-link:focus-visible .row-action {
-  font-style: italic;
+  text-decoration-color: currentColor;
 }
 
 .student-row-link:active {
@@ -219,7 +223,7 @@ h1 span {
   right: var(--gutter);
   width: min(42vw, 40rem);
   max-width: calc((100svh - 6rem) * 1.6);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--preview-border);
   background: var(--paper);
   opacity: 0;
   pointer-events: none;
@@ -230,25 +234,6 @@ h1 span {
 .site-preview.is-visible {
   opacity: 1;
   transform: translate(0, -50%);
-}
-
-.preview-bar {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem;
-  align-items: center;
-  min-height: 2.25rem;
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid var(--ink);
-  font-size: var(--text-label);
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.preview-label {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .preview-viewport {
@@ -293,14 +278,18 @@ footer p {
 @media (max-width: 48rem) {
   .masthead {
     grid-template-columns: 1fr auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .masthead .eyebrow {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: start;
   }
 
   .hero {
     min-height: 28rem;
-  }
-
-  .eyebrow {
-    margin-bottom: 2rem;
   }
 
   h1 {
@@ -394,7 +383,7 @@ footer p {
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: 0;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
 }
 
 .work-views {
@@ -495,7 +484,7 @@ footer p {
   aspect-ratio: 16 / 10;
   overflow: hidden;
   background: color-mix(in srgb, var(--ink) 8%, var(--paper));
-  border: 1px solid var(--rule);
+  border: 1px solid var(--preview-border);
   background-clip: padding-box;
 }
 
@@ -578,7 +567,7 @@ footer p {
   .work-views {
     width: 100%;
     margin-bottom: 0;
-    border-bottom: 1px solid var(--ink);
+    border-bottom: 1px solid var(--line);
   }
 
   .work-views button {
@@ -630,9 +619,9 @@ footer p {
   grid-column: 1 / -1;
   width: fit-content;
   margin-top: 0.25rem;
-  font-size: var(--text-label);
+  font-size: clamp(0.5625rem, 0.75vw, 0.8125rem);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   opacity: 0.7;
 }
 
