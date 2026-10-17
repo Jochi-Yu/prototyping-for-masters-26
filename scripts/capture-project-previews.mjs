@@ -12,6 +12,13 @@ const results = [];
 try {
   await Promise.all(Array.from({ length: 3 }, async () => {
     const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+    // Next.js fallbacks use local("Arial"), which rejects fonts.load() on machines without Arial.
+    await context.addInitScript(() => {
+      const load = FontFaceSet.prototype.load;
+      FontFaceSet.prototype.load = function (...args) {
+        return load.apply(this, args).catch(() => []);
+      };
+    });
     for (let project; (project = queue.shift());) {
       const page = await context.newPage();
       const student = students.find(({ name }) => name === project.student);

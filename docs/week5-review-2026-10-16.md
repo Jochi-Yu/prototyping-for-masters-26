@@ -52,7 +52,7 @@ Weather apps with demo data or key requirements remain classified as weather pro
 | Shuotong Huang (Tiffany) | Not found | Not found |
 | Siyue Zhong | [Weather Station](https://prototyping-for-masters-c12t.vercel.app/prototypes/weather-station) | Not found |
 | Stephen Grant (Mac) | [Local Forecast](https://masters-main.vercel.app/prototypes/local-weather) | Not found |
-| Taiying Zhang (Sunshine) | [Weather Horizon](https://sunshine-prototypes.vercel.app/prototypes/weather-horizon) | Not found |
+| Taiyang Zhang (Sunshine) | [Weather Horizon](https://sunshine-prototypes.vercel.app/prototypes/weather-horizon) | Not found |
 | Tinglan Huang (Alanis) | [Local Weather](https://alanis1-omega.vercel.app/prototypes/local-weather) | Not found |
 | Vivan Nadkarni | [Weather](https://vivans-prototypes.vercel.app/prototypes/weather) | Not found |
 | Wenying Zhu | No site URL | No site URL |

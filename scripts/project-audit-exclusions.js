@@ -1,0 +1,46 @@
+// Links the audit should not report as new projects. Remove an entry to have it re-reviewed.
+// Starter-template routes, matched by their last URL segment on every student site.
+export const templateSlugs = ["example", "confetti-button"];
+
+// Reviewed links that are not gallery projects. `url` may be relative to the student's site.
+// Reasons for earlier decisions are recorded in docs/project-curation.md.
+export const reviewedExclusions = [
+  { student: "Carnycia Royce", url: "/prototypes/experiences", reason: "Career portfolio page." },
+  { student: "Carnycia Royce", url: "/prototypes/awards", reason: "Awards portfolio page." },
+  { student: "Carnycia Royce", url: "/prototypes/solo-repertoire", reason: "Music repertoire page." },
+  { student: "Carnycia Royce", url: "/prototypes/class-prototypes", reason: "Mixed lab index, not a focused assignment page." },
+  { student: "Ethan Wise", url: "/prototypes/tarot-oracle", reason: "Tarot advice tool with local content." },
+  { student: "Ethan Wise", url: "https://www.hotwelcome.studio", reason: "Professional studio site." },
+  { student: "Jiaqi Yuan", url: "/prototypes/the-magician", reason: "Tarot/cat reveal interaction." },
+  { student: "Jiaqi Yuan", url: "/prototypes/wheel-of-fortune", reason: "Fortune-telling interaction." },
+  { student: "Jiaqi Yuan", url: "/prototypes/the-tower", reason: "Cup-catching game." },
+  { student: "Jochi Yu", url: "/prototypes/body-morphing", reason: "Face sculpting, not typography or doodling." },
+  { student: "Jochi Yu", url: "https://jochiyuniverse.com", reason: "Personal portfolio site." },
+  { student: "Minju Jang", url: "/prototypes/graph-paper-minesweeper", reason: "Primarily Minesweeper." },
+  { student: "Qianyi Ma (Kate)", url: "/airbuy", reason: "Portfolio case study." },
+  { student: "Qianyi Ma (Kate)", url: "/salome", reason: "Portfolio case study." },
+  { student: "Qianyi Ma (Kate)", url: "/mushroom", reason: "Portfolio case study." },
+  { student: "Qianyi Ma (Kate)", url: "/name", reason: "Portfolio landing page." },
+  { student: "Ruyi Wang", url: "/prototypes/y2k-website", reason: "Sims desktop portfolio interaction." },
+  { student: "Sean Wiseman", url: "/about", reason: "About page." },
+  { student: "Sean Wiseman", url: "/projects", reason: "Project index." },
+  { student: "Sean Wiseman", url: "/prototypes/umbrella-rain", reason: "Letter-catching arcade game." },
+  { student: "Sean Wiseman", url: "/prototypes/sword-in-the-stone", reason: "Sword/dragon game." },
+  { student: "Sean Wiseman", url: "/prototypes/imperium", reason: "Gladiator game." },
+  { student: "Sean Wiseman", url: "/prototypes/summit-signal", reason: "3D survival shooter game." },
+  { student: "Siyue Zhong", url: "/prototypes/blog", reason: "Personal blog." },
+  { student: "Taiyang Zhang (Sunshine)", url: "/prototypes/purr-and-wag-cafe", reason: "Virtual pet sanctuary." },
+  { student: "Taiyang Zhang (Sunshine)", url: "/prototypes/gumi-space", reason: "Music/curation page." },
+  { student: "Taiyang Zhang (Sunshine)", url: "/prototypes/maimai-dx", reason: "Rhythm arcade." },
+  { student: "Tinglan Huang (Alanis)", url: "/prototypes/point-trace-doodle", reason: "Embeds Point / Trace, which the gallery links on its standalone host." },
+  { student: "Wenying Zhu", url: "/prototypes/blog", reason: "Design journal/blog." },
+  { student: "Yi Pan (Ruby Pann)", url: "/prototypes/tate-sunburst", reason: "D3 study of a static Tate dataset; no live data API. Pending instructor decision." },
+  { student: "Yiping Dong", url: "https://yipingdong.com", reason: "Personal portfolio site." },
+  { student: "Yiping Dong", url: "https://open.spotify.com/embed/playlist/32Xns48YFAaxdWcT8NJ28f", reason: "Embedded playlist." },
+  { student: "Ziona Sober", url: "/work", reason: "Portfolio index." },
+  { student: "Ziona Sober", url: "/work/text-wave", reason: "Case-study wrapper for Text Wave." },
+  { student: "Ziona Sober", url: "/work/paper-dolls", reason: "Case-study wrapper for Dress the Doodle." },
+  { student: "Ziona Sober", url: "/work/weather-app", reason: "Case-study wrapper for Weather App." },
+  { student: "Ziona Sober", url: "/work/my-bookshelf", reason: "Case-study wrapper for My Bookshelf." },
+  { student: "Ziqing Huang (Lyra)", url: "/prototypes/aura-gradient", reason: "CSS gradient tool." },
+];

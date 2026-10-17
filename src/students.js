@@ -18,7 +18,7 @@ export const students = [
   { name: "Shuotong Huang (Tiffany)", url: "https://shuotong-huang-portfolio.vercel.app/" },
   { name: "Siyue Zhong", url: "https://prototyping-for-masters-c12t.vercel.app/" },
   { name: "Stephen Grant (Mac)", url: "https://masters-main.vercel.app/" },
-  { name: "Taiying Zhang (Sunshine)", url: "https://sunshine-prototypes.vercel.app/" },
+  { name: "Taiyang Zhang (Sunshine)", url: "https://sunshine-prototypes.vercel.app/" },
   { name: "Tinglan Huang (Alanis)", url: "https://alanis1-omega.vercel.app/" },
   { name: "Vivan Nadkarni", url: "https://vivans-prototypes.vercel.app/" },
   { name: "Wenying Zhu", url: "https://prototyping-for-masters-delta.vercel.app/" },

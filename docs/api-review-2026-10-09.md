@@ -44,7 +44,7 @@ All four direct project pages returned HTTP 200. Saved local gallery previews af
 | Shuotong Huang (Tiffany) | Reviewed the scrapbook project navigation and standalone HTML routes; no external data API project found. |
 | Siyue Zhong | Reviewed the index and six additional journal/type/ribbon routes; only Weather Station showed a data API integration. |
 | Stephen Grant (Mac) | Reviewed the homepage and nested Instagram-style feed; only Local Forecast showed a data API integration. |
-| Taiying Zhang (Sunshine) | Checked Purr & Wag Cafe, GUMI Space, and maimai DX. Browser audio synthesis, curated outbound media links, and local games; no additional external data API project found. |
+| Taiyang Zhang (Sunshine) | Checked Purr & Wag Cafe, GUMI Space, and maimai DX. Browser audio synthesis, curated outbound media links, and local games; no additional external data API project found. |
 | Tinglan Huang (Alanis) | Reviewed the published site; its index links only Getting Started and Confetti. The previously supplied Point / Trace drawing tool has no new API project link in the reviewed index. |
 | Vivan Nadkarni | Reviewed the project index and routes; only Weather showed a data API integration. |
 | Wenying Zhu | No site URL in the roster; could not inspect. |

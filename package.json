@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "playwright test",
     "previews:sites": "node scripts/capture-site-previews.mjs",
-    "previews:capture": "node scripts/capture-project-previews.mjs"
+    "previews:capture": "node scripts/capture-project-previews.mjs",
+    "audit:projects": "node scripts/audit-student-projects.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",

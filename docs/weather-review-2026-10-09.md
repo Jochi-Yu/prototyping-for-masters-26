@@ -40,7 +40,7 @@ October 10 Jiaqi follow-up: Elizabeth supplied the direct Weather Cat link. It r
 | Ryan Page | [Weather Dashboard](https://prototyping-for-masters-rho.vercel.app/prototypes/weather-dashboard) | Current city conditions, 24-hour forecast, and five-day outlook. |
 | Sasha Shafran | [Weather Archive](https://prototyping-for-masters-sashki-lw62.vercel.app/prototypes/weather-archive) | Five-day Kyiv forecast in a filmstrip, with weather-based outfit suggestions. |
 | Sean Wiseman | [Weather, anywhere.](https://prototyping-for-masters.vercel.app/prototypes/weather) | Interactive globe and city search for local weather. |
-| Taiying Zhang (Sunshine) | [Weather Horizon](https://sunshine-prototypes.vercel.app/prototypes/weather-horizon) | City search, atmospheric scene, temperature, wind, pressure, visibility, and solar cycle. |
+| Taiyang Zhang (Sunshine) | [Weather Horizon](https://sunshine-prototypes.vercel.app/prototypes/weather-horizon) | City search, atmospheric scene, temperature, wind, pressure, visibility, and solar cycle. |
 | Vivan Nadkarni | [Weather](https://vivans-prototypes.vercel.app/prototypes/weather) | Current weather, hourly/five-day forecast, practical activity advice, and air quality. |
 | Yi Pan (Ruby Pann) | [Find my weather](https://ruby-pann-course.vercel.app/prototypes/ideal-weather) | Matches preferred temperature and conditions against weather in 24 places. |
 | Yiping Dong | [Weather](https://prototyping-for-masters-tau.vercel.app/prototypes/weather) | City weather, hourly/daily forecasts, and a climate-based dressing room. |

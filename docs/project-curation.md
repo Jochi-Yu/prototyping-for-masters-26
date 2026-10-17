@@ -22,7 +22,9 @@ October 15 follow-up: reviewed all 30 published sites and added Alanis’s newly
 
 October 16 follow-up: added Zoe’s Atmos and Aria’s Weather Flag to Weather, and Ethan’s The Herbal Atlas to API explorations, with captured previews. Zoe’s city search and Ethan’s reference lookup worked; Aria’s weather endpoint returned a missing-key error, so its preview shows the About panel. API explorations now has five projects from five students. See [the full recheck](week5-review-2026-10-16.md).
 
-Current totals: **36 Typography projects from 28 students**, **22 PixiJS projects from 17 students**, **27 Doodle projects from 25 students**, and **28 Weather apps from 28 students**. These corrections supersede the earlier counts and exclusions below.
+October 17 audit: removed Mac’s Ampersand Field and TADA Tile Automaton (both now HTTP 404), added Wenying’s NYC Weather Desk to Weather, added four API explorations from Michelle, Minju, Ruby, and Reign, and pointed Jiaqi’s Weather Cat at her current site. See [the October 17 review](site-review-2026-10-17.md).
+
+Current totals: **34 Typography projects from 27 students**, **22 PixiJS projects from 17 students**, **27 Doodle projects from 25 students**, **29 Weather apps from 29 students**, **9 API explorations from 9 students**, and **24 Books projects from 24 students**. These corrections supersede the earlier counts and exclusions below.
 
 October 9 API explorations review: checked all 29 published student sites and 37 additional project/case-study pages. Added four non-weather API projects from Carnycia, Kate, Sasha, and Sean to Week 5 — API explorations. See [the full roster review and API evidence](api-review-2026-10-09.md).
 
@@ -87,7 +89,7 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Sean Wiseman | [Torch Typography](https://prototyping-for-masters.vercel.app/prototypes/torch-typography) |
 | Stephen Grant (Mac) | [Ampersand Field](https://masters-main.vercel.app/prototypes/ampersand-field) |
 | Stephen Grant (Mac) | [TADA Tile Automaton](https://masters-main.vercel.app/prototypes/tada-tile-automaton) |
-| Taiying Zhang (Sunshine) | [MAYHEM](https://sunshine-prototypes.vercel.app/prototypes/mayhem) |
+| Taiyang Zhang (Sunshine) | [MAYHEM](https://sunshine-prototypes.vercel.app/prototypes/mayhem) |
 | Vivan Nadkarni | [Projected Type](https://vivans-prototypes.vercel.app/prototypes/projected-type) |
 | Xuanyi Meng | [Maybe Tomorrow](https://xuanyi-prototyping-2026.vercel.app/prototypes/maybe-tomorrow) |
 | Yi Pan (Ruby Pann) | [Antique collage](https://ruby-pann-course.vercel.app/prototypes/antique-collage) |
@@ -144,8 +146,8 @@ October 9 addition: Ethan Wise's Gradient Maker was added to Week 4 at Elizabeth
 | Ryan Page | [Doodle Creator](https://prototyping-for-masters-rho.vercel.app/prototypes/doodle-creator) |
 | Sean Wiseman | [Doodle](https://prototyping-for-masters.vercel.app/prototypes/doodle) |
 | Sasha Shafran | [Fashion Doodle](https://prototyping-for-masters-sashki-lw62.vercel.app/prototypes/fashion-doodle) |
-| Taiying Zhang (Sunshine) | [Needy Girl Oekaki](https://sunshine-prototypes.vercel.app/prototypes/needy-girl-os) |
-| Taiying Zhang (Sunshine) | [Masterpiece Vandal Club](https://sunshine-prototypes.vercel.app/prototypes/masterpiece-graffiti-lab) |
+| Taiyang Zhang (Sunshine) | [Needy Girl Oekaki](https://sunshine-prototypes.vercel.app/prototypes/needy-girl-os) |
+| Taiyang Zhang (Sunshine) | [Masterpiece Vandal Club](https://sunshine-prototypes.vercel.app/prototypes/masterpiece-graffiti-lab) |
 | Yi Pan (Ruby Pann) | [Little Print Shop](https://ruby-pann-course.vercel.app/prototypes/little-print-shop) |
 | Tinglan Huang (Alanis) | [Point / Trace](https://point-trace-doodle.vercel.app/) |
 | Vivan Nadkarni | [Doodle Engine](https://vivans-prototypes.vercel.app/prototypes/doodle-engine) |
@@ -177,9 +179,9 @@ These remain accessible through student sites. No assignment was inferred from a
 | Sean Wiseman | [/prototypes/umbrella-rain](https://prototyping-for-masters.vercel.app/prototypes/umbrella-rain) | Letter-catching arcade game. |
 | Sean Wiseman | [/prototypes/sword-in-the-stone](https://prototyping-for-masters.vercel.app/prototypes/sword-in-the-stone) | Sword/dragon game; text reflow is supporting behavior. |
 | Siyue Zhong | [/prototypes/blog](https://prototyping-for-masters-c12t.vercel.app/prototypes/blog) | Personal blog. |
-| Taiying Zhang (Sunshine) | [/prototypes/purr-and-wag-cafe](https://sunshine-prototypes.vercel.app/prototypes/purr-and-wag-cafe) | Virtual pet sanctuary. |
-| Taiying Zhang (Sunshine) | [/prototypes/gumi-space](https://sunshine-prototypes.vercel.app/prototypes/gumi-space) | Music/curation page. |
-| Taiying Zhang (Sunshine) | [/prototypes/maimai-dx](https://sunshine-prototypes.vercel.app/prototypes/maimai-dx) | Rhythm arcade; PixiJS use was not verified. |
+| Taiyang Zhang (Sunshine) | [/prototypes/purr-and-wag-cafe](https://sunshine-prototypes.vercel.app/prototypes/purr-and-wag-cafe) | Virtual pet sanctuary. |
+| Taiyang Zhang (Sunshine) | [/prototypes/gumi-space](https://sunshine-prototypes.vercel.app/prototypes/gumi-space) | Music/curation page. |
+| Taiyang Zhang (Sunshine) | [/prototypes/maimai-dx](https://sunshine-prototypes.vercel.app/prototypes/maimai-dx) | Rhythm arcade; PixiJS use was not verified. |
 | Ziqing Huang (Lyra) | [/prototypes/aura-gradient](https://prototyping-for-masters-beta.vercel.app/prototypes/aura-gradient) | CSS gradient tool; no project-specific PixiJS evidence. |
 | Yoonseo Yang (Eunice) | [/prototypes/tamagotchi](https://prototyping-for-master.vercel.app/prototypes/tamagotchi) | Virtual pet game; outside these assignment collections. |
 
