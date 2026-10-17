@@ -524,18 +524,18 @@ footer p {
   padding-top: 1rem;
 }
 
-.project-student {
+.project-caption h3 {
+  margin: 0;
   font-family: "Faculty Glyphic", sans-serif;
   font-size: clamp(1.1rem, 1.65vw, 1.65rem);
+  font-weight: 400;
   line-height: 1.25;
   overflow-wrap: anywhere;
 }
 
-.project-caption h3 {
+.project-student {
   grid-column: 1 / -1;
-  margin: 0;
   font-size: var(--text-small);
-  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -593,7 +593,7 @@ footer p {
     padding-top: 2rem;
   }
 
-  .project-student {
+  .project-caption h3 {
     font-size: 1.35rem;
   }
 }

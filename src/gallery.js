@@ -69,9 +69,9 @@ export function initGallery(students) {
               <img src="${escapeHtml(project.preview)}" alt="" width="1440" height="900" loading="${index < 3 ? "eager" : "lazy"}" decoding="async" />
             </div>
             <div class="project-caption">
-              <span class="project-student">${escapeHtml(student.name)}</span>
-              <span class="project-week">Week ${project.week}</span>
               <h3>${escapeHtml(project.title)}</h3>
+              <span class="project-week">Week ${project.week}</span>
+              <span class="project-student">${escapeHtml(student.name)}</span>
               ${showTypes ? `<span class="project-type">${escapeHtml(projectTypes.find(({ id }) => id === project.type).title)}</span>` : ""}
             </div>
           </a>
