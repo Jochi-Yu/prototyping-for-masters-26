@@ -1,12 +1,8 @@
 :root {
   --paper: #000000;
   --ink: #ffffff;
-<<<<<<< HEAD
   --preview-border: color-mix(in srgb, var(--ink) 16%, transparent);
-=======
-  --rule: color-mix(in srgb, var(--ink) 8%, transparent);
   --line: color-mix(in srgb, var(--ink) 16%, transparent);
->>>>>>> origin/main
   --gutter: clamp(1rem, 2.2vw, 2rem);
   --text-small: clamp(0.75rem, 1vw, 1.125rem);
   --text-label: clamp(0.625rem, 0.9vw, 1rem);
