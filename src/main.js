@@ -40,13 +40,13 @@ document.querySelector("#app").innerHTML = `
   <main class="site-shell">
     <header class="masthead">
       <a class="wordmark" href="#top" aria-label="Prototyping for Masters home">Fall / 2026</a>
+      <p class="eyebrow">DSG-5465-A · Elizabeth Lin</p>
       <button class="palette-button" type="button" aria-label="Change color palette">
         <span class="palette-dot" aria-hidden="true"></span>
       </button>
     </header>
 
     <section class="hero" id="top" aria-labelledby="course-title">
-      <p class="eyebrow">DSG-5465-A · Elizabeth Lin</p>
       <h1 id="course-title">
         <span>Prototyping</span>
         <span class="title-indent">for Masters</span>
