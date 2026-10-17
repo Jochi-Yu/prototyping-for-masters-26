@@ -11,18 +11,20 @@ Compared all 31 students against the current gallery data (`src/students.js`, `s
 | Caoyun Xu (Zoe) | Typography |
 | Carnycia Royce | Books |
 | Jiaqi Yuan | Books |
-| Qianyi Ma (Kate) | Doodle |
+| Qianyi Ma (Kate) | Doodle* |
 | Ruyi Wang | Doodle, Weather apps, Books |
 | Shuotong Huang (Tiffany) | Weather apps, Books |
-| Siyue Zhong | Doodle |
+| Siyue Zhong | Doodle* |
 | Stephen Grant (Mac) | Typography |
 | Tinglan Huang (Alanis) | Typography |
 | Wenying Zhu | Typography, Doodle, Books |
-| Xuanyi Meng | Doodle |
+| Xuanyi Meng | Doodle* |
 | Yiping Dong | Books |
 | Ziqing Huang (Lyra) | Books |
 
-**13 students have missing required projects; 18 have all four present.**
+\* Exempt from Doodle: students with a PixiJS project don’t need a Doodle project. Kate has Bubble Rush, Siyue has Silk Ribbon and Jelly Creatures, and Xuanyi has Stardew Mini Game and Pink Room Smash.
+
+**13 students have missing required projects; 18 have all four present.** Counting the Doodle exemption, Kate, Siyue, and Xuanyi have nothing outstanding, leaving 10 students with missing required projects.
 
 ## All required projects present
 
@@ -33,16 +35,16 @@ Ethan Wise; Heran Cui (Bruce); Hoi Kin Chan (Matthew); Jochi Yu; Letian Tian; Mi
 | Category | Present | Missing |
 | --- | ---: | ---: |
 | Typography | 27 | 4 |
-| Doodle | 26 | 5 |
+| Doodle | 26 | 5 (3 exempt*) |
 | Weather apps | 29 | 2 |
 | Books | 24 | 7 |
 
 ## Changes since October 16
 
 - **Stephen Grant (Mac): Typography now missing.** Ampersand Field and TADA Tile Automaton return HTTP 404 and are no longer linked from his site, so both were removed from the gallery. His [Instagram Assignment Feed](https://masters-main.vercel.app/prototypes/instagram-feed) has type-study posts (Art Nouveau, Editorial, Collage, Swiss Grid), but it isn’t classified as typography and doesn’t count here.
-- **Stephen Grant (Mac): Doodle still counts as present.** As in the October 16 report, the doodle canvas inside his Instagram Assignment Feed counts as his Doodle project, even though the gallery lists that page under PixiJS. It is not in the gallery’s Doodle collection.
+- **Stephen Grant (Mac): Doodle still counts as present.** As in the October 16 report, the doodle canvas inside his Instagram Assignment Feed counts as his Doodle project, even though the gallery lists that page under PixiJS. It is not in the gallery’s Doodle collection. Because that feed is also a PixiJS project, he would be exempt from Doodle either way.
 - **Wenying Zhu: Weather apps now in the gallery.** [NYC Weather Desk](https://prototyping-for-masters-delta.vercel.app/prototypes/weather) was added to Week 5. On October 16 it already counted as present but wasn’t in the gallery, so her missing list is unchanged.
 - **Jiaqi Yuan:** Weather Cat moved to `/prototypes/weather-cat` on her roster site. It still counts as present.
-- Still not counted: Zoe’s placeholder “Take It Slow” typography card, Tiffany’s static reading list, Siyue’s PixiJS experiments (Silk Ribbon, Jelly Creatures), and Ruby’s Tate sunburst study (optional API category, pending instructor decision).
+- Still not counted: Zoe’s placeholder “Take It Slow” typography card, Tiffany’s static reading list, Siyue’s PixiJS experiments as a Doodle project (they exempt her from Doodle instead), and Ruby’s Tate sunburst study (optional API category, pending instructor decision).
 
 This report does not modify the gallery or student work.
