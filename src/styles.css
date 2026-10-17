@@ -56,7 +56,8 @@ button:focus-visible {
 
 .masthead {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  gap: 0 1.5rem;
   align-items: center;
   min-height: 4.5rem;
   padding: 0 var(--gutter);
@@ -105,7 +106,8 @@ footer {
 }
 
 .eyebrow {
-  margin: 0 0 clamp(1.5rem, 3vh, 3rem);
+  margin: 0;
+  justify-self: end;
 }
 
 h1,
@@ -295,14 +297,18 @@ footer p {
 @media (max-width: 48rem) {
   .masthead {
     grid-template-columns: 1fr auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .masthead .eyebrow {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: start;
   }
 
   .hero {
     min-height: 28rem;
-  }
-
-  .eyebrow {
-    margin-bottom: 2rem;
   }
 
   h1 {
