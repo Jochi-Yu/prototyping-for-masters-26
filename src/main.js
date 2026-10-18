@@ -1,4 +1,5 @@
 import "./styles.css";
+import { inject } from "@vercel/analytics";
 import { students } from "./students.js";
 import { initSitePreviews } from "./site-previews.js";
 import { galleryMarkup, initGallery } from "./gallery.js";
@@ -100,3 +101,4 @@ applyPalette(paletteIndex);
 
 initSitePreviews();
 initGallery(students);
+inject();
