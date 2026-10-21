@@ -7,7 +7,8 @@ import { projects } from "../src/projects.js";
 const browser = await chromium.launch({ channel: "chrome", headless: true, args: ["--mute-audio"] });
 await mkdir(new URL("../public/previews/", import.meta.url), { recursive: true });
 const requestedTitles = process.argv.slice(2);
-const queue = projects.filter((project) => !requestedTitles.length || requestedTitles.includes(project.title));
+// Arguments can be project titles or student names.
+const queue = projects.filter((project) => !requestedTitles.length || requestedTitles.includes(project.title) || requestedTitles.includes(project.student));
 const results = [];
 try {
   await Promise.all(Array.from({ length: 3 }, async () => {
@@ -168,7 +169,7 @@ try {
           });
           await page.waitForTimeout(500);
         }
-        if (["/prototypes/little-print-shop", "/prototypes/doodle-playground"].includes(project.path)) {
+        if (project.path === "/prototypes/little-print-shop" || (project.path === "/prototypes/doodle-playground" && project.student === "Ziqing Huang (Lyra)")) {
           const isPrintShop = project.path === "/prototypes/little-print-shop";
           if (!isPrintShop) {
             await page.getByRole("button", { name: "OK", exact: true }).click();

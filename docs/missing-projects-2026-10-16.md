@@ -1,5 +1,7 @@
 # Required-project coverage — October 16, 2026
 
+October 21 update: Shuotong Huang (Tiffany) now has published Weather and Books projects on her new portfolio, and all four required projects are present. The counts below reflect October 16.
+
 PixiJS and API explorations are optional and excluded, as clarified by Elizabeth. Required categories: Week 3 Typography, Week 4 Doodle, Week 5 Weather, and Week 6 Books.
 
 Compared all 31 students against the current gallery and October 15–16 site-review evidence. Subsequently rechecked the current live sites of all 13 students initially listed as missing required work, inspected their project menus and exposed routes, and opened 69 candidate project URLs. All 13 homepages returned HTTP 200; candidate pages returned 12 HTTP 200 responses and 57 HTTP 404 responses, with no navigation errors. “Missing” means no qualifying published project was identified; unlinked or unpublished work may exist. Published demos and configuration-blocked projects count as present. This is a coverage check, not a functionality grade.
