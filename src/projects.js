@@ -203,6 +203,7 @@ const inspirationProjects = [
   ["Qianyi Ma (Kate)","Inspiration library / 灵感库","/prototypes/inspiration-library"],
   ["Ryan Page","Inspiration library","/prototypes/inspiration-library"],
   ["Sasha Shafran","Bibliothèque d'Inspiration","/prototypes/inspiration-library"],
+  ["Sean Wiseman","Inspiration library","/prototypes/inspiration-library"],
   ["Shuotong Huang (Tiffany)","Inspiration library","/prototypes/inspiration-library"],
   ["Siyue Zhong","Inspiration library","/prototypes/inspiration-library"],
   ["Stephen Grant (Mac)","Inspiration library","/prototypes/inspiration-library"],

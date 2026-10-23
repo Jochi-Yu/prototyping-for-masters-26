@@ -17,7 +17,7 @@ The homepage opens in **Student sites**, showing the full roster. Choose **Proje
 - `/#student-sites` — student directory (default)
 - `/?view=projects#student-sites` — all projects
 
-The collection contains **34 Typography**, **22 projects in the PixiJS group**, **27 Doodle**, **29 Weather apps**, **9 API explorations**, **29 Books**, and **20 Inspiration library** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
+The collection contains **34 Typography**, **22 projects in the PixiJS group**, **27 Doodle**, **29 Weather apps**, **9 API explorations**, **29 Books**, and **21 Inspiration library** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
 
 The [Week 5 review](docs/weather-review-2026-10-09.md) records the initial 29 published sites and Caoyun’s subsequent site review, the 25 weather apps included, and API/demo limitations.
 
@@ -29,7 +29,7 @@ The [API explorations review](docs/api-review-2026-10-09.md) records the full-ro
 
 The [Week 6 Books review](docs/books-review-2026-10-16.md) records the full-roster review, 29 published bookshelf projects (with an October 23 recheck), and observed demo/configuration limitations.
 
-The [Week 7 Inspiration library review](docs/inspiration-review-2026-10-23.md) covers all 20 listed libraries; all are listed for visibility, and the note records which have a connected database.
+The [Week 7 Inspiration library review](docs/inspiration-review-2026-10-23.md) covers all 21 published libraries; all are listed for visibility, and the note records which have a connected database.
 
 The [October 17 audit](docs/site-review-2026-10-17.md) rechecked all 31 sites with `npm run audit:projects`, added five projects, removed two that no longer exist, and refreshed every thumbnail.
 
