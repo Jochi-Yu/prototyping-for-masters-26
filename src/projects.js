@@ -160,6 +160,7 @@ const bookProjects = [
   ["Ethan Wise","My Bookshelf","/prototypes/my-bookshelf"],
   ["Heran Cui (Bruce)","Bruce’s books","/prototypes/my-bookshelf"],
   ["Hoi Kin Chan (Matthew)","My bookshelf","/prototypes/my-bookshelf"],
+  ["Jiaqi Yuan","My Bookstore","/prototypes/my-bookshelf"],
   ["Jochi Yu","My bookshelf","/prototypes/my-bookshelf"],
   ["Letian Tian","My Bookshelf","/prototypes/my-bookshelf"],
   ["Michelle Wong","Michelle's Bookshelf","/prototypes/my-bookshelf"],

@@ -16,7 +16,7 @@ The homepage opens in **Student sites**, showing the full roster. Choose **Proje
 - `/#student-sites` — student directory (default)
 - `/?view=projects#student-sites` — all projects
 
-The collection contains **34 Typography**, **22 projects in the PixiJS group**, **27 Doodle**, **29 Weather apps**, **9 API explorations**, and **28 Books** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
+The collection contains **34 Typography**, **22 projects in the PixiJS group**, **27 Doodle**, **29 Weather apps**, **9 API explorations**, and **29 Books** projects. Classification is based on the rendered project and its main interaction; portfolio titles and route names can be stale. PixiJS projects are checked for actual renderer usage, not just a library name in a prefetched homepage, with instructor-directed additions noted in [the curation review](docs/project-curation.md).
 
 The [Week 5 review](docs/weather-review-2026-10-09.md) records the initial 29 published sites and Caoyun’s subsequent site review, the 25 weather apps included, and API/demo limitations.
 
@@ -26,7 +26,7 @@ The [October 16 recheck](docs/week5-review-2026-10-16.md) adds Zoe’s Atmos, Ar
 
 The [API explorations review](docs/api-review-2026-10-09.md) records the full-roster review, four non-weather API projects, and their live/demo behavior.
 
-The [Week 6 Books review](docs/books-review-2026-10-16.md) records the full-roster review, 28 published bookshelf projects (with an October 23 recheck), and observed demo/configuration limitations.
+The [Week 6 Books review](docs/books-review-2026-10-16.md) records the full-roster review, 29 published bookshelf projects (with an October 23 recheck), and observed demo/configuration limitations.
 
 The [October 17 audit](docs/site-review-2026-10-17.md) rechecked all 31 sites with `npm run audit:projects`, added five projects, removed two that no longer exist, and refreshed every thumbnail.
 

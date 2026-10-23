@@ -12,6 +12,8 @@ Jochi’s shelf, previously blocked by missing Notion configuration, now renders
 
 Evidence: `output/books-recheck-2026-10-23/` contains rendered text, request statuses, and screenshots for every checked page.
 
+Later the same day, two more rechecks added **Jiaqi**’s “My Bookstore,” bringing the collection to **29 projects from 27 students**. It is linked from her homepage but displays missing Notion configuration, so no books load. Ethan connected his shelf to Notion (110 books in a redesigned shelf) and Kate redesigned hers as a drag-to-shelve “Annual shelf.” Both previews were refreshed.
+
 ## Latest additions check
 
 Reviewed all 31 homepages, including Wenying’s newly available roster URL, and checked the common bookshelf route on the nine sites absent from the Books collection. Found **Sunshine** and **Reign**, bringing the collection to **24 projects from 24 students**. Both are linked from their homepages and returned 200. Sunshine displays eight books in Demo Mode; Reign displays 12 entries with a Live Notion Database indicator and a successful books API response. Both have captured previews. No bookshelf was found for the other seven students, including Wenying.
@@ -35,15 +37,16 @@ Revisited all 30 roster sites and checked the common bookshelf route on all 29 V
 | Student | Project | Observed state |
 | --- | --- | --- |
 | Caoyun Xu (Zoe) | [My bookshelf](https://my-bookshelf-sand.vercel.app/) | Twelve sample books with ratings and reading notes on a separately hosted deployment linked from her portfolio. |
-| Ethan Wise | [My Bookshelf](https://prototyping-for-masters-8v9j.vercel.app/prototypes/my-bookshelf) | Six sample books rendered. Now also linked from his homepage. |
+| Ethan Wise | [My Bookshelf](https://prototyping-for-masters-8v9j.vercel.app/prototypes/my-bookshelf) | Connected to Notion (October 23): redesigned shelf with search, eight genre filters, and 110 books. Linked from his homepage. |
 | Heran Cui (Bruce) | [Bruce’s books](https://prototyping-for-masters-one.vercel.app/prototypes/my-bookshelf) | Redesigned again (October 23): stacked spines above a “Bruce’s Book Collection” title list, with search and genre filters. |
 | Hoi Kin Chan (Matthew) | [My bookshelf](https://matthews-site.vercel.app/prototypes/my-bookshelf) | One book, Vagabond, rendered with a rating and a detailed review; books endpoint returned 200. |
+| Jiaqi Yuan | [My Bookstore](https://prototyping-for-masters-1-eyt7.vercel.app/prototypes/my-bookshelf) | Added October 23: “A Constellation of Stories” bookstore page, linked from her homepage; displays missing Notion configuration, so no books load. |
 | Jochi Yu | [My bookshelf](https://jochiprototypes.vercel.app/prototypes/my-bookshelf) | Recovered: now renders a “Jochi’s Books” collection of scattered covers (October 23). Previously displayed missing Notion configuration. |
 | Letian Tian | [My Bookshelf](https://prototyping-for-masters-nine.vercel.app/prototypes/my-bookshelf) | Twelve books with genres, ratings, and reviews rendered; Notion books endpoint returned 200. |
 | Michelle Wong | [Michelle's Bookshelf](https://prototyping-for-masters-wine.vercel.app/prototypes/my-bookshelf) | Nine books with ratings and reviews rendered; bookshelf endpoint returned 200. Live Notion provenance was not independently established. |
 | Mingtai Sun | [My Bookshelf](https://mingtai-prototypes.vercel.app/prototypes/my-bookshelf) | Eight books rendered in explicitly labeled Sample Library mode. |
 | Minju Jang | [My Bookshelf](https://minjujang-prototyping-3rp6.vercel.app/prototypes/my-bookshelf) | Rebuilt (October 23) as “Minju’s Bookshelf” with Shelf, Stack, and Gallery views and genre/sort controls; eight books, labeled Demo Mode. |
-| Qianyi Ma (Kate) | [My bookshelf / 我的书架](https://qianyima.vercel.app/prototypes/my-bookshelf) | Twelve books rendered with a connected-to-Notion indicator; books endpoint returned 200. |
+| Qianyi Ma (Kate) | [My bookshelf / 我的书架](https://qianyima.vercel.app/prototypes/my-bookshelf) | Redesigned (October 23) as “A little room for stories”: 12 Notion books start unshelved and can be dragged onto an Annual shelf. Connected to Notion. |
 | Ruyi Wang | [JZA / Bookshelf](https://ruyiwang.vercel.app/prototypes/my-bookshelf) | Added October 23: spine-style shelf of 13 books with genre and score filters and a Live Notion indicator; linked from her homepage. |
 | Ryan Page | [My bookshelf](https://prototyping-for-masters-rho.vercel.app/prototypes/my-bookshelf) | Now connected to Ryan’s Notion books: 13 books rendered, and the books endpoint returned 200. |
 | Sasha Shafran | [What I Read in NYC](https://prototyping-for-masters-sashki-lw62.vercel.app/prototypes/my-bookshelf) | Connection fixed: now displays 13 books and a Live from Notion indicator. Preview refreshed from the live reading log. |
@@ -70,7 +73,6 @@ Revisited all 30 roster sites and checked the common bookshelf route on all 29 V
 | Student | Result |
 | --- | --- |
 | Carnycia Royce | No bookshelf project found. |
-| Jiaqi Yuan | No bookshelf project found. |
 | Wenying Zhu | Newly available roster site reviewed; no bookshelf project found. |
 | Ziqing Huang (Lyra) | No bookshelf project found. |
 
