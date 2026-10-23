@@ -197,6 +197,7 @@ const inspirationProjects = [
   ["Heran Cui (Bruce)","Inspiration library","/prototypes/inspiration-library"],
   ["Hoi Kin Chan (Matthew)","Inspiration library","/prototypes/inspiration-library"],
   ["Jochi Yu","Inspiration library","/prototypes/inspiration-library"],
+  ["Letian Tian","Inspiration library","/prototypes/inspiration-library"],
   ["Michelle Wong","Inspiration library","/prototypes/inspiration-library"],
   ["Minju Jang","Inspiration library","/prototypes/inspiration-library"],
   ["Qianyi Ma (Kate)","Inspiration library / 灵感库","/prototypes/inspiration-library"],
