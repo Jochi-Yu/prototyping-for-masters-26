@@ -58,7 +58,7 @@ export function initGallery(students) {
     title.textContent = collection ? `Week ${collection.week} - ${collection.title}` : "All projects";
     const studentCount = new Set(visibleProjects.map(({ student }) => student)).size;
     count.textContent = `${visibleProjects.length} ${visibleProjects.length === 1 ? "project" : "projects"} · ${studentCount} ${studentCount === 1 ? "student" : "students"}`;
-    grid.innerHTML = visibleProjects.map((project, index) => {
+    const projectCard = (project, index, showStudent = true) => {
       const student = studentByName.get(project.student);
       const url = new URL(project.path, student.url).href;
       return `
@@ -69,14 +69,54 @@ export function initGallery(students) {
               <img src="${escapeHtml(project.preview)}" alt="" width="1440" height="900" loading="${index < 3 ? "eager" : "lazy"}" decoding="async" />
             </div>
             <div class="project-caption">
-              <span class="project-student">${escapeHtml(student.name)}</span>
+              ${showStudent ? `<span class="project-student">${escapeHtml(student.name)}</span>` : ""}
               <span class="project-week">Week ${project.week}</span>
               <h3>${escapeHtml(project.title)}</h3>
               ${showTypes ? `<span class="project-type">${escapeHtml(projectTypes.find(({ id }) => id === project.type).title)}</span>` : ""}
             </div>
           </a>
         </li>`;
-    }).join("");
+    };
+    const groupedByStudent = selectedType === "all";
+    grid.classList.toggle("student-project-rows", groupedByStudent);
+    if (groupedByStudent) {
+      const projectsByStudent = new Map();
+      visibleProjects.forEach((project) => {
+        projectsByStudent.set(project.student, [...(projectsByStudent.get(project.student) ?? []), project]);
+      });
+      grid.innerHTML = [...projectsByStudent].map(([studentName, studentProjects], rowIndex) => `
+        <li class="student-project-row">
+          <div class="student-row-heading">
+            <h3 class="project-student">${escapeHtml(studentName)}</h3>
+            <div class="student-row-controls">
+              <button type="button" data-direction="-1" aria-label="Previous projects by ${escapeHtml(studentName)}">&lt;</button>
+              <button type="button" data-direction="1" aria-label="Next projects by ${escapeHtml(studentName)}">&gt;</button>
+            </div>
+          </div>
+          <ul class="student-project-track" aria-label="Projects by ${escapeHtml(studentName)}">
+            ${studentProjects.map((project, index) => projectCard(project, rowIndex === 0 ? index : 3, false)).join("")}
+          </ul>
+        </li>`).join("");
+      grid.querySelectorAll(".student-project-row").forEach((row) => {
+        const track = row.querySelector(".student-project-track");
+        const [previous, next] = row.querySelectorAll("button");
+        const updateControls = () => {
+          previous.disabled = track.scrollLeft <= 1;
+          next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+        };
+        row.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => {
+          const card = track.querySelector(".project-card");
+          const step = card.offsetWidth + parseFloat(getComputedStyle(track).columnGap);
+          const visibleCards = Math.max(1, Math.floor((track.clientWidth + 1) / step));
+          track.scrollBy({ left: Number(button.dataset.direction) * visibleCards * step, behavior: "smooth" });
+        }));
+        track.addEventListener("scroll", updateControls, { passive: true });
+        new ResizeObserver(updateControls).observe(track);
+        updateControls();
+      });
+    } else {
+      grid.innerHTML = visibleProjects.map((project, index) => projectCard(project, index)).join("");
+    }
     if (!visibleProjects.length) {
       grid.innerHTML = `<li class="gallery-empty">No project links for this collection yet. Choose another collection or browse the student sites.</li>`;
     }

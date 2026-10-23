@@ -119,7 +119,7 @@ test("every project view is alphabetical by student, then project title", async 
   for (const type of ["all", ...projectTypes.map(({ id }) => id)]) {
     await page.getByLabel("Filter by week and project").selectOption(type);
     const cards = await page.locator(".project-card").evaluateAll((cards) => cards.map((card) => ({
-      student: card.querySelector(".project-student").textContent,
+      student: (card.querySelector(".project-student") ?? card.closest(".student-project-row").querySelector(".project-student")).textContent,
       title: card.querySelector("h3").textContent,
     })));
     const names = cards.map(({ student }) => student);
@@ -157,4 +157,19 @@ test("week-only and invalid type links recover to a valid collection", async ({ 
   await page.goto("/?week=999&type=unknown");
   await expect(page.getByLabel("Filter by week and project")).toHaveValue("all");
   await expect(page.locator(".project-card")).toHaveCount(projects.length);
+});
+
+test("all projects groups each student into a carousel row", async ({ page }) => {
+  await page.goto("/?view=projects");
+  const studentNames = [...new Set(projects.map(({ student }) => student))].sort((a, b) => a.localeCompare(b, "en"));
+  await expect(page.locator(".student-project-row")).toHaveCount(studentNames.length);
+  await expect(page.locator(".student-project-row .project-student")).toHaveText(studentNames);
+  const row = page.locator(".student-project-row").filter({ has: page.locator(".student-project-track > li:nth-child(4)") }).first();
+  const track = row.locator(".student-project-track");
+  await expect(row.getByRole("button", { name: /^Previous projects/ })).toBeDisabled();
+  await row.getByRole("button", { name: /^Next projects/ }).click();
+  await expect.poll(() => track.evaluate((el) => el.scrollLeft)).toBeGreaterThan(0);
+  await expect(row.getByRole("button", { name: /^Previous projects/ })).toBeEnabled();
+  await page.getByLabel("Filter by week and project").selectOption("typography");
+  await expect(page.locator(".student-project-row")).toHaveCount(0);
 });

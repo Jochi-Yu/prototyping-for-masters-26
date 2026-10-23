@@ -630,3 +630,80 @@ footer p {
     width: 100%;
   }
 }
+
+.project-grid.student-project-rows {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 3.5rem;
+}
+
+.student-row-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.student-row-heading h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.student-row-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.student-row-controls button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-size: var(--text-control);
+}
+
+.student-row-controls button:disabled {
+  cursor: default;
+  opacity: 0.35;
+}
+
+.student-project-track {
+  display: grid;
+  grid-auto-columns: calc((100% - 4.5rem) / 3.25);
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  list-style: none;
+}
+
+.student-project-track::-webkit-scrollbar {
+  display: none;
+}
+
+.student-project-track .project-card {
+  scroll-snap-align: start;
+}
+
+@media (max-width: 64rem) {
+  .student-project-track {
+    grid-auto-columns: calc((100% - 3rem) / 2.25);
+  }
+}
+
+@media (max-width: 40rem) {
+  .project-grid.student-project-rows {
+    gap: 2.5rem;
+  }
+
+  .student-project-track {
+    grid-auto-columns: 86%;
+  }
+}
