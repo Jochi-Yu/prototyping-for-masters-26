@@ -7,6 +7,7 @@ All 31 student sites were scanned for an inspiration-library project. The scan r
 | Student | Project | Evidence |
 | --- | --- | --- |
 | Sasha Shafran | [Bibliothèque d'Inspiration](https://prototyping-for-masters-sashki-lw62.vercel.app/prototypes/inspiration-library) | The fake sign-in returned “Invalid email or password”. Earlier today the page showed a database-not-connected notice; on recheck it worked. |
+| Tinglan Huang (Alanis) | [Inspiration library](https://alanis1-omega.vercel.app/prototypes/inspiration-library) | The fake sign-in returned “Invalid email or password” (the auth endpoint answered 401). Earlier today sign-in reported “temporarily unavailable”; on a later recheck it worked. |
 | Yoonseo Yang (Eunice) | [Inspiration library](https://prototyping-for-master.vercel.app/prototypes/inspiration-library) | The fake sign-in returned “Invalid email or password”. The page works but isn’t yet linked from her homepage. |
 
 ## Published but not working yet
@@ -15,8 +16,7 @@ All 31 student sites were scanned for an inspiration-library project. The scan r
 | --- | --- |
 | Hoi Kin Chan (Matthew) | “Connect the database” notice (DATABASE_URL missing). |
 | Jochi Yu | “The database isn't connected yet” notice. |
-| Tinglan Huang (Alanis) | Landing, sign-in, and sign-up pages render, but sign-in reports “temporarily unavailable”. |
 | Vivan Nadkarni | “The database isn’t connected yet” notice. |
 | Ziona Sober | “The library needs its database” notice; a `/work/inspiration-library` case-study page exists. |
 
-The five pages above most likely need DATABASE_URL set in the Vercel project’s environment variables, not just in `.env.local`. Taiyang Zhang’s homepage “Inspirations” section is part of her portfolio, not this project. No inspiration-library page was found for the other 23 students.
+The four pages above most likely need DATABASE_URL set in the Vercel project’s environment variables, not just in `.env.local`. Taiyang Zhang’s homepage “Inspirations” section is part of her portfolio, not this project. No inspiration-library page was found for the other 23 students.

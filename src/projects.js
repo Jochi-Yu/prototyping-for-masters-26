@@ -192,6 +192,7 @@ const bookProjects = [
 // Only libraries whose live database answers sign-in are included; see docs/inspiration-review-2026-10-23.md.
 const inspirationProjects = [
   ["Sasha Shafran","Bibliothèque d'Inspiration","/prototypes/inspiration-library"],
+  ["Tinglan Huang (Alanis)","Inspiration library","/prototypes/inspiration-library"],
   ["Yoonseo Yang (Eunice)","Inspiration library","/prototypes/inspiration-library"],
 ];
 
