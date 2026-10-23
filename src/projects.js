@@ -174,7 +174,7 @@ const bookProjects = [
   ["Shuotong Huang (Tiffany)","My Bookshelf","/prototypes/my-bookshelf"],
   ["Shuotong Huang (Tiffany)","Minimalist Bookshelf","/prototypes/minimalist-bookshelf"],
   ["Siyue Zhong","My bookshelf","/prototypes/my-bookshelf"],
-  ["Stephen Grant (Mac)","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Stephen Grant (Mac)","My Bookshelf","https://masters-main-7s64.vercel.app/prototypes/my-bookshelf"],
   ["Taiyang Zhang (Sunshine)","My Bookshelf","/prototypes/my-bookshelf"],
   ["Tinglan Huang (Alanis)","My Bookshelf","/prototypes/my-bookshelf"],
   ["Vivan Nadkarni","My Bookshelf","/prototypes/my-bookshelf"],

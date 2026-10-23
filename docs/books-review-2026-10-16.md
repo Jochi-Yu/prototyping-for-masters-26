@@ -8,11 +8,11 @@ The collection groups the Week 6 assignment by topic; it does not assert publica
 
 Rechecked every curated Books URL plus the common bookshelf route on the seven sites without a shelf, alongside a full `npm run audit:projects` pass of all 31 sites. Added **Ruyi** and **Yiping**, bringing the collection to **28 projects from 26 students** (Tiffany’s two shelves were added on October 21). All 28 project pages returned 200.
 
-Jochi’s shelf, previously blocked by missing Notion configuration, now renders a scattered-cover collection. Bruce, Minju, Siyue, Vivan, and Reign redesigned their shelves; Ethan removed his sort control. Their previews, and the two new ones, were refreshed. Minju’s redesign is labeled Demo Mode. Mac (503), Xuanyi (502), and Eunice (500, missing configuration) are unchanged. No student data or external settings were changed.
+Jochi’s shelf, previously blocked by missing Notion configuration, now renders a scattered-cover collection. Bruce, Minju, Siyue, Vivan, and Reign redesigned their shelves; Ethan removed his sort control. Their previews, and the two new ones, were refreshed. Minju’s redesign is labeled Demo Mode. Xuanyi (502), and Eunice (500, missing configuration) are unchanged. No student data or external settings were changed.
 
 Evidence: `output/books-recheck-2026-10-23/` contains rendered text, request statuses, and screenshots for every checked page.
 
-Later the same day, two more rechecks added **Jiaqi**’s “My Bookstore,” bringing the collection to **29 projects from 27 students**. It is linked from her homepage but displays missing Notion configuration, so no books load. Ethan connected his shelf to Notion (110 books in a redesigned shelf) and Kate redesigned hers as a drag-to-shelve “Annual shelf.” Both previews were refreshed.
+Later the same day, two more rechecks added **Jiaqi**’s “My Bookstore,” bringing the collection to **29 projects from 27 students**. It is linked from her homepage but displays missing Notion configuration, so no books load. Mac’s newer deployment now loads 12 books from Notion, and the gallery links to it. Ethan connected his shelf to Notion (110 books in a redesigned shelf) and Kate redesigned hers as a drag-to-shelve “Annual shelf.” Both previews were refreshed.
 
 ## Latest additions check
 
@@ -54,7 +54,7 @@ Revisited all 30 roster sites and checked the common bookshelf route on all 29 V
 | Shuotong Huang (Tiffany) | [My Bookshelf](https://shuotong-portfolio.vercel.app/prototypes/my-bookshelf) | Added October 21: eight books in a Notion demo library with gallery, shelf, and table views. |
 | Shuotong Huang (Tiffany) | [Minimalist Bookshelf](https://shuotong-portfolio.vercel.app/prototypes/minimalist-bookshelf) | Added October 21: curated archive of 24 books, music, films, and other objects. |
 | Siyue Zhong | [My bookshelf](https://prototyping-for-masters-c12t.vercel.app/prototypes/my-bookshelf) | Redesigned (October 23) as a hand-drawn shelf synced with Notion; ten books with clickable spines. |
-| Stephen Grant (Mac) | [My Bookshelf](https://masters-main.vercel.app/prototypes/my-bookshelf) | Published bookshelf interface renders a Notion setup screen. Books endpoint returned 503; no books loaded. |
+| Stephen Grant (Mac) | [My Bookshelf](https://masters-main-7s64.vercel.app/prototypes/my-bookshelf) | Fixed (October 23): his newer deployment loads 12 Notion books with genres, ratings, and search; books endpoint returned 200. His original masters-main deployment still returns 503 for books, so the gallery links to the working deployment. |
 | Taiyang Zhang (Sunshine) | [My Bookshelf](https://sunshine-prototypes.vercel.app/prototypes/my-bookshelf) | Eight demo books with ratings, reviews, and gallery/spine/list controls; explicitly labeled Demo Mode. |
 | Tinglan Huang (Alanis) | [My Bookshelf](https://alanis1-omega.vercel.app/prototypes/my-bookshelf) | Connection fixed: now displays 13 entries, including one Untitled placeholder, and a Connected to Notion indicator. Preview refreshed. |
 | Vivan Nadkarni | [My Bookshelf](https://vivans-prototypes.vercel.app/prototypes/my-bookshelf) | Restyled (October 23) as an “Ex libris” catalogue; twelve books across six genres with reviews. |
