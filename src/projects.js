@@ -193,9 +193,11 @@ const bookProjects = [
 // status per student is in docs/inspiration-review-2026-10-23.md.
 const inspirationProjects = [
   ["Carnycia Royce","Inspiration library","/prototypes/inspiration-library"],
+  ["Ethan Wise","Inspiration library","/prototypes/inspiration-library"],
   ["Heran Cui (Bruce)","Inspiration library","/prototypes/inspiration-library"],
   ["Hoi Kin Chan (Matthew)","Inspiration library","/prototypes/inspiration-library"],
   ["Jochi Yu","Inspiration library","/prototypes/inspiration-library"],
+  ["Qianyi Ma (Kate)","Inspiration library / 灵感库","/prototypes/inspiration-library"],
   ["Sasha Shafran","Bibliothèque d'Inspiration","/prototypes/inspiration-library"],
   ["Tinglan Huang (Alanis)","Inspiration library","/prototypes/inspiration-library"],
   ["Vivan Nadkarni","Inspiration library","/prototypes/inspiration-library"],
