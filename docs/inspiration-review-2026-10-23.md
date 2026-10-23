@@ -1,10 +1,10 @@
 # Week 7 Inspiration library review — October 23, 2026
 
-All 31 student sites were scanned for an inspiration-library project. The scan read homepage links and script bundles, and requested common routes such as `/prototypes/inspiration-library`. Twenty-one students have published a page, and all are listed in the gallery for visibility, working or not.
+All 31 student sites were scanned for an inspiration-library project. The scan read homepage links and script bundles, and requested common routes such as `/prototypes/inspiration-library`. Twenty-two students have published a page, and all are listed in the gallery for visibility, working or not.
 
 Each database was tested by sending a sign-in with a fake email to the site’s `/api/auth/sign-in/email` endpoint, and through the sign-in form in a browser. No accounts were created, and no student work was changed. A normal 401 “Invalid email or password” rejection means sign-in reaches the database. Pages can show “Invalid email or password” even when the server failed, so the server’s actual response was checked. Account creation, saving to boards, and public links weren’t tested.
 
-The tables reflect the latest check, the seventh of the day. No new pages appeared since the sixth; Sean’s library was fixed and added.
+The tables reflect the latest check, the eighth of the day. Sean’s library was fixed and added on the seventh; Sunshine’s was added on the eighth.
 
 ## Working (sign-in reaches the database)
 
@@ -17,6 +17,7 @@ The tables reflect the latest check, the seventh of the day. No new pages appear
 | Ryan Page | Fixed since the previous check. |
 | Sasha Shafran | |
 | Sean Wiseman | Fixed and added this check. His page previously crashed with HTTP 500; it now loads, and sign-in returns 401 from the server and through the browser form. |
+| Taiyang Zhang (Sunshine) | New this check, found by the full project audit. Returns 401 from the server and through the browser form. |
 | Tinglan Huang (Alanis) | |
 | Vivan Nadkarni | |
 | Yiping Dong | |
@@ -37,4 +38,4 @@ The tables reflect the latest check, the seventh of the day. No new pages appear
 | Stephen Grant (Mac) | New. The page renders; sign-in returns 500 (“We could not sign you in”). |
 | Yurou Zhou (Reign) | Sign-in returns 500. |
 
-Most of the not-working sites need DATABASE_URL set in the Vercel project’s environment variables, followed by a redeploy; Michelle needs her auth URL set to her live address. Taiyang Zhang’s homepage “Inspirations” section is part of her portfolio, not this project. No inspiration-library page was found for the other 9 students.
+Most of the not-working sites need DATABASE_URL set in the Vercel project’s environment variables, followed by a redeploy; Michelle needs her auth URL set to her live address. No inspiration-library page was found for the other 9 students.

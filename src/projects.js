@@ -36,10 +36,12 @@ const typographyProjects = [
   ["Qianyi Ma (Kate)","Typography Experiments","/prototypes/typography-experiments"],
   ["Ruyi Wang","Typography Generator","/prototypes/typography-generator"],
   ["Ruyi Wang","Typography Experiments","/prototypes/typography-experiments"],
+  ["Ruyi Wang","Shatter Type","/prototypes/shatter-type"],
   ["Ryan Page","Typography Experiments","/prototypes/typography-experiments"],
   ["Sasha Shafran","Type Mix","/prototypes/type-mix"],
   ["Sean Wiseman","Torch Typography","/prototypes/torch-typography"],
   ["Shuotong Huang (Tiffany)","Typography Playground","/prototypes/typography-playground"],
+  ["Shuotong Huang (Tiffany)","Custom Font Canvas","/prototypes/custom-font-canvas"],
   ["Siyue Zhong","Typography Generator","/prototypes/typography-generator"],
   ["Siyue Zhong","Typography Experiments","/prototypes/typography-experiments"],
   ["Siyue Zhong","Spiral Typography","/prototypes/spiral-typography"],
@@ -94,6 +96,7 @@ const doodleProjects = [
   ["Mingtai Sun","Alien Toothpaste Doodle","/prototypes/alien-toothpaste-doodle"],
   ["Minju Jang","Emoji & ASCII Mosaic Doodler","/prototypes/emoji-mosaic"],
   ["Minju Jang","Excel Art Doodle Tool","/prototypes/excel-doodle"],
+  ["Ruyi Wang","Doodle Garden","/prototypes/doodle-garden"],
   ["Ryan Page","Doodle Creator","/prototypes/doodle-creator"],
   ["Sean Wiseman","Doodle","/prototypes/doodle"],
   ["Sasha Shafran","Fashion Doodle","/prototypes/fashion-doodle"],
@@ -124,6 +127,7 @@ const weatherProjects = [
   ["Mingtai Sun","The Weather Daily","/prototypes/weather-station"],
   ["Minju Jang","Globe Weather","/prototypes/weather-dashboard"],
   ["Qianyi Ma (Kate)","Weather, now / 天气此刻","/prototypes/local-weather"],
+  ["Ruyi Wang","Atmosphere","https://weather-prototype-nine.vercel.app/"],
   ["Ryan Page","Weather Dashboard","/prototypes/weather-dashboard"],
   ["Sasha Shafran","Weather Archive","/prototypes/weather-archive"],
   ["Sean Wiseman","Weather, anywhere.","/prototypes/weather"],
@@ -159,6 +163,7 @@ const apiProjects = [
 
 const bookProjects = [
   ["Caoyun Xu (Zoe)","My bookshelf","https://my-bookshelf-sand.vercel.app/"],
+  ["Carnycia Royce","Bookshelf","/prototypes/my-bookshelf"],
   ["Ethan Wise","My Bookshelf","/prototypes/my-bookshelf"],
   ["Heran Cui (Bruce)","Bruce’s books","/prototypes/my-bookshelf"],
   ["Hoi Kin Chan (Matthew)","My bookshelf","/prototypes/my-bookshelf"],
@@ -187,6 +192,7 @@ const bookProjects = [
   ["Yurou Zhou (Reign)","Reign's Reading Sharing","/prototypes/my-bookshelf"],
   ["Zhongyunqi Meng (Aria)","My bookshelf","/prototypes/my-bookshelf"],
   ["Ziona Sober","My Bookshelf","/prototypes/my-bookshelf"],
+  ["Ziqing Huang (Lyra)","The Reading Archive","/prototypes/my-bookshelf"],
 ];
 
 // Every published library is listed for visibility, including ones whose database isn't connected yet;
@@ -207,6 +213,7 @@ const inspirationProjects = [
   ["Shuotong Huang (Tiffany)","Inspiration library","/prototypes/inspiration-library"],
   ["Siyue Zhong","Inspiration library","/prototypes/inspiration-library"],
   ["Stephen Grant (Mac)","Inspiration library","/prototypes/inspiration-library"],
+  ["Taiyang Zhang (Sunshine)","Inspiration library","/prototypes/inspiration-library"],
   ["Tinglan Huang (Alanis)","Inspiration library","/prototypes/inspiration-library"],
   ["Vivan Nadkarni","Inspiration library","/prototypes/inspiration-library"],
   ["Yiping Dong","Inspiration library","/prototypes/inspiration-library"],

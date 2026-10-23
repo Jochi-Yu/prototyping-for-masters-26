@@ -65,10 +65,10 @@ try {
         }
         if (project.type === "api") {
           if (project.path === "/prototypes/spotify-palette-explorer") {
-            const search = page.locator("input").first();
-            if (await search.count()) {
-              await search.fill("Miles Davis");
-              await page.getByRole("button", { name: "Explore Album", exact: true }).click();
+            const explore = page.getByRole("button", { name: "Explore Album", exact: true });
+            if (await explore.count()) {
+              await page.locator("input").first().fill("Miles Davis");
+              await explore.click();
             } else {
               // The updated music player opens directly on an album and palette.
               await page.getByRole("button", { name: "3D Sleeve Mode ↗", exact: true }).waitFor();
