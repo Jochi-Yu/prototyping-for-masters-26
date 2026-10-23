@@ -189,11 +189,20 @@ const bookProjects = [
   ["Ziona Sober","My Bookshelf","/prototypes/my-bookshelf"],
 ];
 
-// Only libraries whose live database answers sign-in are included; see docs/inspiration-review-2026-10-23.md.
+// Every published library is listed for visibility, including ones whose database isn't connected yet;
+// status per student is in docs/inspiration-review-2026-10-23.md.
 const inspirationProjects = [
+  ["Carnycia Royce","Inspiration library","/prototypes/inspiration-library"],
+  ["Heran Cui (Bruce)","Inspiration library","/prototypes/inspiration-library"],
+  ["Hoi Kin Chan (Matthew)","Inspiration library","/prototypes/inspiration-library"],
+  ["Jochi Yu","Inspiration library","/prototypes/inspiration-library"],
   ["Sasha Shafran","Bibliothèque d'Inspiration","/prototypes/inspiration-library"],
   ["Tinglan Huang (Alanis)","Inspiration library","/prototypes/inspiration-library"],
+  ["Vivan Nadkarni","Inspiration library","/prototypes/inspiration-library"],
+  ["Yiping Dong","Inspiration library","/prototypes/inspiration-library"],
   ["Yoonseo Yang (Eunice)","Inspiration library","/prototypes/inspiration-library"],
+  ["Yurou Zhou (Reign)","Inspiration library","/prototypes/inspiration-library"],
+  ["Ziona Sober","Inspiration library","/prototypes/inspiration-library"],
 ];
 
 const makeProjects = (entries, week, type) => entries.map(([student, title, path]) => ({

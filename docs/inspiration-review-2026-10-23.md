@@ -1,22 +1,28 @@
 # Week 7 Inspiration library review — October 23, 2026
 
-All 31 student sites were scanned for an inspiration-library project. The scan read homepage links and script bundles, and requested common routes such as `/prototypes/inspiration-library`. Seven students have a published page. A library is included only when its live database responds. This was tested with a sign-in using a fake email: no accounts were created, and no student work was changed.
+All 31 student sites were scanned for an inspiration-library project. The scan read homepage links and script bundles, and requested common routes such as `/prototypes/inspiration-library`. Eleven students have a published page, and all are listed in the gallery for visibility, working or not.
 
-## Included (database connected)
+Each database was tested by sending a sign-in with a fake email to the site’s `/api/auth/sign-in/email` endpoint. No accounts were created, and no student work was changed. A normal 401 “Invalid email or password” rejection means the database is answering. Pages can show “Invalid email or password” even when the server failed, so the server’s actual response was checked.
 
-| Student | Project | Evidence |
-| --- | --- | --- |
-| Sasha Shafran | [Bibliothèque d'Inspiration](https://prototyping-for-masters-sashki-lw62.vercel.app/prototypes/inspiration-library) | The fake sign-in returned “Invalid email or password”. Earlier today the page showed a database-not-connected notice; on recheck it worked. |
-| Tinglan Huang (Alanis) | [Inspiration library](https://alanis1-omega.vercel.app/prototypes/inspiration-library) | The fake sign-in returned “Invalid email or password” (the auth endpoint answered 401). Earlier today sign-in reported “temporarily unavailable”; on a later recheck it worked. |
-| Yoonseo Yang (Eunice) | [Inspiration library](https://prototyping-for-master.vercel.app/prototypes/inspiration-library) | The fake sign-in returned “Invalid email or password”. The page works but isn’t yet linked from her homepage. |
+## Working (database connected)
 
-## Published but not working yet
+| Student | Evidence |
+| --- | --- |
+| Sasha Shafran | Returns 401 “Invalid email or password”. |
+| Tinglan Huang (Alanis) | Returns 401. Sign-in reported “temporarily unavailable” earlier in the day. |
+| Yoonseo Yang (Eunice) | Returns 401. The page isn’t yet linked from her homepage. |
+
+## Listed, not working yet (latest check)
 
 | Student | Observed |
 | --- | --- |
-| Hoi Kin Chan (Matthew) | “Connect the database” notice (DATABASE_URL missing). |
-| Jochi Yu | “The database isn't connected yet” notice. |
-| Vivan Nadkarni | “The database isn’t connected yet” notice. |
-| Ziona Sober | “The library needs its database” notice; a `/work/inspiration-library` case-study page exists. |
+| Carnycia Royce | The live sign-in form sends logins to `http://localhost:3000`, which browsers block (“Failed to fetch”). The server endpoint itself returns 500. The page isn’t linked from her homepage. |
+| Heran Cui (Bruce) | The sign-in endpoint returns 404; the page shows that as “Invalid email or password”. |
+| Hoi Kin Chan (Matthew) | Returns 503 `database_not_configured`; a database notice is on the page. |
+| Jochi Yu | Returns 503 “The database isn't connected yet”. |
+| Vivan Nadkarni | Database notice on the page; sign-in returns 500. |
+| Yiping Dong | Sign-in returns 500, shown on the page as “Invalid email or password”. |
+| Yurou Zhou (Reign) | Sign-in returns 500 (“Failed to sign in”). |
+| Ziona Sober | Database notice on the page; sign-in returns 500. A `/work/inspiration-library` case-study page also exists. |
 
-The four pages above most likely need DATABASE_URL set in the Vercel project’s environment variables, not just in `.env.local`. Taiyang Zhang’s homepage “Inspirations” section is part of her portfolio, not this project. No inspiration-library page was found for the other 23 students.
+Most of these need DATABASE_URL, and Carnycia also needs her auth URL, set in the Vercel project’s environment variables, followed by a redeploy. Taiyang Zhang’s homepage “Inspirations” section is part of her portfolio, not this project. No inspiration-library page was found for the other 19 students.
