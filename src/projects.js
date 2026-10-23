@@ -5,6 +5,7 @@ export const weeks = [
   { number: 4, title: "PixiJS & Doodle" },
   { number: 5, title: "Weather apps & API explorations" },
   { number: 6, title: "Books" },
+  { number: 7, title: "Inspiration library" },
 ];
 
 export const projectTypes = [
@@ -14,6 +15,7 @@ export const projectTypes = [
   { id: "weather", title: "Weather apps", week: 5 },
   { id: "api", title: "API explorations", week: 5 },
   { id: "books", title: "Books", week: 6 },
+  { id: "inspiration", title: "Inspiration library", week: 7 },
 ];
 
 // Each entry: [student name, project title, direct project path].
@@ -187,6 +189,12 @@ const bookProjects = [
   ["Ziona Sober","My Bookshelf","/prototypes/my-bookshelf"],
 ];
 
+// Only libraries whose live database answers sign-in are included; see docs/inspiration-review-2026-10-23.md.
+const inspirationProjects = [
+  ["Sasha Shafran","Bibliothèque d'Inspiration","/prototypes/inspiration-library"],
+  ["Yoonseo Yang (Eunice)","Inspiration library","/prototypes/inspiration-library"],
+];
+
 const makeProjects = (entries, week, type) => entries.map(([student, title, path]) => ({
   student, title, path, week, type,
   preview: `/previews/${student.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}-${(path.replace(/\/index\.html?$/i, "").split("/").pop() || title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/, "")}.jpg`,
@@ -199,4 +207,5 @@ export const projects = [
   ...makeProjects(weatherProjects, 5, "weather"),
   ...makeProjects(apiProjects, 5, "api"),
   ...makeProjects(bookProjects, 6, "books"),
+  ...makeProjects(inspirationProjects, 7, "inspiration"),
 ];
