@@ -4,7 +4,7 @@ A Vite course homepage with a weekly student-project gallery and a student-site 
 
 ## Browse student work
 
-The homepage opens in **Student sites**, showing the full roster. Choose **Projects**, then select **Week 3 — Typography**, **Week 4 — PixiJS**, **Week 4 — Doodle**, **Week 5 — Weather apps**, **Week 5 — API explorations**, **Week 6 — Books**, or **Week 7 — Inspiration library**. Every view is sorted alphabetically by student name, then project title. Filters are shareable and work with browser Back/Forward:
+The homepage opens in **Student sites**, showing the full roster. Choose **Projects**, then select **Week 3 — Typography**, **Week 4 — PixiJS**, **Week 4 — Doodle**, **Week 5 — Weather apps**, **Week 5 — API explorations**, **Week 6 — Books**, or **Week 7 — Inspiration library**. Every view is sorted alphabetically by student name, then by most recent week first, then project title. Filters are shareable and work with browser Back/Forward:
 
 - `/?week=3#student-sites` — Week 3 typography gallery
 - `/?week=4&type=pixijs#student-sites` — Week 4 PixiJS gallery
