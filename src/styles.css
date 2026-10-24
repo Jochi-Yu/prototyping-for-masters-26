@@ -494,7 +494,6 @@ footer p {
   height: 100%;
   object-fit: cover;
   background: var(--paper);
-  transition: transform 240ms ease-out;
 }
 
 .preview-fallback {
@@ -510,10 +509,6 @@ footer p {
 
 .has-missing-preview .preview-fallback {
   display: grid;
-}
-
-.project-link:hover img {
-  transform: scale(1.025);
 }
 
 .project-caption {
@@ -596,16 +591,6 @@ footer p {
 
   .project-student {
     font-size: 1.35rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .project-image img {
-    transition: none;
-  }
-
-  .project-link:hover img {
-    transform: none;
   }
 }
 
