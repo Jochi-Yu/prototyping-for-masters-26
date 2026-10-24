@@ -31,6 +31,8 @@ The [Week 6 Books review](docs/books-review-2026-10-16.md) records the full-rost
 
 The [Week 7 Inspiration library review](docs/inspiration-review-2026-10-23.md) covers all 22 published libraries; all are listed for visibility, and the note records which have a connected database.
 
+The [October 24 thumbnail refresh](docs/preview-refresh-2026-10-24.md) recaptured all 31 homepages and updated the 11 whose design or content changed, including Matthew’s redesigned site.
+
 The [October 23 recheck](docs/site-review-2026-10-23.md) reran the audit across all 31 sites, added seven projects (six to earlier weeks, one to Week 7), and refreshed every thumbnail.
 
 The [October 17 audit](docs/site-review-2026-10-17.md) rechecked all 31 sites with `npm run audit:projects`, added five projects, removed two that no longer exist, and refreshed every thumbnail.
