@@ -1,5 +1,8 @@
 import { projects, projectTypes } from "./projects.js";
 
+// projectTypes is listed in course order, so a higher index is a more recent collection.
+const typeOrder = new Map(projectTypes.map(({ id }, index) => [id, index]));
+
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
 })[character]);
@@ -53,7 +56,9 @@ export function initGallery(students) {
     const collection = projectTypes.find(({ id }) => id === selectedType);
     const visibleProjects = projects
       .filter((project) => selectedType === "all" || project.type === selectedType)
-      .sort((a, b) => a.student.localeCompare(b.student, "en") || a.title.localeCompare(b.title, "en"));
+      .sort((a, b) => a.student.localeCompare(b.student, "en")
+        || typeOrder.get(b.type) - typeOrder.get(a.type)
+        || a.title.localeCompare(b.title, "en"));
     const showTypes = new Set(visibleProjects.map(({ type }) => type)).size > 1;
     title.textContent = collection ? `Week ${collection.week} - ${collection.title}` : "All projects";
     const studentCount = new Set(visibleProjects.map(({ student }) => student)).size;

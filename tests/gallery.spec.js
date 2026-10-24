@@ -114,21 +114,33 @@ test("the single Week 4 filter fits on mobile and supports keyboard navigation",
 });
 
 
-test("every project view is alphabetical by student, then project title", async ({ page }) => {
+test("every project view is alphabetical by student, then most recent week first", async ({ page }) => {
   await page.goto("/?view=projects");
+  const typeOrder = new Map(projectTypes.map(({ title }, index) => [title, index]));
   for (const type of ["all", ...projectTypes.map(({ id }) => id)]) {
     await page.getByLabel("Filter by week and project").selectOption(type);
+    const collection = projectTypes.find(({ id }) => id === type);
     const cards = await page.locator(".project-card").evaluateAll((cards) => cards.map((card) => ({
       student: (card.querySelector(".project-student") ?? card.closest(".student-project-row").querySelector(".project-student")).textContent,
+      week: Number(card.querySelector(".project-week").textContent.replace("Week ", "")),
+      type: card.querySelector(".project-type")?.textContent,
       title: card.querySelector("h3").textContent,
     })));
     const names = cards.map(({ student }) => student);
     expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b, "en")));
     for (const name of new Set(names)) {
-      const titles = cards.filter(({ student }) => student === name).map(({ title }) => title);
-      expect(titles).toEqual([...titles].sort((a, b) => a.localeCompare(b, "en")));
+      const studentCards = cards.filter(({ student }) => student === name);
+      const expected = [...studentCards].sort((a, b) => b.week - a.week
+        || typeOrder.get(b.type ?? collection.title) - typeOrder.get(a.type ?? collection.title)
+        || a.title.localeCompare(b.title, "en"));
+      expect(studentCards.map(({ title }) => title)).toEqual(expected.map(({ title }) => title));
     }
   }
+  await page.getByLabel("Filter by week and project").selectOption("all");
+  const firstRowWeeks = (await page.locator(".student-project-row").first().locator(".project-week").allTextContents())
+    .map((week) => Number(week.replace("Week ", "")));
+  expect(new Set(firstRowWeeks).size).toBeGreaterThan(1);
+  expect(firstRowWeeks).toEqual([...firstRowWeeks].sort((a, b) => b - a));
 });
 
 test("Week 5 API explorations stay separate from weather across shared links and history", async ({ page }) => {
