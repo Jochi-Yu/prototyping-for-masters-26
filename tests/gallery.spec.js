@@ -120,12 +120,15 @@ test("every project view is alphabetical by student, then most recent week first
   for (const type of ["all", ...projectTypes.map(({ id }) => id)]) {
     await page.getByLabel("Filter by week and project").selectOption(type);
     const collection = projectTypes.find(({ id }) => id === type);
-    const cards = await page.locator(".project-card").evaluateAll((cards) => cards.map((card) => ({
-      student: (card.querySelector(".project-student") ?? card.closest(".student-project-row").querySelector(".project-student")).textContent,
-      week: Number(card.querySelector(".project-week").textContent.replace("Week ", "")),
-      type: card.querySelector(".project-type")?.textContent,
-      title: card.querySelector("h3").textContent,
-    })));
+    const cards = await page.locator(".project-card").evaluateAll((cards) => cards.map((card) => {
+      const [, week, type] = card.querySelector(".project-week").textContent.match(/^Week (\d+)(?:: (.+))?$/);
+      return {
+        student: (card.querySelector(".project-student") ?? card.closest(".student-project-row").querySelector(".project-student")).textContent,
+        week: Number(week),
+        type,
+        title: card.querySelector("h3").textContent,
+      };
+    }));
     const names = cards.map(({ student }) => student);
     expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b, "en")));
     for (const name of new Set(names)) {
@@ -138,7 +141,7 @@ test("every project view is alphabetical by student, then most recent week first
   }
   await page.getByLabel("Filter by week and project").selectOption("all");
   const firstRowWeeks = (await page.locator(".student-project-row").first().locator(".project-week").allTextContents())
-    .map((week) => Number(week.replace("Week ", "")));
+    .map((label) => Number(label.match(/^Week (\d+)/)[1]));
   expect(new Set(firstRowWeeks).size).toBeGreaterThan(1);
   expect(firstRowWeeks).toEqual([...firstRowWeeks].sort((a, b) => b - a));
 });
