@@ -14,6 +14,8 @@ export const reviewedExclusions = [
   { student: "Jiaqi Yuan", url: "/prototypes/the-magician", reason: "Tarot/cat reveal interaction." },
   { student: "Jiaqi Yuan", url: "/prototypes/wheel-of-fortune", reason: "Fortune-telling interaction." },
   { student: "Jiaqi Yuan", url: "/prototypes/the-tower", reason: "Cup-catching game." },
+  { student: "Jiaqi Yuan", url: "/prototypes/a-reading-for-yourself", reason: "Three-card tarot spread; outside the assignment collections." },
+  { student: "Jiaqi Yuan", url: "/prototypes/grain-light-card", reason: "Holographic tarot card study; outside the assignment collections." },
   { student: "Jochi Yu", url: "/prototypes/body-morphing", reason: "Face sculpting, not typography or doodling." },
   { student: "Jochi Yu", url: "https://jochiyuniverse.com", reason: "Personal portfolio site." },
   { student: "Minju Jang", url: "/prototypes/graph-paper-minesweeper", reason: "Primarily Minesweeper." },

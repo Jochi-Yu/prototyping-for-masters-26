@@ -4,7 +4,7 @@ export const students = [
   { name: "Ethan Wise", url: "https://prototyping-for-masters-8v9j.vercel.app/" },
   { name: "Heran Cui (Bruce)", url: "https://prototyping-for-masters-one.vercel.app/" },
   { name: "Hoi Kin Chan (Matthew)", url: "https://matthews-site.vercel.app/" },
-  { name: "Jiaqi Yuan", url: "https://prototyping-for-masters-1-eyt7.vercel.app/" },
+  { name: "Jiaqi Yuan", url: "https://prototyping-for-masters-1-guiq.vercel.app/" },
   { name: "Jochi Yu", url: "https://jochiprototypes.vercel.app/" },
   { name: "Letian Tian", url: "https://prototyping-for-masters-nine.vercel.app/" },
   { name: "Michelle Wong", url: "https://prototyping-for-masters-wine.vercel.app/" },
