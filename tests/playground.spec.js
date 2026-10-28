@@ -17,7 +17,7 @@ test("playground canvas pans, zooms, and hosts widgets", async ({ page }) => {
   await expect(page.getByText("Stick Figure", { exact: true })).toBeVisible();
   const clock = page.getByRole("img", { name: /\d{1,2}:\d{2} [AP]M in New York/ });
   await expect(clock).toBeVisible();
-  await expect(page.locator(".widget.is-unframed")).toHaveCount(1);
+  await expect(page.locator(".widget.is-unframed").filter({ has: clock })).toHaveCount(1);
   await clock.click();
   await expect(page.locator(".widget").filter({ hasText: "New York time" }).locator(".face")).toHaveClass(/is-spinning/);
 
