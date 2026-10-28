@@ -206,6 +206,7 @@ const inspirationProjects = [
   ["Jochi Yu","Inspiration library","/prototypes/inspiration-library"],
   ["Letian Tian","Inspiration library","/prototypes/inspiration-library"],
   ["Michelle Wong","Inspiration library","/prototypes/inspiration-library"],
+  ["Mingtai Sun","Inspiration library","/prototypes/inspiration-library"],
   ["Minju Jang","Inspiration library","/prototypes/inspiration-library"],
   ["Qianyi Ma (Kate)","Inspiration library / 灵感库","/prototypes/inspiration-library"],
   ["Ryan Page","Inspiration library","/prototypes/inspiration-library"],
