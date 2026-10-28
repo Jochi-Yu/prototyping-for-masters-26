@@ -13,11 +13,14 @@ test("playground canvas pans, zooms, and hosts widgets", async ({ page }) => {
   await expect(page.getByRole("region", { name: "Playground canvas" })).toBeVisible();
   await expect(page.getByText("Elizabeth Lin", { exact: true }).last()).toBeVisible();
   await expect(page.getByText("New York time", { exact: true })).toBeVisible();
+  await expect(page.getByText("Carnycia Royce", { exact: true }).last()).toBeVisible();
+  await expect(page.getByText("Stick Figure", { exact: true })).toBeVisible();
   const clock = page.getByRole("img", { name: /\d{1,2}:\d{2} [AP]M in New York/ });
   await expect(clock).toBeVisible();
   await expect(page.locator(".widget.is-unframed", { hasText: "Elizabeth Lin" })).toHaveCount(1);
+  await expect(page.locator(".widget.is-unframed").filter({ has: clock })).toHaveCount(1);
   await clock.click();
-  await expect(page.locator(".widget-body").first().locator(".face")).toHaveClass(/is-spinning/);
+  await expect(page.locator(".widget").filter({ hasText: "New York time" }).locator(".face")).toHaveClass(/is-spinning/);
 
   const fitted = await readView(page);
   const viewport = page.locator(".canvas-viewport");
@@ -85,7 +88,7 @@ test("playground fits a narrow viewport", async ({ page }) => {
 
 test("playground widgets can be dragged around without panning canvas or triggering click", async ({ page }) => {
   await page.goto("/playground/");
-  const widget = page.locator(".widget").first();
+  const widget = page.locator(".widget").filter({ hasText: "New York time" });
   await expect(widget).toBeVisible();
 
   const readWidgetPos = () => widget.evaluate((el) => ({
@@ -181,4 +184,39 @@ test("framed widget caption dragging moves widget while button remains clickable
   const btn = widget.locator("button");
   await btn.click();
   await expect(btn).toHaveText("Count: 1");
+});
+
+test("stick figure widget renders and animates on click", async ({ page }) => {
+  await page.goto("/playground/");
+  const widget = page.locator(".widget").filter({ hasText: "Stick Figure" });
+  await expect(widget).toBeVisible();
+
+  const stickFigureSvg = widget.getByRole("img", { name: "Stick figure" });
+  await expect(stickFigureSvg).toBeVisible();
+
+  // Clicking triggers jump animation and particle reaction
+  await stickFigureSvg.click();
+  await expect(widget.locator(".particle")).toBeVisible();
+test("smile widget by Yurou Zhou (Reign) renders and changes moods on interaction", async ({ page }) => {
+  await page.goto("/playground/");
+  await expect(page.getByText("Yurou Zhou (Reign)", { exact: true })).toBeVisible();
+  await expect(page.getByText("Smile Widget", { exact: true })).toBeVisible();
+
+  const faceSvg = page.locator(".smile-face-svg");
+  await expect(faceSvg).toBeVisible();
+
+  const status = page.locator(".smile-status");
+  await expect(status).toHaveText(/Feeling cheerful!/);
+
+  // Click face to cycle mood to Wink
+  await faceSvg.click();
+  await expect(status).toHaveText(/Caught your eye!/);
+
+  // Click Wink pill button to switch
+  const grinBtn = page.getByRole("button", { name: "😄 Grin" });
+  await grinBtn.click();
+  await expect(status).toHaveText(/Big sunny grin!/);
+
+  // Moving mouse tracks eyes without error
+  await page.mouse.move(200, 200);
 });
