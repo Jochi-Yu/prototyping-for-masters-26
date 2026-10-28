@@ -61,6 +61,32 @@ Use `typographyProjects` for Week 3 typography, `pixiProjects` for Week 4 PixiJS
 
 Inspect the actual page before classifying it. Games that happen to contain letters do not belong in Typography; hand-drawn styling alone does not make a game a Doodle tool. The filter options and counts update from the curated data.
 
+## Add a playground widget
+
+The playground at `/playground/` is an open canvas of widgets, one or more from each student. Drag empty space to pan, and scroll to zoom.
+
+To add yours, create one file in `src/playground/widgets/` named after you, such as `jane-doe.js`. Every file in that folder appears on the canvas automatically, so you don’t need to edit any other file. `elizabeth-lin.js` is a working example.
+
+```js
+export default {
+  student: "Jane Doe",
+  title: "Widget title",
+  width: 320,
+  height: 220,
+  mount(root) {
+    root.innerHTML = `<p>Hello</p>`;
+  },
+};
+```
+
+`mount` receives the inside of your widget. Put any HTML, CSS, SVG, canvas, or JavaScript there; styles you add stay inside your widget. Color and font follow the page palette unless you set your own. Width and height are in pixels and default to 320 by 220.
+
+Widgets don’t have to look alike. By default a widget sits in a simple frame with your name across the top. Set `frame: false` to drop the frame and draw your own shape, colors, and background; your name then appears underneath. Set `rotate` to tilt it, in degrees. `elizabeth-lin.js` uses both for a tilted clock face that spins when clicked.
+
+Leave out `x` and `y` and the playground finds an open spot. Add them to place your widget at an exact position on the canvas. If your widget throws an error, its frame shows “This widget failed to load” and the rest of the canvas still renders.
+
+Run `npm run dev`, open `/playground/` to check it, then open a pull request with your file.
+
 ## Audit student sites
 
 Run the audit regularly to find projects that are missing from the gallery or have stopped working:
