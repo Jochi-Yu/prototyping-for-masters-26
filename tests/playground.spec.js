@@ -13,11 +13,13 @@ test("playground canvas pans, zooms, and hosts widgets", async ({ page }) => {
   await expect(page.getByRole("region", { name: "Playground canvas" })).toBeVisible();
   await expect(page.getByText("Elizabeth Lin", { exact: true }).last()).toBeVisible();
   await expect(page.getByText("New York time", { exact: true })).toBeVisible();
+  await expect(page.getByText("Carnycia Royce", { exact: true }).last()).toBeVisible();
+  await expect(page.getByText("Stick Figure", { exact: true })).toBeVisible();
   const clock = page.getByRole("img", { name: /\d{1,2}:\d{2} [AP]M in New York/ });
   await expect(clock).toBeVisible();
   await expect(page.locator(".widget.is-unframed")).toHaveCount(1);
   await clock.click();
-  await expect(page.locator(".widget-body").first().locator(".face")).toHaveClass(/is-spinning/);
+  await expect(page.locator(".widget").filter({ hasText: "New York time" }).locator(".face")).toHaveClass(/is-spinning/);
 
   const fitted = await readView(page);
   const viewport = page.locator(".canvas-viewport");
@@ -85,7 +87,7 @@ test("playground fits a narrow viewport", async ({ page }) => {
 
 test("playground widgets can be dragged around without panning canvas or triggering click", async ({ page }) => {
   await page.goto("/playground/");
-  const widget = page.locator(".widget").first();
+  const widget = page.locator(".widget").filter({ hasText: "New York time" });
   await expect(widget).toBeVisible();
 
   const readWidgetPos = () => widget.evaluate((el) => ({
@@ -181,4 +183,17 @@ test("framed widget caption dragging moves widget while button remains clickable
   const btn = widget.locator("button");
   await btn.click();
   await expect(btn).toHaveText("Count: 1");
+});
+
+test("stick figure widget renders and animates on click", async ({ page }) => {
+  await page.goto("/playground/");
+  const widget = page.locator(".widget").filter({ hasText: "Stick Figure" });
+  await expect(widget).toBeVisible();
+
+  const stickFigureSvg = widget.getByRole("img", { name: "Stick figure" });
+  await expect(stickFigureSvg).toBeVisible();
+
+  // Clicking triggers jump animation and particle reaction
+  await stickFigureSvg.click();
+  await expect(widget.locator(".particle")).toBeVisible();
 });
