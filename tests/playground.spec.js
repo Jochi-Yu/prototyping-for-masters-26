@@ -182,3 +182,27 @@ test("framed widget caption dragging moves widget while button remains clickable
   await btn.click();
   await expect(btn).toHaveText("Count: 1");
 });
+
+test("smile widget by Yurou Zhou (Reign) renders and changes moods on interaction", async ({ page }) => {
+  await page.goto("/playground/");
+  await expect(page.getByText("Yurou Zhou (Reign)", { exact: true })).toBeVisible();
+  await expect(page.getByText("Smile Widget", { exact: true })).toBeVisible();
+
+  const faceSvg = page.locator(".smile-face-svg");
+  await expect(faceSvg).toBeVisible();
+
+  const status = page.locator(".smile-status");
+  await expect(status).toHaveText(/Feeling cheerful!/);
+
+  // Click face to cycle mood to Wink
+  await faceSvg.click();
+  await expect(status).toHaveText(/Caught your eye!/);
+
+  // Click Wink pill button to switch
+  const grinBtn = page.getByRole("button", { name: "😄 Grin" });
+  await grinBtn.click();
+  await expect(status).toHaveText(/Big sunny grin!/);
+
+  // Moving mouse tracks eyes without error
+  await page.mouse.move(200, 200);
+});
