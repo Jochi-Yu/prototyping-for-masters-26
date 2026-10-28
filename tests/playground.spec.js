@@ -82,3 +82,103 @@ test("playground fits a narrow viewport", async ({ page }) => {
   expect(canvas.width).toBeLessThanOrEqual(390);
   expect(canvas.height).toBeGreaterThan(200);
 });
+
+test("playground widgets can be dragged around without panning canvas or triggering click", async ({ page }) => {
+  await page.goto("/playground/");
+  const widget = page.locator(".widget").first();
+  await expect(widget).toBeVisible();
+
+  const readWidgetPos = () => widget.evaluate((el) => ({
+    left: parseFloat(el.style.left),
+    top: parseFloat(el.style.top),
+  }));
+
+  const initialPos = await readWidgetPos();
+  const initialView = await readView(page);
+
+  const widgetBox = await widget.boundingBox();
+  const startX = widgetBox.x + widgetBox.width / 2;
+  const startY = widgetBox.y + widgetBox.height / 2;
+
+  // Drag the widget by +120px X and +80px Y
+  await page.mouse.move(startX, startY);
+  await page.mouse.down();
+  await page.mouse.move(startX + 60, startY + 40, { steps: 4 });
+  await expect(widget).toHaveClass(/is-dragging/);
+  await expect(page.locator("body")).toHaveClass(/is-dragging-widget/);
+
+  await page.mouse.move(startX + 120, startY + 80, { steps: 4 });
+  await page.mouse.up();
+
+  await expect(widget).not.toHaveClass(/is-dragging/);
+  await expect(page.locator("body")).not.toHaveClass(/is-dragging-widget/);
+
+  const draggedPos = await readWidgetPos();
+  const expectedDx = 120 / initialView.scale;
+  const expectedDy = 80 / initialView.scale;
+  expect(draggedPos.left).toBeCloseTo(initialPos.left + expectedDx, 1);
+  expect(draggedPos.top).toBeCloseTo(initialPos.top + expectedDy, 1);
+
+  // Canvas world should NOT have panned
+  const afterDragView = await readView(page);
+  expect(afterDragView.x).toBeCloseTo(initialView.x, 1);
+  expect(afterDragView.y).toBeCloseTo(initialView.y, 1);
+
+  // Dragging should not have triggered the click animation
+  await expect(widget.locator(".face")).not.toHaveClass(/is-spinning/);
+
+  // But a click without drag still triggers the interaction
+  const clock = page.getByRole("img", { name: /\d{1,2}:\d{2} [AP]M in New York/ });
+  await clock.click();
+  await expect(widget.locator(".face")).toHaveClass(/is-spinning/);
+});
+
+test("framed widget caption dragging moves widget while button remains clickable", async ({ page }) => {
+  await page.goto("/playground/");
+  await page.evaluate(async () => {
+    const { mountPlayground } = await import("/src/playground/canvas.js");
+    const app = document.querySelector("#app");
+    app.innerHTML = "";
+    mountPlayground(app, [
+      {
+        student: "Jane Doe",
+        title: "Calculator",
+        frame: true,
+        x: 100,
+        y: 100,
+        width: 250,
+        height: 200,
+        mount(root) {
+          const btn = document.createElement("button");
+          btn.textContent = "Count: 0";
+          let count = 0;
+          btn.addEventListener("click", () => {
+            count += 1;
+            btn.textContent = `Count: ${count}`;
+          });
+          root.appendChild(btn);
+        },
+      },
+    ]);
+  });
+
+  const caption = page.locator(".widget-caption").first();
+  await expect(caption).toBeVisible();
+
+  const widget = page.locator(".widget").first();
+  const initLeft = await widget.evaluate((el) => parseFloat(el.style.left));
+
+  const box = await caption.boundingBox();
+  await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(box.x + box.width / 2 + 100, box.y + box.height / 2 + 50, { steps: 5 });
+  await page.mouse.up();
+
+  const newLeft = await widget.evaluate((el) => parseFloat(el.style.left));
+  expect(newLeft).toBeGreaterThan(initLeft + 50);
+
+  // Button inside widget body is still clickable without dragging
+  const btn = widget.locator("button");
+  await btn.click();
+  await expect(btn).toHaveText("Count: 1");
+});

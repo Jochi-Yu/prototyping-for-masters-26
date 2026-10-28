@@ -96,6 +96,105 @@ const mountWidget = (widget, { x, y, width, height, framed, rotate }) => {
   return article;
 };
 
+let topZIndex = 1;
+
+const enableWidgetDrag = (article, box, { getScale }) => {
+  let isDragging = false;
+  let startPointerX = 0;
+  let startPointerY = 0;
+  let lastPointerX = 0;
+  let lastPointerY = 0;
+  let moved = false;
+
+  article.addEventListener("dragstart", (event) => event.preventDefault());
+
+  article.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0) return;
+
+    const path = event.composedPath();
+    const isCaption = path.some((el) => el instanceof Element && el.classList?.contains("widget-caption"));
+    const isCredit = path.some((el) => el instanceof Element && el.classList?.contains("widget-credit"));
+
+    if (!isCaption && !isCredit) {
+      const isInteractive = path.some((el) => {
+        if (!(el instanceof Element)) return false;
+        const tag = el.tagName?.toLowerCase();
+        return (
+          tag === "button" ||
+          tag === "input" ||
+          tag === "textarea" ||
+          tag === "select" ||
+          tag === "option" ||
+          tag === "a" ||
+          tag === "canvas" ||
+          tag === "audio" ||
+          tag === "video" ||
+          el.isContentEditable ||
+          el.getAttribute("draggable") === "true" ||
+          el.hasAttribute("data-no-drag")
+        );
+      });
+      if (isInteractive) return;
+    }
+
+    article.style.zIndex = `${++topZIndex}`;
+    isDragging = true;
+    moved = false;
+    startPointerX = event.clientX;
+    startPointerY = event.clientY;
+    lastPointerX = event.clientX;
+    lastPointerY = event.clientY;
+
+    const onPointerMove = (moveEvent) => {
+      if (!isDragging) return;
+
+      if (!moved) {
+        if (Math.hypot(moveEvent.clientX - startPointerX, moveEvent.clientY - startPointerY) < 4) return;
+        moved = true;
+        article.classList.add("is-dragging");
+        document.body.classList.add("is-dragging-widget");
+      }
+
+      const currentScale = getScale();
+      const dx = (moveEvent.clientX - lastPointerX) / currentScale;
+      const dy = (moveEvent.clientY - lastPointerY) / currentScale;
+      lastPointerX = moveEvent.clientX;
+      lastPointerY = moveEvent.clientY;
+
+      box.x += dx;
+      box.y += dy;
+      article.style.left = `${box.x}px`;
+      article.style.top = `${box.y}px`;
+    };
+
+    const onPointerUp = () => {
+      window.removeEventListener("pointermove", onPointerMove);
+      window.removeEventListener("pointerup", onPointerUp);
+      window.removeEventListener("pointercancel", onPointerUp);
+
+      if (!isDragging) return;
+      isDragging = false;
+
+      if (moved) {
+        article.classList.remove("is-dragging");
+        document.body.classList.remove("is-dragging-widget");
+        const suppressClick = (clickEvent) => {
+          clickEvent.stopPropagation();
+          clickEvent.preventDefault();
+        };
+        window.addEventListener("click", suppressClick, { capture: true, once: true });
+        setTimeout(() => {
+          window.removeEventListener("click", suppressClick, { capture: true });
+        }, 50);
+      }
+    };
+
+    window.addEventListener("pointermove", onPointerMove);
+    window.addEventListener("pointerup", onPointerUp);
+    window.addEventListener("pointercancel", onPointerUp);
+  });
+};
+
 export function mountPlayground(app, widgets) {
   app.innerHTML = `
     <div class="playground">
@@ -128,7 +227,11 @@ export function mountPlayground(app, widgets) {
   let lastPointerX = 0;
   let lastPointerY = 0;
 
-  widgets.forEach((widget, index) => world.append(mountWidget(widget, placed[index])));
+  widgets.forEach((widget, index) => {
+    const article = mountWidget(widget, placed[index]);
+    enableWidgetDrag(article, placed[index], { getScale: () => scale });
+    world.append(article);
+  });
 
   const render = () => {
     world.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
